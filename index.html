@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pediatrician Pathway — a head start on becoming a children's doctor</title>
+<meta name="description" content="A friendly guide, checklist, quiz and flashcard set for someone who wants to become a paediatrician.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🩺</text></svg>">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="#top"><span class="brand-mark">🩺</span> Pediatrician Pathway</a>
+  <nav class="topnav">
+    <a href="#path">Path</a>
+    <a href="#now">Do now</a>
+    <a href="#quiz">Quiz</a>
+    <a href="#cards">Cards</a>
+    <a href="#day">The job</a>
+    <a href="#shelf">Shelf</a>
+  </nav>
+  <button id="themeBtn" class="icon-btn" title="Switch light / dark" aria-label="Switch light or dark mode">◐</button>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <p class="eyebrow">So you want to be a children's doctor</p>
+    <h1>Hi <span id="heroName" class="name">there</span> — here's the whole map.</h1>
+    <p class="lede">
+      Becoming a paediatrician is a long road, but it's a <em>known</em> road. Every step is written down,
+      and the first ones are things you can start this week. This page is your starting point.
+    </p>
+    <div class="hero-actions">
+      <label class="namefield">
+        <span>Your name</span>
+        <input id="nameInput" type="text" placeholder="type your name" maxlength="20" autocomplete="off">
+      </label>
+      <a class="btn" href="#now">Show me what to do now</a>
+    </div>
+    <div id="factBox" class="fact">
+      <span class="fact-label">Did you know</span>
+      <span id="factText"></span>
+      <button id="factBtn" class="linkish">another →</button>
+    </div>
+  </section>
+
+  <!-- PROGRESS -->
+  <section class="progress-strip">
+    <div class="ring-wrap">
+      <svg class="ring" viewBox="0 0 120 120" aria-hidden="true">
+        <circle class="ring-bg" cx="60" cy="60" r="52"></circle>
+        <circle id="ringFg" class="ring-fg" cx="60" cy="60" r="52"></circle>
+      </svg>
+      <span id="ringPct" class="ring-pct">0%</span>
+    </div>
+    <div>
+      <h2 class="strip-title">Your head start</h2>
+      <p id="progressText" class="muted">Tick things off the list below and this fills up. It saves on this device.</p>
+      <button id="resetBtn" class="linkish danger">reset my progress</button>
+    </div>
+  </section>
+
+  <!-- PATHWAY -->
+  <section id="path" class="block">
+    <h2>The path, step by step</h2>
+    <p class="muted">Pick where you live — the route is genuinely different.</p>
+    <div class="tabs" role="tablist">
+      <button class="tab is-on" data-country="uk" role="tab">🇬🇧 UK / Ireland</button>
+      <button class="tab" data-country="us" role="tab">🇺🇸 United States</button>
+    </div>
+    <p id="pathNote" class="note"></p>
+    <ol id="timeline" class="timeline"></ol>
+  </section>
+
+  <!-- CHECKLISTS -->
+  <section id="now" class="block">
+    <h2>What you can actually do now</h2>
+    <p class="muted">Nobody expects medical knowledge yet. These are the things that genuinely count.</p>
+    <div id="checklists" class="checklists"></div>
+  </section>
+
+  <!-- QUIZ -->
+  <section id="quiz" class="block">
+    <h2>Quiz yourself</h2>
+    <p class="muted">Twelve questions on children's bodies and the career itself. You learn most from the ones you get wrong.</p>
+    <div id="quizCard" class="quiz-card"></div>
+  </section>
+
+  <!-- FLASHCARDS -->
+  <section id="cards" class="block">
+    <h2>Flashcards</h2>
+    <p class="muted">Click the card to flip it.</p>
+    <div class="card-tools">
+      <select id="catFilter" aria-label="Filter flashcards by category"></select>
+      <button id="shuffleBtn" class="btn small ghost">Shuffle</button>
+    </div>
+    <div id="flashcard" class="flashcard" tabindex="0" role="button" aria-label="Flashcard, click to flip">
+      <div class="fc-inner">
+        <div class="fc-face fc-front"><span class="fc-cat"></span><p></p><span class="fc-hint">click to flip</span></div>
+        <div class="fc-face fc-back"><p></p></div>
+      </div>
+    </div>
+    <div class="card-nav">
+      <button id="prevCard" class="btn small ghost">← Back</button>
+      <span id="cardCount" class="muted"></span>
+      <button id="nextCard" class="btn small">Next →</button>
+    </div>
+  </section>
+
+  <!-- DAY IN THE LIFE -->
+  <section id="day" class="block">
+    <h2>What the job is actually like</h2>
+    <div class="grid two">
+      <div class="panel good">
+        <h3>The best parts</h3>
+        <ul>
+          <li>Children get better fast. You see people go from very sick to running down the corridor.</li>
+          <li>You're trusted with the thing families care about most in the world.</li>
+          <li>Enormous variety — newborns, teenagers, emergencies, long-term conditions.</li>
+          <li>You genuinely never stop learning.</li>
+          <li>Silliness is part of the job. Stickers, jokes and daft voices are clinical tools.</li>
+        </ul>
+      </div>
+      <div class="panel hard">
+        <h3>The hard parts (worth knowing early)</h3>
+        <ul>
+          <li>Some children don't get better. That stays with you, and you learn to carry it, not avoid it.</li>
+          <li>Night shifts, weekends and missed birthdays are real.</li>
+          <li>Training is long, and exams keep coming for years.</li>
+          <li>You're often managing frightened parents as much as the illness.</li>
+          <li>You have to be able to notice when a child is unsafe at home, and act on it.</li>
+        </ul>
+      </div>
+    </div>
+    <h3 class="sub">A typical hospital day</h3>
+    <ul class="daylist">
+      <li><b>08:00</b> Handover — the night team tells you about every child on the ward.</li>
+      <li><b>08:30</b> Ward round with the consultant. Examine, discuss, plan, explain.</li>
+      <li><b>11:00</b> Jobs: bloods, referrals, prescriptions, phone calls to GPs and parents.</li>
+      <li><b>13:00</b> Lunch, in theory.</li>
+      <li><b>14:00</b> Clinic or admissions — new children arriving through A&amp;E.</li>
+      <li><b>17:00</b> Handover to the evening team, and teaching if you're lucky.</li>
+    </ul>
+
+    <h3 class="sub">Other ways into children's healthcare</h3>
+    <p class="muted">Medicine isn't the only door, and none of these are second best.</p>
+    <div id="roles" class="grid roles"></div>
+  </section>
+
+  <!-- SHELF -->
+  <section id="shelf" class="block">
+    <h2>Where to learn more</h2>
+    <div id="shelfGrid" class="grid shelf"></div>
+    <h3 class="sub">Notes to myself</h3>
+    <p class="muted">Questions, words you didn't know, things you want to look up. Saved on this device.</p>
+    <textarea id="notes" rows="6" placeholder="e.g. what does 'idiopathic' mean? — ask Miss Doyle about work experience"></textarea>
+    <p id="noteStatus" class="muted tiny"></p>
+  </section>
+
+  <section class="closing">
+    <p>You do not have to have it all figured out. You just have to keep being curious and keep being kind — the rest is teachable.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Made as a study and inspiration tool. It's general career and education information, not medical advice.
+     Always check current entry requirements directly with universities and medical schools — they change.</p>
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
