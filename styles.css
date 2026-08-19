@@ -324,3 +324,38 @@ footer p{max-width:920px; margin:0 auto; font-size:.82rem; color:var(--ink-soft)
 .learn-btn:hover{background:var(--accent-soft)}
 .learn-btn.is-done{background:var(--good); border-color:var(--good); color:#fff}
 .lesson-nav{display:flex; justify-content:space-between; align-items:center; gap:12px; margin-top:16px; flex-wrap:wrap}
+
+/* ---------- experience ---------- */
+.exp-controls{
+  display:flex; flex-wrap:wrap; gap:16px; align-items:center;
+  margin:18px 0 6px; padding:16px 18px;
+  background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); box-shadow:var(--shadow);
+}
+.exp-summary{margin:0; flex:1 1 260px; font-size:.95rem}
+.exp-summary b{color:var(--accent-ink)}
+.exp-grid{display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); margin-top:14px}
+.exp-card{
+  display:flex; flex-direction:column; gap:8px;
+  background:var(--surface); border:1px solid var(--line); border-left:4px solid var(--accent);
+  border-radius:var(--radius); padding:16px 18px; box-shadow:var(--shadow);
+}
+.exp-card.locked{border-left-color:var(--ink-soft); opacity:.82}
+.exp-card h4{margin:0; font-size:1.05rem; font-weight:800}
+.exp-card p{margin:0; font-size:.93rem}
+.exp-head{display:flex; flex-wrap:wrap; gap:6px}
+.chip.cat{background:var(--accent-soft); border-color:transparent; color:var(--accent-ink)}
+.chip.age{background:var(--surface-2)}
+.chip.age.now{background:var(--good); border-color:var(--good); color:#fff}
+.exp-how, .exp-why{color:var(--ink-soft)}
+.exp-how b, .exp-why b{color:var(--ink)}
+.exp-note{
+  background:var(--warm-soft); border-left:3px solid var(--warm);
+  padding:8px 12px; border-radius:0 8px 8px 0; font-size:.88rem !important;
+}
+.exp-tick{
+  align-self:flex-start; margin-top:4px;
+  font:inherit; font-weight:700; font-size:.85rem; cursor:pointer; padding:6px 14px; border-radius:999px;
+  background:transparent; border:1px solid var(--line); color:var(--ink-soft);
+}
+.exp-tick:hover{border-color:var(--accent); color:var(--accent-ink)}
+.exp-tick.on{background:var(--good); border-color:var(--good); color:#fff}

@@ -14,6 +14,7 @@ knowledge, and is honest about the hard parts. No build tools, no dependencies, 
 | **Lesson** | **Pick your age, then the month, then the day — and it teaches you that day's lesson.** 12 monthly units, 6 lessons each, 72 in total. The age you pick changes how the lesson is explained, and every lesson assumes you know nothing at all. |
 | **The path** | Step-by-step timeline from GCSEs to consultant ENT surgeon. Toggle between the **UK/Ireland** and **US** routes — they're genuinely different. ENT is a *surgical* specialty, so the route runs through surgical training. Tap any step to expand it. |
 | **Do now** | Age-banded checklists (any age, 11–14, 14–16, 16–18). Ticks are saved and feed a progress ring. |
+| **Experience** | 20 real things to actually go and do — Cadets, sign language, playgroups, nursery placements, hospital work experience — **filtered by age**, so it separates what's open now from what unlocks at 13, 14, 15 and 16. |
 | **Quiz** | 12 questions on ears, noses, throats and the career, with an explanation after every answer. Keeps a best score. |
 | **Flashcards** | 23 flip cards across Ear / Balance / Nose / Throat / Words / Career. Filter by topic, shuffle, arrow-key navigation. |
 | **The job** | The best parts, the hard parts, a typical operating day, and eight other careers in ear and hearing care. |
@@ -45,6 +46,22 @@ Every lesson has: what it is, three facts worth remembering, any new words defin
 section for your level, something to actually go and do, and a question with a hidden answer. Lessons
 marked as learned are counted and saved. Nothing assumes prior knowledge — if a word is used, it's defined.
 
+## The experience list
+
+Every worthwhile placement has an age limit, so the list is age-gated rather than aspirational. Set the
+age (it stays in step with the lesson picker) and each item shows as **open now** or **from 14**, with how
+to start it and why it counts for ENT specifically.
+
+At 11 that's 9 of the 20 — St John Ambulance Cadets, sign language, reading buddy at school, helping at a
+playgroup or holiday club, a first aid course, a CREST science project, Guides or Scouts, fundraising for a
+hearing charity, and helping care for someone at home. Then 1 more at 13 (a part-time job with a council
+work permit), 6 at 14 (Young Leader, babysitting, DofE, NHS Cadets, charity shop, nursery work-experience
+week), 1 at 15 (virtual work experience) and 3 at 16 (hospital and GP work experience, care home
+volunteering, deaf children's charities).
+
+Paid nursery work is flagged honestly: it starts at 16 and needs a Level 2 or 3 childcare qualification.
+The ages are the UK rules and are noted as such — US equivalents are summarised at the foot of the section.
+
 ## Running it
 
 Plain HTML, CSS and JavaScript. Open `index.html` in a browser, or serve it:
@@ -70,6 +87,11 @@ No rebuild needed.
 const QUIZ = [
   { q: "…", a: ["…","…","…","…"], correct: 1, why: "…" },
 ];
+
+// data.js — an experience opportunity. `from` is the youngest age it opens at.
+const EXPERIENCE = [
+  { name: "…", cat: "With children", from: 14, what: "…", how: "…", why: "…", note: "…" },
+];
 ```
 
 ```js
@@ -89,7 +111,7 @@ const QUIZ = [
 | --- | --- |
 | `index.html` | Page structure |
 | `styles.css` | All styling and the light/dark theme tokens |
-| `data.js` | Pathway, checklists, quiz, flashcards, careers, books |
+| `data.js` | Pathway, checklists, experience list, quiz, flashcards, careers, books |
 | `lessons.js` | **The 72 daily lessons**, in 12 monthly units |
 | `app.js` | Behaviour: lesson picker, timeline, checklists, quiz, flashcards, saving |
 

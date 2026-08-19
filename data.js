@@ -365,3 +365,175 @@ const FACTS = [
   "Your ears keep working while you're asleep — your brain just stops paying attention.",
   "Children get more ear infections because the tube from ear to nose is short and nearly horizontal until they grow."
 ];
+
+/* ------------------------------------------------------------------
+   Real experience, and the age you can actually start it.
+   `from` is the youngest age it's realistically open to.
+   Ages are the UK rules — see EXPERIENCE_NOTE for the US.
+------------------------------------------------------------------ */
+
+const EXPERIENCE_NOTE = "These ages are the UK ones, and they're the usual rule rather than a law in every case — always check with the actual group, shop or hospital, because they set their own limits. In the US the equivalents differ: Red Cross babysitting certification starts at 11, hospital junior volunteer or 'candy striper' programmes usually start at 14–16, and HOSA runs in high school.";
+
+const EXPERIENCE = [
+  {
+    name: "St John Ambulance Cadets",
+    cat: "Healthcare",
+    from: 10,
+    what: "A weekly youth group where you learn real first aid, work as a team, and go on to help at public events.",
+    how: "Search for your nearest Cadet unit and go along to a taster evening. Badgers is the version for ages 7–10.",
+    why: "It is the closest thing to hands-on healthcare available at your age, and it is the single strongest thing an 11-year-old can be doing."
+  },
+  {
+    name: "Learn sign language",
+    cat: "Ears & hearing",
+    from: 7,
+    what: "Start learning British Sign Language — fingerspelling first, then everyday signs, then a proper course later.",
+    how: "Free videos and apps to begin with. Some schools run a lunchtime club; ask. Formal BSL qualifications usually start at 16.",
+    why: "If you want to work with ears, being able to talk to deaf people directly — not through someone else — matters enormously."
+  },
+  {
+    name: "Reading buddy or playground buddy",
+    cat: "With children",
+    from: 11,
+    what: "Older pupils paired with younger ones to read together, help at breaktime, or settle new starters in.",
+    how: "Ask your form tutor or head of year whether your school runs one. If it doesn't, ask whether you could help start it.",
+    why: "It is genuine experience of being patient with a younger child who is struggling — and you can talk about it for years afterwards."
+  },
+  {
+    name: "Helping at a playgroup or holiday club",
+    cat: "With children",
+    from: 11,
+    what: "Helping run games, snacks and craft at a church, community or sports holiday club, with an adult in charge.",
+    how: "Usually through someone your family already knows — a leader, a neighbour, a club you already attend. You'll be helping, not supervising.",
+    why: "This is the realistic version of 'working in a nursery' at your age, and it is the best possible preparation for it."
+  },
+  {
+    name: "First aid course",
+    cat: "Healthcare",
+    from: 11,
+    what: "A short course covering choking, bleeding, burns, the recovery position and CPR.",
+    how: "St John Ambulance and the British Red Cross both run youth courses. Some schools run them free.",
+    why: "Useful for the rest of your life, and it teaches you to act calmly rather than freeze — which is most of emergency medicine."
+  },
+  {
+    name: "CREST Award",
+    cat: "Science",
+    from: 11,
+    what: "A science project you design and run yourself, assessed and certificated by the British Science Association.",
+    how: "Bronze is aimed at about 11 and up; Silver at 14+; Gold at 16+. Ask a science teacher, or do it independently.",
+    why: "You could genuinely do yours on sound, hearing or noise levels — and then have something real to talk about at interview."
+  },
+  {
+    name: "Guides, Scouts or a similar group",
+    cat: "With children",
+    from: 10,
+    what: "A weekly group building teamwork, camping, first aid, badges and leadership.",
+    how: "Join as a member now. At 14 you can become a Young Leader with the younger sections.",
+    why: "It leads directly into the Young Leader role at 14 — and long, continuous involvement is worth far more than a scattered list."
+  },
+  {
+    name: "Fundraise for a hearing charity",
+    cat: "Ears & hearing",
+    from: 7,
+    what: "Raise money for RNID, the National Deaf Children's Society, or a local deaf children's group.",
+    how: "A sponsored anything, a bake sale, a silent hour. Any age, with an adult helping you set it up.",
+    why: "It gets you reading about deafness properly, and it is something concrete you chose to do rather than were given."
+  },
+  {
+    name: "Helping care for someone at home",
+    cat: "Care",
+    from: 7,
+    what: "Helping look after a relative who is ill, disabled or elderly — including a grandparent who is going deaf.",
+    how: "It counts even though nobody arranged it. If you're doing a lot of it, your school or a local young carers service can support you.",
+    why: "Medical schools take this seriously. You already know what caring actually involves, which most applicants only imagine."
+  },
+  {
+    name: "Part-time paid job",
+    cat: "Work",
+    from: 13,
+    what: "Light work outside school hours — a paper round, a Saturday job, helping in a local shop.",
+    how: "In most of the UK the minimum age is 13, and you need a work permit from your local council. Hours are legally limited during term.",
+    why: "Turning up reliably when you don't feel like it is a real skill, and employers' references carry weight later."
+  },
+  {
+    name: "Babysitting (with a course first)",
+    cat: "With children",
+    from: 14,
+    what: "Looking after younger children for a family who knows you, having done a babysitting and first aid course.",
+    how: "There is no legal minimum age in the UK, but you are not legally responsible until 16 — so realistically 14+, and only with your parents' agreement.",
+    why: "Being trusted alone with someone's child is a serious thing, and it teaches you to stay calm when they won't settle."
+  },
+  {
+    name: "Young Leader with a younger section",
+    cat: "With children",
+    from: 14,
+    what: "Helping run Rainbows, Brownies, Beavers or Cubs — planning activities and looking after a group of small children weekly.",
+    how: "Girlguiding and Scouts both run Young Leader schemes for ages 14–18, with training included.",
+    why: "Regular, long-term, hands-on responsibility for children. This is one of the strongest things on the whole list."
+  },
+  {
+    name: "Duke of Edinburgh Award",
+    cat: "Work",
+    from: 14,
+    what: "Bronze from 14: volunteering, a physical activity, a skill, and an expedition.",
+    how: "Through school, or independently through a local DofE centre.",
+    why: "The volunteering section makes you commit for months rather than a week, which is exactly the pattern universities look for."
+  },
+  {
+    name: "NHS Cadets",
+    cat: "Healthcare",
+    from: 14,
+    what: "A programme run by St John Ambulance with the NHS, introducing healthcare careers and skills.",
+    how: "Ages 14–18. Check whether a unit runs near you.",
+    why: "It is designed exactly for people who think they might want a career in healthcare and want to find out for real."
+  },
+  {
+    name: "Charity shop volunteering",
+    cat: "Work",
+    from: 14,
+    what: "A regular shift sorting, pricing and serving customers.",
+    how: "Many shops take volunteers from 14 with a parent's consent; some wait until 16. Just ask in person.",
+    why: "It is public-facing, so you practise talking to strangers of every age and mood — which is most of a clinic day."
+  },
+  {
+    name: "Virtual work experience",
+    cat: "Healthcare",
+    from: 15,
+    what: "Filmed or live consultations you watch online, with tasks and reflection, run by universities and medical organisations.",
+    how: "Look up Observe GP, Springpod and university virtual work experience. Age limits vary — usually 15 or 16 up — so check each one.",
+    why: "It is free, it is available anywhere, and it gets round the fact that hospitals rarely take under-16s in person."
+  },
+  {
+    name: "Work experience week in a nursery",
+    cat: "With children",
+    from: 14,
+    what: "A school-arranged placement of a week or two in a nursery or pre-school.",
+    how: "Schools usually arrange these in Year 10 or 11. Say early and clearly that this is what you want.",
+    why: "Days of watching how small children behave, communicate and are comforted. That is directly the skill paediatric ENT runs on.",
+    note: "Actual paid nursery work starts at 16, and to count in staff ratios you need a childcare qualification (Level 2 or 3)."
+  },
+  {
+    name: "Hospital or GP work experience",
+    cat: "Healthcare",
+    from: 16,
+    what: "Shadowing in a real clinical setting — sometimes including an ENT clinic or an audiology department.",
+    how: "Most trusts require 16+ for insurance and safeguarding reasons. Apply early; places go quickly.",
+    why: "Nothing else shows you the actual pace and texture of the job. Ask specifically about audiology — people rarely do, and it's memorable."
+  },
+  {
+    name: "Care home or hospice volunteering",
+    cat: "Care",
+    from: 16,
+    what: "Regular visiting, activities, tea rounds and company for people who are unwell or very elderly.",
+    how: "Usually 16+. Contact homes directly — most are genuinely glad to hear from you.",
+    why: "Many residents are deaf or hard of hearing. You will learn, fast, how to communicate when someone can't hear you."
+  },
+  {
+    name: "Volunteering with a deaf children's group",
+    cat: "Ears & hearing",
+    from: 16,
+    what: "Helping at events, activity days or family groups run by deafness charities.",
+    how: "Most roles are 16+ or 18+, and involve a DBS check. Some have youth roles from 14 — ask.",
+    why: "It is the most direct possible experience of the people you want to spend your career helping."
+  }
+];

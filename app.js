@@ -515,7 +515,10 @@
     renderLesson();
   }
 
-  ageSel.addEventListener("change", renderLesson);
+  ageSel.addEventListener("change", function () {
+    renderLesson();
+    renderExperience();
+  });
   monthSel.addEventListener("change", function () {
     fillDays(Number(monthSel.value), Number(daySel.value));
     renderLesson();
@@ -537,9 +540,96 @@
     if (age !== null && age >= 7 && age <= 18) ageSel.value = age;
     showBirthdayNote();
     renderLesson();
+    renderExperience();
   });
 
   showBirthdayNote();
   renderLesson();
+
+
+  /* ---------------- real experience, by age ---------------- */
+  const expAge = $("#expAge");
+  let doing = store.get("doing", {});
+
+  for (let a = 7; a <= 18; a++) {
+    const o = document.createElement("option");
+    o.value = a;
+    o.textContent = a;
+    expAge.appendChild(o);
+  }
+
+  function expCard(item, open) {
+    const card = document.createElement("article");
+    card.className = "exp-card" + (open ? "" : " locked");
+
+    const ageChip = open
+      ? '<span class="chip age now">open now</span>'
+      : '<span class="chip age">from ' + item.from + "</span>";
+
+    card.innerHTML =
+      '<div class="exp-head"><span class="chip cat">' + item.cat + "</span>" + ageChip + "</div>" +
+      "<h4>" + item.name + "</h4>" +
+      "<p>" + item.what + "</p>" +
+      '<p class="exp-how"><b>How to start:</b> ' + item.how + "</p>" +
+      '<p class="exp-why"><b>Why it counts:</b> ' + item.why + "</p>" +
+      (item.note ? '<p class="exp-note">' + item.note + "</p>" : "");
+
+    const btn = document.createElement("button");
+    btn.className = "exp-tick" + (doing[item.name] ? " on" : "");
+    btn.textContent = doing[item.name] ? "✓ I'm doing this" : "I'm doing this";
+    btn.addEventListener("click", function () {
+      doing[item.name] = !doing[item.name];
+      store.set("doing", doing);
+      renderExperience();
+    });
+    card.appendChild(btn);
+
+    return card;
+  }
+
+  function renderExperience() {
+    const age = Number(ageSel.value);
+    expAge.value = age;
+
+    const open = EXPERIENCE.filter(function (e) { return e.from <= age; });
+    const later = EXPERIENCE.filter(function (e) { return e.from > age; })
+      .sort(function (a, b) { return a.from - b.from; });
+
+    const nowBox = $("#expNow");
+    const laterBox = $("#expLater");
+    nowBox.innerHTML = "";
+    laterBox.innerHTML = "";
+    open.forEach(function (item) { nowBox.appendChild(expCard(item, true)); });
+    later.forEach(function (item) { laterBox.appendChild(expCard(item, false)); });
+
+    $("#expLaterHead").style.display = later.length ? "" : "none";
+    $("#expNowHead").style.display = open.length ? "" : "none";
+
+    // "6 more unlock at 14, and 4 at 16"
+    const gates = {};
+    later.forEach(function (e) { gates[e.from] = (gates[e.from] || 0) + 1; });
+    const gateText = Object.keys(gates)
+      .sort(function (a, b) { return a - b; })
+      .map(function (g) { return gates[g] + " more at " + g; })
+      .join(", ");
+
+    const started = Object.keys(doing).filter(function (k) { return doing[k]; }).length;
+
+    $("#expSummary").innerHTML =
+      "At " + age + ", <b>" + open.length + " of these " + EXPERIENCE.length +
+      "</b> are open to you right now." +
+      (gateText ? " Then " + gateText + "." : "") +
+      (started ? " You've started " + started + "." : "");
+
+    $("#expNote").textContent = EXPERIENCE_NOTE;
+  }
+
+  expAge.addEventListener("change", function () {
+    ageSel.value = expAge.value;
+    renderLesson();
+    renderExperience();
+  });
+
+  renderExperience();
 
 })();
