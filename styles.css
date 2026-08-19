@@ -261,3 +261,66 @@ footer p{max-width:920px; margin:0 auto; font-size:.82rem; color:var(--ink-soft)
 @media (prefers-reduced-motion:reduce){
   *{transition:none !important; scroll-behavior:auto !important}
 }
+
+/* ---------- daily lesson ---------- */
+.picker{display:flex; flex-wrap:wrap; gap:12px; align-items:flex-end; margin:18px 0 12px}
+.pick{display:flex; flex-direction:column; gap:5px}
+.pick span{font-size:.72rem; font-weight:800; letter-spacing:.07em; text-transform:uppercase; color:var(--ink-soft)}
+.pick select{min-width:120px; cursor:pointer}
+.birthday{
+  display:flex; flex-wrap:wrap; gap:10px; align-items:center;
+  font-size:.9rem; color:var(--ink-soft); margin-bottom:20px;
+}
+.birthday input{font:inherit; color:var(--ink); background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:7px 10px}
+
+.lesson-card{
+  background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+  box-shadow:var(--shadow); overflow:hidden;
+}
+.lesson-top{
+  background:var(--accent-soft); padding:16px 22px;
+  border-bottom:1px solid color-mix(in srgb, var(--accent) 25%, transparent);
+}
+.lesson-unit{font-size:.72rem; font-weight:800; letter-spacing:.07em; text-transform:uppercase; color:var(--accent-ink)}
+.lesson-card h3{font-size:1.35rem; margin:.35em 0 .2em}
+.chips{display:flex; flex-wrap:wrap; gap:6px; margin-top:8px}
+.chip{
+  font-size:.72rem; font-weight:800; letter-spacing:.04em; padding:3px 10px; border-radius:999px;
+  background:var(--surface); border:1px solid var(--line); color:var(--ink-soft);
+}
+.chip.level{background:var(--accent); border-color:var(--accent); color:#fff}
+.chip.today{background:var(--warm); border-color:var(--warm); color:#fff}
+.chip.cake{background:var(--warm-soft); border-color:var(--warm); color:var(--warm)}
+.lesson-body{padding:20px 22px 22px}
+.lesson-body h4{
+  font-size:.74rem; font-weight:800; letter-spacing:.08em; text-transform:uppercase;
+  color:var(--warm); margin:1.6em 0 .5em;
+}
+.lesson-body h4:first-child{margin-top:0}
+.lesson-body p{margin:0 0 .9em}
+.lesson-body ul{margin:0; padding-left:20px}
+.lesson-body li{margin-bottom:6px}
+.wordlist{list-style:none; padding:0; margin:0}
+.wordlist li{
+  padding:9px 12px; background:var(--surface-2); border-radius:10px; margin-bottom:8px; font-size:.94rem;
+}
+.wordlist b{color:var(--accent-ink)}
+.do-box{
+  background:var(--warm-soft); border-left:3px solid var(--warm);
+  padding:12px 16px; border-radius:0 10px 10px 0;
+}
+.check-box{background:var(--surface-2); border-radius:12px; padding:14px 16px}
+.check-box p{margin:0 0 .6em; font-weight:700}
+.check-box .answer{display:none; margin:.6em 0 0; padding-top:10px; border-top:1px solid var(--line); font-weight:400}
+.check-box .answer.show{display:block}
+.lesson-foot{
+  display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between;
+  margin-top:20px; padding-top:16px; border-top:1px solid var(--line);
+}
+.learn-btn{
+  font:inherit; font-weight:700; font-size:.9rem; cursor:pointer; padding:8px 16px; border-radius:999px;
+  background:var(--surface); border:1px solid var(--accent); color:var(--accent-ink);
+}
+.learn-btn:hover{background:var(--accent-soft)}
+.learn-btn.is-done{background:var(--good); border-color:var(--good); color:#fff}
+.lesson-nav{display:flex; justify-content:space-between; align-items:center; gap:12px; margin-top:16px; flex-wrap:wrap}

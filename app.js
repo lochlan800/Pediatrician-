@@ -327,4 +327,218 @@
       noteStatus.textContent = "saved on this device";
     }, 500);
   });
+
+  /* ---------------- the daily lesson ---------------- */
+  const DEFAULT_BIRTHDAY = "2015-06-16";
+  const MONTH_NAMES = CURRICULUM.map(function (u) { return u.name; });
+
+  const ageSel = $("#ageSel");
+  const monthSel = $("#monthSel");
+  const daySel = $("#daySel");
+  const bdayInput = $("#bdayInput");
+  const lessonOut = $("#lessonOut");
+
+  let learned = store.get("learned", {});
+
+  function levelFor(age) {
+    if (age <= 10) return "t1";
+    if (age <= 13) return "t2";
+    return "t3";
+  }
+
+  function levelInfo(key) {
+    return LEVELS.filter(function (l) { return l.key === key; })[0];
+  }
+
+  function daysIn(month) {
+    // 2024 is a leap year, so February offers all 29 days.
+    return new Date(2024, month, 0).getDate();
+  }
+
+  function ageFromBirthday(value) {
+    if (!value) return null;
+    const parts = value.split("-");
+    if (parts.length !== 3) return null;
+    const birth = new Date(Number(parts[0]), Number(parts[1]) - 1, Number(parts[2]));
+    if (isNaN(birth.getTime())) return null;
+    const now = new Date();
+    let age = now.getFullYear() - birth.getFullYear();
+    const beforeBirthday =
+      now.getMonth() < birth.getMonth() ||
+      (now.getMonth() === birth.getMonth() && now.getDate() < birth.getDate());
+    if (beforeBirthday) age--;
+    return age;
+  }
+
+  // --- build the three dropdowns ---
+  for (let a = 7; a <= 18; a++) {
+    const o = document.createElement("option");
+    o.value = a;
+    o.textContent = a + " years old";
+    ageSel.appendChild(o);
+  }
+  MONTH_NAMES.forEach(function (name, i) {
+    const o = document.createElement("option");
+    o.value = i + 1;
+    o.textContent = name;
+    monthSel.appendChild(o);
+  });
+
+  function fillDays(month, keep) {
+    const total = daysIn(month);
+    daySel.innerHTML = "";
+    for (let d = 1; d <= total; d++) {
+      const o = document.createElement("option");
+      o.value = d;
+      o.textContent = d;
+      daySel.appendChild(o);
+    }
+    daySel.value = Math.min(keep || 1, total);
+  }
+
+  // --- starting state ---
+  const today = new Date();
+  bdayInput.value = store.get("birthday", DEFAULT_BIRTHDAY);
+
+  const bdayAge = ageFromBirthday(bdayInput.value);
+  const startAge = store.get("age", null) || (bdayAge !== null ? bdayAge : 11);
+  ageSel.value = Math.min(18, Math.max(7, startAge));
+  monthSel.value = store.get("month", null) || today.getMonth() + 1;
+  fillDays(Number(monthSel.value), store.get("day", null) || today.getDate());
+
+  function showBirthdayNote() {
+    const age = ageFromBirthday(bdayInput.value);
+    $("#bdayNote").textContent =
+      age === null ? "" : "That makes you " + age + ", so the age above is set to " + age + ".";
+  }
+
+  function isToday(month, day) {
+    const now = new Date();
+    return now.getMonth() + 1 === month && now.getDate() === day;
+  }
+
+  function isBirthday(month, day) {
+    const v = bdayInput.value;
+    if (!v) return false;
+    const parts = v.split("-");
+    return Number(parts[1]) === month && Number(parts[2]) === day;
+  }
+
+  function renderLesson() {
+    const age = Number(ageSel.value);
+    const month = Number(monthSel.value);
+    const day = Number(daySel.value);
+
+    store.set("age", age);
+    store.set("month", month);
+    store.set("day", day);
+
+    const unit = CURRICULUM[month - 1];
+    const index = (day - 1) % unit.lessons.length;
+    const lesson = unit.lessons[index];
+    const levelKey = levelFor(age);
+    const level = levelInfo(levelKey);
+    const step = lesson[levelKey];
+    const id = month + "-" + index;
+    const isLearned = !!learned[id];
+
+    const chips =
+      '<span class="chip level">' + level.name + " level · ages " + level.ages + "</span>" +
+      '<span class="chip">Lesson ' + (index + 1) + " of " + unit.lessons.length + "</span>" +
+      (isToday(month, day) ? '<span class="chip today">Today</span>' : "") +
+      (isBirthday(month, day) ? '<span class="chip cake">🎂 Happy birthday</span>' : "");
+
+    const words = (lesson.words || []).map(function (w) {
+      return "<li><b>" + w.w + "</b> — " + w.m + "</li>";
+    }).join("");
+
+    lessonOut.innerHTML =
+      '<article class="lesson-card">' +
+        '<div class="lesson-top">' +
+          '<p class="lesson-unit">Unit ' + unit.m + " of 12 · " + unit.name + " · " + unit.topic + "</p>" +
+          "<h3>" + lesson.title + "</h3>" +
+          '<div class="chips">' + chips + "</div>" +
+        "</div>" +
+        '<div class="lesson-body">' +
+          "<h4>What this is</h4>" +
+          "<p>" + lesson.what + "</p>" +
+          "<h4>Worth remembering</h4>" +
+          "<ul>" + lesson.facts.map(function (f) { return "<li>" + f + "</li>"; }).join("") + "</ul>" +
+          (words ? '<h4>New words</h4><ul class="wordlist">' + words + "</ul>" : "") +
+          "<h4>Going deeper</h4>" +
+          "<p>" + step.d + "</p>" +
+          "<h4>Try this today</h4>" +
+          '<p class="do-box">' + step.task + "</p>" +
+          "<h4>Check yourself</h4>" +
+          '<div class="check-box">' +
+            "<p>" + step.q + "</p>" +
+            '<button class="linkish" id="revealBtn">show the answer</button>' +
+            '<p class="answer" id="answerText">' + step.a + "</p>" +
+          "</div>" +
+          '<div class="lesson-foot">' +
+            '<button class="learn-btn' + (isLearned ? " is-done" : "") + '" id="learnBtn">' +
+              (isLearned ? "✓ Learned" : "Mark as learned") +
+            "</button>" +
+            '<span class="muted tiny">Written for ' + level.ages + ". " + level.blurb + "</span>" +
+          "</div>" +
+        "</div>" +
+      "</article>";
+
+    $("#revealBtn").addEventListener("click", function () {
+      $("#answerText").classList.add("show");
+      this.remove();
+    });
+
+    $("#learnBtn").addEventListener("click", function () {
+      learned[id] = !learned[id];
+      store.set("learned", learned);
+      renderLesson();
+    });
+
+    const count = Object.keys(learned).filter(function (k) { return learned[k]; }).length;
+    $("#learnedCount").textContent = count + " of 72 lessons learned";
+  }
+
+  function shiftDay(step) {
+    let month = Number(monthSel.value);
+    let day = Number(daySel.value) + step;
+    if (day < 1) {
+      month = month === 1 ? 12 : month - 1;
+      day = daysIn(month);
+    } else if (day > daysIn(month)) {
+      month = month === 12 ? 1 : month + 1;
+      day = 1;
+    }
+    monthSel.value = month;
+    fillDays(month, day);
+    renderLesson();
+  }
+
+  ageSel.addEventListener("change", renderLesson);
+  monthSel.addEventListener("change", function () {
+    fillDays(Number(monthSel.value), Number(daySel.value));
+    renderLesson();
+  });
+  daySel.addEventListener("change", renderLesson);
+  $("#prevDay").addEventListener("click", function () { shiftDay(-1); });
+  $("#nextDay").addEventListener("click", function () { shiftDay(1); });
+
+  $("#todayBtn").addEventListener("click", function () {
+    const now = new Date();
+    monthSel.value = now.getMonth() + 1;
+    fillDays(now.getMonth() + 1, now.getDate());
+    renderLesson();
+  });
+
+  bdayInput.addEventListener("change", function () {
+    store.set("birthday", bdayInput.value);
+    const age = ageFromBirthday(bdayInput.value);
+    if (age !== null && age >= 7 && age <= 18) ageSel.value = age;
+    showBirthdayNote();
+    renderLesson();
+  });
+
+  showBirthdayNote();
+  renderLesson();
+
 })();

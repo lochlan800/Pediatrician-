@@ -13,6 +13,7 @@
 <header class="topbar">
   <a class="brand" href="#top"><span class="brand-mark">🩺</span> Pediatrician Pathway</a>
   <nav class="topnav">
+    <a href="#lesson">Lesson</a>
     <a href="#path">Path</a>
     <a href="#now">Do now</a>
     <a href="#quiz">Quiz</a>
@@ -38,7 +39,8 @@
         <span>Your name</span>
         <input id="nameInput" type="text" placeholder="type your name" maxlength="20" autocomplete="off">
       </label>
-      <a class="btn" href="#now">Show me what to do now</a>
+      <a class="btn" href="#lesson">Today's lesson</a>
+      <a class="btn ghost" href="#now">What to do now</a>
     </div>
     <div id="factBox" class="fact">
       <span class="fact-label">Did you know</span>
@@ -60,6 +62,43 @@
       <h2 class="strip-title">Your head start</h2>
       <p id="progressText" class="muted">Tick things off the list below and this fills up. It saves on this device.</p>
       <button id="resetBtn" class="linkish danger">reset my progress</button>
+    </div>
+  </section>
+
+  <!-- DAILY LESSON -->
+  <section id="lesson" class="block">
+    <h2>Your lesson for today</h2>
+    <p class="muted">Pick your age, then the month, then the day — and you get that day's lesson.
+       Every lesson starts from nothing. No science knowledge needed, and every new word is explained.</p>
+
+    <div class="picker">
+      <label class="pick">
+        <span>1 · Your age</span>
+        <select id="ageSel"></select>
+      </label>
+      <label class="pick">
+        <span>2 · Month</span>
+        <select id="monthSel"></select>
+      </label>
+      <label class="pick">
+        <span>3 · Day</span>
+        <select id="daySel"></select>
+      </label>
+      <button id="todayBtn" class="btn small ghost">Jump to today</button>
+    </div>
+
+    <p class="birthday">
+      <label for="bdayInput">Or put your birthday in and it works your age out for you:</label>
+      <input type="date" id="bdayInput">
+      <span id="bdayNote" class="muted tiny"></span>
+    </p>
+
+    <div id="lessonOut"></div>
+
+    <div class="lesson-nav">
+      <button id="prevDay" class="btn small ghost">← Day before</button>
+      <span id="learnedCount" class="muted tiny"></span>
+      <button id="nextDay" class="btn small">Next day →</button>
     </div>
   </section>
 
@@ -171,6 +210,7 @@
 </footer>
 
 <script src="data.js"></script>
+<script src="lessons.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
