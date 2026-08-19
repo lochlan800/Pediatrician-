@@ -401,16 +401,26 @@
   const today = new Date();
   bdayInput.value = store.get("birthday", DEFAULT_BIRTHDAY);
 
+  // The birthday wins: recomputed every load, so she moves up a level on her own.
   const bdayAge = ageFromBirthday(bdayInput.value);
-  const startAge = store.get("age", null) || (bdayAge !== null ? bdayAge : 11);
+  const startAge = bdayAge !== null ? bdayAge : (store.get("age", null) || 11);
   ageSel.value = Math.min(18, Math.max(7, startAge));
   monthSel.value = store.get("month", null) || today.getMonth() + 1;
   fillDays(Number(monthSel.value), store.get("day", null) || today.getDate());
 
   function showBirthdayNote() {
     const age = ageFromBirthday(bdayInput.value);
-    $("#bdayNote").textContent =
-      age === null ? "" : "That makes you " + age + ", so the age above is set to " + age + ".";
+    if (age === null) { $("#bdayNote").textContent = ""; return; }
+
+    const level = levelInfo(levelFor(age));
+    let text = "That makes you " + age + ", so you're getting the " + level.name + " version.";
+
+    const next = age <= 10 ? 11 : (age <= 13 ? 14 : null);
+    if (next) {
+      const nextLevel = levelInfo(levelFor(next));
+      text += " On your " + next + "th birthday it moves up to " + nextLevel.name + " on its own.";
+    }
+    $("#bdayNote").textContent = text;
   }
 
   function isToday(month, day) {
@@ -470,16 +480,17 @@
           "<p>" + step.d + "</p>" +
           "<h4>Try this today</h4>" +
           '<p class="do-box">' + step.task + "</p>" +
+          (TESTS[id] ? "<h4>A way to remember it</h4>" +
+            '<p class="hook-box">' + TESTS[id].hook + "</p>" : "") +
           "<h4>Check yourself</h4>" +
           '<div class="check-box">' +
             "<p>" + step.q + "</p>" +
             '<button class="linkish" id="revealBtn">show the answer</button>' +
             '<p class="answer" id="answerText">' + step.a + "</p>" +
           "</div>" +
+          "<h4>The test</h4>" +
+          '<div class="test-box" id="testBox"></div>' +
           '<div class="lesson-foot">' +
-            '<button class="learn-btn' + (isLearned ? " is-done" : "") + '" id="learnBtn">' +
-              (isLearned ? "✓ Learned" : "Mark as learned") +
-            "</button>" +
             '<span class="muted tiny">Written for ' + level.ages + ". " + level.blurb + "</span>" +
           "</div>" +
         "</div>" +
@@ -490,11 +501,7 @@
       this.remove();
     });
 
-    $("#learnBtn").addEventListener("click", function () {
-      learned[id] = !learned[id];
-      store.set("learned", learned);
-      renderLesson();
-    });
+    renderTestBox(id, lesson, step);
 
     const count = Object.keys(learned).filter(function (k) { return learned[k]; }).length;
     $("#learnedCount").textContent = count + " of " + TOTAL_LESSONS + " lessons learned";
@@ -544,7 +551,6 @@
   });
 
   showBirthdayNote();
-  renderLesson();
 
 
   /* ---------------- real experience, by age ---------------- */
@@ -631,5 +637,377 @@
   });
 
   renderExperience();
+
+
+  /* ---------------- the test, and spaced repetition ----------------
+     Every lesson you test produces review cards. Each card comes back
+     at a growing gap: 1 day, 3 days, ~8, ~20, ~50, and so on. Getting
+     one wrong drops it back to the start.
+  ------------------------------------------------------------------ */
+
+  let srs = store.get("srs", {});
+
+  function dayStr(d) {
+    return d.getFullYear() + "-" +
+      String(d.getMonth() + 1).padStart(2, "0") + "-" +
+      String(d.getDate()).padStart(2, "0");
+  }
+  function todayStr() { return dayStr(new Date()); }
+  function inDays(n) {
+    const d = new Date();
+    d.setDate(d.getDate() + n);
+    return dayStr(d);
+  }
+  function daysBetween(from, to) {
+    return Math.round((new Date(to) - new Date(from)) / 86400000);
+  }
+
+  function lessonCardIds(id, lesson) {
+    const ids = [];
+    if (TESTS[id]) ids.push(id + ":mcq0", id + ":mcq1");
+    ids.push(id + ":check");
+    (lesson.words || []).forEach(function (w, i) { ids.push(id + ":word" + i); });
+    return ids;
+  }
+
+  // Turn a card id back into something answerable.
+  function getCard(cid) {
+    const parts = cid.split(":");
+    const bits = parts[0].split("-");
+    const unit = CURRICULUM[Number(bits[0]) - 1];
+    if (!unit) return null;
+    const lesson = unit.lessons[Number(bits[1])];
+    if (!lesson) return null;
+
+    const where = unit.name + " · " + lesson.title;
+    const type = parts[1];
+
+    if (type === "mcq0" || type === "mcq1") {
+      const t = TESTS[parts[0]];
+      if (!t) return null;
+      const q = t.qs[type === "mcq0" ? 0 : 1];
+      return { kind: "mcq", q: q.q, options: q.a, correct: q.correct, where: where };
+    }
+    if (type === "check") {
+      const step = lesson[levelFor(Number(ageSel.value))];
+      return { kind: "recall", q: step.q, answer: step.a, where: where };
+    }
+    if (type.indexOf("word") === 0) {
+      const w = (lesson.words || [])[Number(type.slice(4))];
+      if (!w) return null;
+      return { kind: "recall", q: "What does “" + w.w + "” mean?", answer: w.m, where: where };
+    }
+    return null;
+  }
+
+  function schedule(cid, grade) {
+    const card = srs[cid] || { int: 0, ease: 2.5, lapses: 0 };
+    if (grade === 0) {
+      card.int = 1;
+      card.ease = Math.max(1.3, card.ease - 0.2);
+      card.lapses = (card.lapses || 0) + 1;
+    } else if (grade === 1) {
+      card.int = Math.max(1, Math.round((card.int || 1) * 1.2));
+      card.ease = Math.max(1.3, card.ease - 0.05);
+    } else if (grade === 2) {
+      card.int = card.int ? Math.round(card.int * card.ease) : 1;
+    } else {
+      card.int = card.int ? Math.round(card.int * card.ease * 1.3) : 3;
+      card.ease = card.ease + 0.1;
+    }
+    card.int = Math.min(card.int, 365);
+    card.due = inDays(card.int);
+    srs[cid] = card;
+    store.set("srs", srs);
+  }
+
+  function liveCards() {
+    return Object.keys(srs).filter(function (c) { return getCard(c); });
+  }
+  function dueCards() {
+    const today = todayStr();
+    return liveCards().filter(function (c) { return srs[c].due <= today; });
+  }
+
+  /* ---- the end-of-lesson test ---- */
+
+  function renderTestBox(id, lesson, step) {
+    const box = $("#testBox");
+    if (!box) return;
+    const test = TESTS[id];
+
+    if (!test) {
+      box.innerHTML = '<p class="muted">No test written for this lesson yet.</p>';
+      return;
+    }
+
+    const cards = lessonCardIds(id, lesson);
+    const queued = cards.filter(function (c) { return srs[c]; }).length;
+
+    if (learned[id]) {
+      box.innerHTML =
+        '<p class="test-done">✓ Test done. <b>' + queued +
+        " cards</b> from this lesson are in your review queue, and they will come back to you automatically.</p>" +
+        '<button class="btn small ghost" id="retestBtn">Take it again</button>';
+      $("#retestBtn").addEventListener("click", function () { startTest(id, lesson, step); });
+      return;
+    }
+
+    box.innerHTML =
+      '<p class="muted">Two questions, from memory. Do not scroll back up — trying and failing to remember ' +
+      "is the part that makes it stick.</p>" +
+      '<button class="btn small" id="startTestBtn">Start the test</button>';
+    $("#startTestBtn").addEventListener("click", function () { startTest(id, lesson, step); });
+  }
+
+  function startTest(id, lesson, step) {
+    const box = $("#testBox");
+    const test = TESTS[id];
+    const picked = [null, null];
+
+    box.innerHTML = test.qs.map(function (q, qi) {
+      return '<div class="test-q" data-q="' + qi + '">' +
+        '<p class="test-qtext">' + (qi + 1) + ". " + q.q + "</p>" +
+        '<div class="test-opts">' +
+          q.a.map(function (opt, oi) {
+            return '<button class="opt test-opt" data-q="' + qi + '" data-o="' + oi + '">' + opt + "</button>";
+          }).join("") +
+        "</div></div>";
+    }).join("") +
+    '<button class="btn small" id="markBtn" disabled>Mark my answers</button>';
+
+    const markBtn = $("#markBtn");
+
+    box.querySelectorAll(".test-opt").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        const qi = Number(btn.dataset.q);
+        picked[qi] = Number(btn.dataset.o);
+        box.querySelectorAll('.test-opt[data-q="' + qi + '"]').forEach(function (b) {
+          b.classList.remove("sel");
+        });
+        btn.classList.add("sel");
+        markBtn.disabled = picked.some(function (p) { return p === null; });
+      });
+    });
+
+    markBtn.addEventListener("click", function () {
+      let score = 0;
+      const wrong = [];
+
+      test.qs.forEach(function (q, qi) {
+        box.querySelectorAll('.test-opt[data-q="' + qi + '"]').forEach(function (b) {
+          b.disabled = true;
+          b.classList.remove("sel");
+          const oi = Number(b.dataset.o);
+          if (oi === q.correct) b.classList.add("right");
+          else if (oi === picked[qi]) b.classList.add("wrong");
+        });
+        if (picked[qi] === q.correct) score++;
+        else wrong.push(id + ":mcq" + qi);
+      });
+
+      // everything from this lesson enters the queue; anything missed comes back today
+      const cards = lessonCardIds(id, lesson);
+      cards.forEach(function (c) {
+        if (!srs[c]) srs[c] = { int: 1, ease: 2.5, lapses: 0, due: inDays(1) };
+      });
+      wrong.forEach(function (c) {
+        srs[c] = { int: 0, ease: 2.3, lapses: 1, due: todayStr() };
+      });
+      learned[id] = true;
+      store.set("srs", srs);
+      store.set("learned", learned);
+
+      markBtn.remove();
+      const result = document.createElement("div");
+      result.className = "test-result";
+      result.innerHTML =
+        "<p><b>" + score + " out of " + test.qs.length + ".</b> " +
+        (score === test.qs.length
+          ? "All correct — these now come back tomorrow, then in three days, then a week."
+          : "The ones you missed are back in your review pile today, not next week.") +
+        '</p><p class="muted tiny">' + cards.length +
+        " cards from this lesson are now in your review queue. Best thing you can do next: explain this lesson out loud to someone.</p>";
+      box.appendChild(result);
+
+      renderReview();
+      const count = Object.keys(learned).filter(function (k) { return learned[k]; }).length;
+      $("#learnedCount").textContent = count + " of " + TOTAL_LESSONS + " lessons learned";
+    });
+  }
+
+  /* ---- the review session ---- */
+
+  let queue = [];
+  let qPos = 0;
+  let reviewed = 0;
+
+  function renderReview() {
+    const box = $("#reviewBox");
+    const all = liveCards();
+    const due = dueCards();
+    const streak = store.get("streak", 0);
+
+    if (!all.length) {
+      box.innerHTML =
+        '<div class="review-empty"><p><b>Nothing in your queue yet.</b></p>' +
+        '<p class="muted">Take the test at the end of a lesson and its questions land here. ' +
+        "After that they come back on their own — tomorrow, then in three days, then a week, then a month.</p>" +
+        '<a class="btn small" href="#lesson">Go to today’s lesson</a></div>';
+      return;
+    }
+
+    if (!due.length) {
+      const next = all.map(function (c) { return srs[c].due; }).sort()[0];
+      const days = Math.max(0, daysBetween(todayStr(), next));
+      const nextCount = all.filter(function (c) { return srs[c].due === next; }).length;
+      box.innerHTML =
+        '<div class="review-empty"><p><b>Nothing due today. You are up to date.</b></p>' +
+        '<p class="muted">' + all.length + " cards in your queue. Next up: " + nextCount +
+        (days <= 1 ? " card" + (nextCount === 1 ? "" : "s") + " tomorrow." : " in " + days + " days.") +
+        (streak ? " Review streak: " + streak + " day" + (streak === 1 ? "" : "s") + "." : "") +
+        "</p></div>";
+      return;
+    }
+
+    box.innerHTML =
+      '<div class="review-start">' +
+        '<div class="due-badge"><p class="due-count">' + due.length + "</p>" +
+        '<p class="muted tiny">card' + (due.length === 1 ? "" : "s") + " due today</p></div>" +
+        "<div><p>These are things you have already learned that are about to slip. " +
+        "Five minutes now saves relearning them from scratch.</p>" +
+        '<button class="btn" id="startReviewBtn">Start review</button>' +
+        (streak ? '<p class="muted tiny">Review streak: ' + streak + " day" + (streak === 1 ? "" : "s") + ".</p>" : "") +
+        "</div></div>";
+
+    $("#startReviewBtn").addEventListener("click", startReview);
+  }
+
+  function startReview() {
+    queue = dueCards();
+    for (let i = queue.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      const tmp = queue[i]; queue[i] = queue[j]; queue[j] = tmp;
+    }
+    qPos = 0;
+    reviewed = 0;
+    renderReviewCard();
+  }
+
+  function gradeButtons(cid) {
+    const wrap = document.createElement("div");
+    wrap.className = "grades";
+    [["Forgot it", 0], ["Tricky", 1], ["Got it", 2], ["Easy", 3]].forEach(function (pair) {
+      const b = document.createElement("button");
+      b.className = "grade g" + pair[1];
+      b.textContent = pair[0];
+      b.addEventListener("click", function () {
+        schedule(cid, pair[1]);
+        reviewed++;
+        qPos++;
+        renderReviewCard();
+      });
+      wrap.appendChild(b);
+    });
+    return wrap;
+  }
+
+  function renderReviewCard() {
+    const box = $("#reviewBox");
+
+    if (qPos >= queue.length) return finishReview();
+
+    const cid = queue[qPos];
+    const card = getCard(cid);
+    if (!card) { qPos++; return renderReviewCard(); }
+
+    box.innerHTML =
+      '<div class="review-card">' +
+        '<p class="review-meta">Card ' + (qPos + 1) + " of " + queue.length + " · " + card.where + "</p>" +
+        '<p class="review-q">' + card.q + "</p>" +
+        '<div id="reviewBody"></div>' +
+      "</div>";
+
+    const body = $("#reviewBody");
+
+    if (card.kind === "mcq") {
+      const opts = document.createElement("div");
+      opts.className = "q-opts";
+      card.options.forEach(function (opt, oi) {
+        const b = document.createElement("button");
+        b.className = "opt";
+        b.textContent = opt;
+        b.addEventListener("click", function () {
+          opts.querySelectorAll(".opt").forEach(function (x, xi) {
+            x.disabled = true;
+            if (xi === card.correct) x.classList.add("right");
+            else if (xi === oi) x.classList.add("wrong");
+          });
+          const right = oi === card.correct;
+          schedule(cid, right ? 2 : 0);
+          reviewed++;
+          const note = document.createElement("div");
+          note.className = "review-next";
+          note.innerHTML = "<p>" + (right
+            ? "Correct — back in " + srs[cid].int + " day" + (srs[cid].int === 1 ? "" : "s") + "."
+            : "Not this time. This one comes back tomorrow.") + "</p>";
+          const nextBtn = document.createElement("button");
+          nextBtn.className = "btn small";
+          nextBtn.textContent = "Next →";
+          nextBtn.addEventListener("click", function () { qPos++; renderReviewCard(); });
+          note.appendChild(nextBtn);
+          body.appendChild(note);
+          nextBtn.focus();
+        });
+        opts.appendChild(b);
+      });
+      body.appendChild(opts);
+      return;
+    }
+
+    // free recall: have a go first, then grade yourself honestly
+    const showBtn = document.createElement("button");
+    showBtn.className = "btn small ghost";
+    showBtn.textContent = "Show the answer";
+    showBtn.addEventListener("click", function () {
+      showBtn.remove();
+      const ans = document.createElement("p");
+      ans.className = "review-answer";
+      ans.innerHTML = card.answer;
+      body.appendChild(ans);
+      const prompt = document.createElement("p");
+      prompt.className = "muted tiny";
+      prompt.textContent = "Be honest — guessing right is not the same as knowing it.";
+      body.appendChild(prompt);
+      body.appendChild(gradeButtons(cid));
+    });
+    body.appendChild(showBtn);
+  }
+
+  function finishReview() {
+    const today = todayStr();
+    const last = store.get("lastReview", null);
+    let streak = store.get("streak", 0);
+    if (last !== today) {
+      streak = last === inDays(-1) ? streak + 1 : 1;
+      store.set("streak", streak);
+      store.set("lastReview", today);
+    }
+
+    const stillDue = dueCards().length;
+    const box = $("#reviewBox");
+    box.innerHTML =
+      '<div class="review-empty"><p><b>Done — ' + reviewed + " card" + (reviewed === 1 ? "" : "s") +
+      " reviewed.</b></p>" +
+      '<p class="muted">Review streak: ' + streak + " day" + (streak === 1 ? "" : "s") + ". " +
+      (stillDue ? stillDue + " still due — you can keep going." : "Nothing else due today.") + "</p>" +
+      (stillDue ? '<button class="btn small" id="keepGoingBtn">Keep going</button>' : "") +
+      "</div>";
+
+    if (stillDue) $("#keepGoingBtn").addEventListener("click", startReview);
+  }
+
+  renderLesson();
+  renderReview();
 
 })();

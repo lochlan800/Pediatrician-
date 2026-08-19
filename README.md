@@ -11,6 +11,7 @@ knowledge, and is honest about the hard parts. No build tools, no dependencies, 
 
 | Section | What it does |
 | --- | --- |
+| **Review** | **Spaced repetition.** Every lesson you test drops its questions into a review queue that brings them back at growing gaps — 1 day, 3, ~8, ~20, ~50 — so they don't fade. Plus a panel on the seven strategies the app is built around. |
 | **Lesson** | **Pick your age, then the month, then the day — and it teaches you that day's lesson.** 12 monthly units, 6 lessons each, 72 in total. The age you pick changes how the lesson is explained, and every lesson assumes you know nothing at all. |
 | **The path** | Step-by-step timeline from GCSEs to consultant ENT surgeon. Toggle between the **UK/Ireland** and **US** routes — they're genuinely different. ENT is a *surgical* specialty, so the route runs through surgical training. Tap any step to expand it. |
 | **Do now** | Age-banded checklists (any age, 11–14, 14–16, 16–18). Ticks are saved and feed a progress ring. |
@@ -43,8 +44,42 @@ Three dropdowns, in order: **age → month → day**.
 There's also a birthday field: enter a date of birth and it works the age out and sets it for you.
 
 Every lesson has: what it is, three facts worth remembering, any new words defined, a "going deeper"
-section for your level, something to actually go and do, and a question with a hidden answer. Lessons
-marked as learned are counted and saved. Nothing assumes prior knowledge — if a word is used, it's defined.
+section for your level, something to actually go and do, **a memory hook**, a free-recall check question,
+and **a two-question test**. Nothing assumes prior knowledge — if a word is used, it's defined.
+
+### The birthday drives the level
+
+Put a date of birth in and the age is recomputed **on every load**, so the level tracks her as she grows —
+an 11-year-old on Learner is moved up to Student on her 14th birthday without anyone doing anything. The
+note under the field says so explicitly. The age dropdown still works as a manual override for that visit.
+
+Levels are **Explorer 7–10, Learner 11–13, Student 14–18** — so 14, 15 and 16 currently share the top level.
+
+## Making it stick
+
+Learning a lesson once doesn't hold. The app is built around seven evidence-backed strategies, and each
+one is implemented rather than just recommended:
+
+| Strategy | Where it lives |
+| --- | --- |
+| Test yourself instead of rereading | The two-question test at the end of every lesson |
+| Space the repetition out | The review queue, at 1 → 3 → ~8 → ~20 → ~50 day gaps |
+| Try to answer before you look | "Check yourself" and every free-recall card |
+| Interleave topics | The queue shuffles cards from all 12 units together |
+| Use a memory hook | An authored hook on all 72 lessons |
+| Teach it to someone | Prompted after each test |
+| Sleep on it | Strategy panel, and November's sleep lesson |
+
+### How the scheduler works
+
+Finishing a lesson's test creates **4–5 cards**: the two multiple-choice questions, the free-recall check
+question at your level, and one per defined word. Anything you got wrong comes back **the same day**;
+everything else starts at one day.
+
+Reviewing a card grades it — Forgot it / Tricky / Got it / Easy — and the interval grows from there
+(SM-2-style: `interval × ease`, ease starting at 2.5 and moving with your answers). Multiple-choice cards
+grade themselves. Getting one wrong sends it back to a one-day interval. It's all in `localStorage` under
+`pp:srs`, and a review streak counts consecutive days.
 
 ## The experience list
 
@@ -95,6 +130,17 @@ const EXPERIENCE = [
 ```
 
 ```js
+// tests.js — the test and hook for one lesson, keyed "<month>-<lessonIndex>"
+"6-3": {
+  hook: "It is an air hole, not a plughole…",
+  qs: [
+    { q: "…", a: ["…","…","…","…"], correct: 1 },
+    { q: "…", a: ["…","…","…","…"], correct: 0 }
+  ]
+}
+```
+
+```js
 // lessons.js — one lesson. Add a 7th to any unit and days 7, 14, 21, 28 will find it.
 {
   title: "…",
@@ -113,6 +159,7 @@ const EXPERIENCE = [
 | `styles.css` | All styling and the light/dark theme tokens |
 | `data.js` | Pathway, checklists, experience list, quiz, flashcards, careers, books |
 | `lessons.js` | **The 72 daily lessons**, in 12 monthly units |
+| `tests.js` | The 144 test questions and 72 memory hooks, keyed by lesson id |
 | `app.js` | Behaviour: lesson picker, timeline, checklists, quiz, flashcards, saving |
 
 ## A note on accuracy

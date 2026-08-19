@@ -13,6 +13,7 @@
 <header class="topbar">
   <a class="brand" href="#top"><span class="brand-mark">👂</span> ENT Pathway</a>
   <nav class="topnav">
+    <a href="#review">Review</a>
     <a href="#lesson">Lesson</a>
     <a href="#path">Path</a>
     <a href="#now">Do now</a>
@@ -66,6 +67,36 @@
       <p id="progressText" class="muted">Tick things off the list below and this fills up. It saves on this device.</p>
       <button id="resetBtn" class="linkish danger">reset my progress</button>
     </div>
+  </section>
+
+  <!-- REVIEW -->
+  <section id="review" class="block">
+    <h2>Today's review</h2>
+    <p class="muted">Learning something once isn't enough — most of it is gone within a week. This brings every
+       lesson back at growing gaps: tomorrow, then three days, then a week, then a month, right at the point
+       you'd otherwise start forgetting it.</p>
+
+    <div id="reviewBox" class="review-box"></div>
+
+    <details class="strategies">
+      <summary>Seven things that actually make it stick</summary>
+      <div class="strat-grid">
+        <div class="strat"><b>1 · Test yourself, don't reread</b>
+          <span>Pulling an answer out of your head is what builds the memory. Reading it again feels productive and mostly isn't. That's what the test at the end of each lesson is for.</span></div>
+        <div class="strat"><b>2 · Space it out</b>
+          <span>Same total time, spread over weeks, beats one long session — by a lot. That's exactly what this review queue does for you.</span></div>
+        <div class="strat"><b>3 · Answer before you look</b>
+          <span>The struggle to remember <em>is</em> the useful part. Always have a go before you press "show the answer", even when you're sure you don't know.</span></div>
+        <div class="strat"><b>4 · Mix it up</b>
+          <span>Your reviews jump between ears, throats, ethics and germs on purpose. Mixed practice is harder and remembered better than doing one topic in a block.</span></div>
+        <div class="strat"><b>5 · Use the hook</b>
+          <span>Every lesson has a memory hook — an image or a mnemonic. Make your own too, and make them vivid or daft. Odd things stick.</span></div>
+        <div class="strat"><b>6 · Teach it to someone</b>
+          <span>Explain today's lesson out loud to someone who doesn't know it. The gaps show up instantly, and you can't fake your way past them.</span></div>
+        <div class="strat"><b>7 · Sleep on it</b>
+          <span>Memories are filed away during deep sleep. A late night undoes a lot of the work you just did.</span></div>
+      </div>
+    </details>
   </section>
 
   <!-- DAILY LESSON -->
@@ -238,6 +269,7 @@
 
 <script src="data.js"></script>
 <script src="lessons.js"></script>
+<script src="tests.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

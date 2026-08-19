@@ -359,3 +359,71 @@ footer p{max-width:920px; margin:0 auto; font-size:.82rem; color:var(--ink-soft)
 }
 .exp-tick:hover{border-color:var(--accent); color:var(--accent-ink)}
 .exp-tick.on{background:var(--good); border-color:var(--good); color:#fff}
+
+/* ---------- review / spaced repetition ---------- */
+.review-box{margin:18px 0}
+.review-empty, .review-start, .review-card{
+  background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+  padding:22px; box-shadow:var(--shadow);
+}
+.review-empty p:last-of-type{margin-bottom:0}
+.review-empty .btn{margin-top:8px}
+.review-start{display:flex; flex-wrap:wrap; gap:22px; align-items:center}
+.due-badge{
+  flex:none; text-align:center; min-width:110px; padding:14px 18px;
+  background:var(--accent-soft); border-radius:var(--radius);
+}
+.due-count{
+  margin:0; font-size:2.6rem; font-weight:800; line-height:1; color:var(--accent-ink);
+  font-variant-numeric:tabular-nums;
+}
+.due-badge p:last-child{margin:4px 0 0}
+.review-start > div:last-child{flex:1 1 240px}
+.review-start p{margin:0 0 12px}
+.review-meta{
+  font-size:.74rem; font-weight:800; letter-spacing:.06em; text-transform:uppercase;
+  color:var(--ink-soft); margin:0 0 .6em;
+}
+.review-q{font-size:1.2rem; font-weight:700; margin:0 0 1em}
+.review-answer{
+  margin:0 0 .4em; padding:12px 16px; background:var(--accent-soft);
+  border-radius:12px; font-size:1rem;
+}
+.review-next{margin-top:14px; display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:space-between}
+.review-next p{margin:0; font-weight:700}
+.grades{display:flex; flex-wrap:wrap; gap:8px; margin-top:12px}
+.grade{
+  font:inherit; font-weight:700; font-size:.88rem; cursor:pointer; padding:8px 16px;
+  border-radius:999px; border:1px solid var(--line); background:var(--surface); color:var(--ink);
+}
+.grade:hover{border-color:var(--accent)}
+.grade.g0{border-color:var(--warm); color:var(--warm)}
+.grade.g3{border-color:var(--good); color:var(--good)}
+
+/* strategies */
+.strategies{
+  background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+  padding:14px 20px; box-shadow:var(--shadow);
+}
+.strategies summary{
+  cursor:pointer; font-weight:800; font-size:1rem; padding:4px 0; color:var(--accent-ink);
+}
+.strat-grid{display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); margin:14px 0 6px}
+.strat b{display:block; margin-bottom:4px; font-size:.95rem}
+.strat span{font-size:.9rem; color:var(--ink-soft)}
+
+/* ---------- hook + end-of-lesson test ---------- */
+.hook-box{
+  background:var(--warm-soft); border-left:3px solid var(--warm);
+  padding:12px 16px; border-radius:0 10px 10px 0; font-weight:600;
+}
+.test-box{background:var(--surface-2); border-radius:12px; padding:16px 18px}
+.test-box > p:first-child{margin-bottom:.8em}
+.test-q{margin-bottom:16px}
+.test-qtext{font-weight:700; margin:0 0 .6em}
+.test-opts{display:grid; gap:8px}
+.test-opt.sel{border-color:var(--accent); background:var(--accent-soft); font-weight:700}
+.test-result{margin-top:14px; padding-top:12px; border-top:1px solid var(--line)}
+.test-result p{margin:0 0 .5em}
+.test-done{margin:0 0 .8em}
+#markBtn:disabled{opacity:.5; cursor:default}
