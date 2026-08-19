@@ -1,10 +1,10 @@
-/* Pediatrician Pathway — all content lives here so it's easy to edit. */
+/* ENT Pathway — all content lives here so it's easy to edit. */
 
 const PATHWAYS = {
   uk: {
     label: "UK / Ireland",
-    endpoint: "Consultant Paediatrician",
-    note: "In the UK it's spelled <em>paediatrician</em>. You go straight from school into medical school — no separate undergraduate degree first.",
+    endpoint: "Consultant ENT Surgeon",
+    note: "ENT is a <strong>surgical</strong> specialty — its proper name is otolaryngology, or ORL-HNS. So the route runs through surgical training, not paediatric training. You go straight from school into medical school; there's no separate undergraduate degree first.",
     steps: [
       {
         age: "Ages 14–16",
@@ -14,7 +14,7 @@ const PATHWAYS = {
         detail: [
           "Take Biology, Chemistry and Physics if you can (Combined Science is fine too).",
           "Most medical schools want around 7+ GCSEs at grade 7/A or above, including Maths and English.",
-          "Chemistry and Biology matter most — they're the gateway to A-Level sciences."
+          "Physics matters more than people expect in ENT — sound is physics."
         ]
       },
       {
@@ -40,66 +40,66 @@ const PATHWAYS = {
         ]
       },
       {
-        age: "Age 17–18",
-        title: "Interviews",
-        length: "A few months",
-        what: "Usually MMIs — short stations testing how you think and communicate.",
-        detail: [
-          "They care about empathy, ethics, teamwork and honesty far more than memorised facts.",
-          "Having real experience with children or caring for people gives you things to talk about.",
-          "Practise saying out loud <em>why</em> you want to do this."
-        ]
-      },
-      {
         age: "Ages 18–24",
         title: "Medical school",
         length: "5–6 years",
-        what: "You graduate as a doctor with an MBBS or MBChB.",
+        what: "You graduate as a doctor with an MBBS or MBChB. Everyone does this, whatever they specialise in later.",
         detail: [
-          "The first years are science-heavy; later years are placements in real hospitals.",
-          "You'll rotate through paediatrics and see if it's really for you.",
-          "Some students add an extra intercalated year for a BSc."
+          "You do not choose ENT yet — you learn all of medicine first.",
+          "There'll be an ENT placement, usually short. Make the most of it.",
+          "Many universities have a surgical society you can join from year one."
         ]
       },
       {
         age: "Ages 23–26",
         title: "Foundation Programme",
         length: "2 years (FY1 & FY2)",
-        what: "Your first paid job as a doctor, rotating through specialties.",
+        what: "Your first paid job as a doctor, rotating through different specialties.",
         detail: [
           "You register with the GMC — provisionally at first, then fully after FY1.",
-          "Try to get a paediatrics rotation.",
-          "This is where you build the evidence for your specialty application."
+          "Try hard to get an ENT or surgical rotation.",
+          "This is where you start building the portfolio your specialty application is scored on."
         ]
       },
       {
-        age: "Ages 25–33",
-        title: "Paediatric specialty training",
-        length: "~8 years (ST1–ST8)",
-        what: "Now you're actually training to be a paediatrician.",
+        age: "Ages 25–27",
+        title: "Core surgical training",
+        length: "2 years (CT1–CT2)",
+        what: "General surgical training, where you learn to operate. You sit the MRCS exams here.",
         detail: [
-          "You sit the MRCPCH exams to become a member of the Royal College of Paediatrics and Child Health.",
-          "You can subspecialise: neonatal medicine, cardiology, oncology, intensive care, community paediatrics and more.",
-          "You're a working, paid doctor the whole time."
+          "Some regions run 'run-through' ENT posts you can enter at ST1 instead, going straight into ENT.",
+          "MRCS = Membership of the Royal College of Surgeons.",
+          "Competition for ENT is real — audit, research, teaching and courses all count."
         ]
       },
       {
-        age: "Around age 32+",
-        title: "CCT → Consultant",
-        length: "The finish line",
-        what: "Certificate of Completion of Training, then you can be appointed as a consultant paediatrician.",
+        age: "Ages 27–33",
+        title: "ENT specialty training",
+        length: "~6 years (ST3–ST8)",
+        what: "Now you're properly training as an ear, nose and throat surgeon.",
         detail: [
-          "You're on the GMC Specialist Register.",
-          "Many paediatricians keep learning and teaching for their whole career.",
-          "Ages here are typical, not rules — plenty of people start later."
+          "You rotate through otology (ears), rhinology (nose), laryngology (voice), head and neck, and paediatric ENT.",
+          "You sit the FRCS (ORL-HNS) exam near the end.",
+          "You are a paid, working surgeon the entire time."
+        ]
+      },
+      {
+        age: "Around age 33–35",
+        title: "CCT → Consultant, then choose your ears",
+        length: "The finish line, then a beginning",
+        what: "Certificate of Completion of Training, then appointment as a consultant ENT surgeon — and this is where you specialise in ears.",
+        detail: [
+          "Most surgeons do a fellowship of about a year in their chosen area: otology, or paediatric ENT, or both.",
+          "Otology and neurotology are the ear subspecialties — grommets, eardrum repair, mastoid surgery, cochlear implants.",
+          "Ages here are typical, not rules. Plenty of people arrive later, and it counts just the same."
         ]
       }
     ]
   },
   us: {
     label: "United States",
-    endpoint: "Board-Certified Pediatrician",
-    note: "In the US you do a full undergraduate degree first, then apply to medical school.",
+    endpoint: "Otolaryngologist (ENT Surgeon)",
+    note: "In the US, ENT is called <strong>otolaryngology – head and neck surgery</strong>. You do a full undergraduate degree first, then medical school, then a 5-year surgical residency.",
     steps: [
       {
         age: "Ages 14–18",
@@ -107,9 +107,9 @@ const PATHWAYS = {
         length: "4 years",
         what: "Build a strong science foundation and a good GPA.",
         detail: [
-          "Take Biology, Chemistry and Physics; AP or IB versions if they're offered.",
+          "Take Biology, Chemistry and Physics; AP or IB versions if offered.",
           "Strong Maths matters — you'll need statistics later.",
-          "Start volunteering, especially anywhere involving kids or healthcare."
+          "Start volunteering, especially anywhere involving healthcare or children."
         ]
       },
       {
@@ -120,7 +120,7 @@ const PATHWAYS = {
         detail: [
           "Prerequisites usually include biology, general and organic chemistry, physics, biochemistry, maths/stats and English.",
           "GPA matters a lot. So does research, volunteering and clinical shadowing.",
-          "Yes, you can major in music or history and still go to medical school."
+          "Shadowing an ENT surgeon early is genuinely worth arranging."
         ]
       },
       {
@@ -142,40 +142,40 @@ const PATHWAYS = {
         detail: [
           "Two years of classroom science, then two years of clinical rotations.",
           "You take USMLE Step 1 and Step 2 (or COMLEX for DO).",
-          "You'll rotate through paediatrics in year three."
+          "Otolaryngology is one of the more competitive specialties to match into, so research helps."
         ]
       },
       {
-        age: "Ages 26–29",
-        title: "Pediatric residency",
-        length: "3 years",
-        what: "Matched through the NRMP 'Match'. You're a paid doctor now.",
+        age: "Ages 26–31",
+        title: "Otolaryngology residency",
+        length: "5 years",
+        what: "Matched through the NRMP 'Match'. You're a paid surgeon in training.",
         detail: [
-          "Clinics, wards, the emergency department and newborn nursery.",
-          "Long hours, but this is where you truly become a paediatrician.",
-          "You choose whether to subspecialise near the end."
+          "Ears, nose, sinuses, voice, head and neck cancer, and paediatric ENT.",
+          "Long hours, and a huge amount of operating.",
+          "You decide near the end whether to subspecialise."
         ]
       },
       {
-        age: "Around age 29",
+        age: "Around age 31",
         title: "Board certification",
-        length: "Exam",
-        what: "Pass the American Board of Pediatrics exam and you're a board-certified pediatrician.",
+        length: "Exams",
+        what: "Pass the American Board of Otolaryngology – Head and Neck Surgery exams and you're board certified.",
         detail: [
-          "You can now practise as a general paediatrician.",
-          "Certification is maintained over your career.",
+          "You can now practise as a general ENT surgeon.",
+          "Certification is maintained across your career.",
           "Ages are typical, not rules."
         ]
       },
       {
-        age: "Optional, +3 years",
-        title: "Fellowship (subspecialty)",
-        length: "3 years",
-        what: "Neonatology, cardiology, oncology, critical care, endocrinology and many more.",
+        age: "+1 to 2 years",
+        title: "Fellowship: the ears",
+        length: "1–2 years",
+        what: "This is the step where you become an ear surgeon specifically.",
         detail: [
-          "Only if you want to specialise further.",
-          "Often involves research as well as clinical work.",
-          "Plenty of brilliant paediatricians never do a fellowship."
+          "Neurotology / otology is the ear fellowship — eardrums, mastoid surgery, cochlear implants, balance disorders.",
+          "Pediatric otolaryngology is the other route if you want children specifically — grommets, tonsils, airways.",
+          "Some surgeons do both, and end up as the person who fixes children's ears."
         ]
       }
     ]
@@ -185,14 +185,14 @@ const PATHWAYS = {
 const CHECKLISTS = [
   {
     band: "Right now (any age)",
-    icon: "🌱",
+    icon: "👂",
     items: [
-      "Read one article or watch one video a week about the human body",
-      "Start a notebook of medical words you don't know yet",
-      "Be curious out loud — ask doctors, nurses and dentists questions when you meet them",
-      "Get comfortable being around younger kids: babysitting, helping cousins, kids' clubs",
-      "Learn basic first aid (schools, St John Ambulance and the Red Cross run courses)",
-      "Practise explaining something complicated to a younger child — that's half the job"
+      "Ask your family exactly what happened when you had your grommets — why, how old you were, what changed afterwards",
+      "Learn the three parts of the ear: outer, middle, inner",
+      "Learn a few signs in British or American Sign Language, and keep going",
+      "Protect your own hearing: keep headphones under about 60% volume, and take breaks",
+      "Read one article or watch one video a week about the body",
+      "Start a notebook of medical words you don't know yet"
     ]
   },
   {
@@ -200,11 +200,11 @@ const CHECKLISTS = [
     icon: "📗",
     items: [
       "Take science seriously now — it compounds",
-      "Join a science club or enter a science fair",
-      "Read one accessible medical book (see the shelf below)",
-      "Start noticing what you're squeamish about, and get gently used to it",
-      "Keep your maths strong — doctors calculate doses every single day",
-      "Try a free intro biology course online"
+      "Learn how sound actually works in physics: waves, frequency, volume",
+      "Practise being steady and precise with your hands — models, sewing, drawing, an instrument",
+      "Get comfortable around younger kids: babysitting, helping cousins, kids' clubs",
+      "Learn basic first aid, including how to stop a nosebleed properly",
+      "Find out what an audiologist does and how they test hearing"
     ]
   },
   {
@@ -215,7 +215,7 @@ const CHECKLISTS = [
       "Aim high in Maths and English — medical schools check these",
       "Start volunteering somewhere regularly (care home, charity shop, kids' club, scouts)",
       "Look up the entry requirements of 3 medical schools you like",
-      "Ask about work experience or a hospital open day",
+      "Ask about work experience, a hospital open day, or an audiology department visit",
       "Keep a short diary of what you learn from volunteering — you'll need these stories later"
     ]
   },
@@ -226,7 +226,7 @@ const CHECKLISTS = [
       "Take Chemistry and Biology (UK) or complete pre-med prerequisites (US)",
       "Book and practise for the UCAT or MCAT well in advance",
       "Get consistent, long-term volunteering — depth beats a one-week placement",
-      "Draft your personal statement early and get it read by someone honest",
+      "Look up ENT UK and the Royal College of Surgeons careers pages",
       "Practise interview questions out loud, including the ethical ones",
       "Have a genuine backup plan you'd also be happy with"
     ]
@@ -235,127 +235,133 @@ const CHECKLISTS = [
 
 const QUIZ = [
   {
-    q: "Roughly how many bones is a baby born with?",
-    a: ["Around 206", "Around 300", "Around 150", "Around 400"],
-    correct: 1,
-    why: "Babies are born with around 300 bones. Many of them are cartilage that later fuses together, leaving about 206 bones in an adult."
-  },
-  {
-    q: "What does the APGAR score check?",
-    a: ["A newborn's condition just after birth", "A child's reading age", "How tall a child will grow", "Whether a vaccine has worked"],
+    q: "What does ENT stand for?",
+    a: ["Ear, nose and throat", "Ear, neck and tongue", "External nerve treatment", "Ear and neural therapy"],
     correct: 0,
-    why: "APGAR is scored at 1 and 5 minutes after birth: Appearance, Pulse, Grimace, Activity and Respiration — each scored 0 to 2, so 10 is the maximum."
+    why: "Ear, nose and throat. The proper medical name is otolaryngology, or ORL-HNS — otolaryngology and head and neck surgery."
   },
   {
-    q: "Paediatricians usually care for patients from birth up to about what age?",
-    a: ["5", "10", "18", "25"],
+    q: "What do grommets actually do?",
+    a: ["Make the eardrum stronger", "Let air into the middle ear and fluid drain out", "Amplify sound like a hearing aid", "Block water from getting in"],
+    correct: 1,
+    why: "A grommet is a tiny tube through the eardrum. It lets air in behind the drum and lets trapped fluid drain out, which fixes the muffled hearing of glue ear."
+  },
+  {
+    q: "What is the smallest bone in the human body?",
+    a: ["The stapes, in the middle ear", "The smallest bone in the little toe", "A bone in the wrist", "A bone in the nose"],
+    correct: 0,
+    why: "The stapes, or stirrup, sits in the middle ear and is around 3 mm long. All three of the smallest bones in your body are in your ear."
+  },
+  {
+    q: "How many bones are there in the middle ear?",
+    a: ["One", "Two", "Three", "Five"],
     correct: 2,
-    why: "Most paediatric services cover birth to around 18, though the exact cut-off varies by country and hospital."
+    why: "Three: the malleus (hammer), incus (anvil) and stapes (stirrup). Together they're called the ossicles, and they amplify vibration on its way in."
   },
   {
-    q: "About when does a baby typically start walking unaided?",
-    a: ["4–6 months", "12–15 months", "24–30 months", "6–8 months"],
-    correct: 1,
-    why: "Most babies walk independently somewhere between 12 and 15 months — but the normal range is wide, and 'normal' covers a lot of ground."
-  },
-  {
-    q: "A child's resting heart rate compared with an adult's is usually…",
-    a: ["Faster", "Slower", "Exactly the same", "It varies randomly"],
-    correct: 0,
-    why: "Younger children have faster resting heart rates. A newborn's is often around 100–160 beats per minute, while a calm adult's is nearer 60–100."
-  },
-  {
-    q: "Which subject pair is required by almost every UK medical school?",
-    a: ["Chemistry and Biology", "Physics and Maths", "Psychology and Sociology", "Biology and Geography"],
-    correct: 0,
-    why: "Chemistry and Biology at A-Level are the standard requirement. Your third subject is much more flexible."
-  },
-  {
-    q: "What is a fontanelle?",
-    a: ["A bone in the foot", "A soft spot between a baby's skull bones", "A type of stethoscope", "A childhood vaccine"],
-    correct: 1,
-    why: "Fontanelles are the soft gaps between a baby's skull bones. They let the head squeeze through birth and let the brain grow. The one at the back closes around 2 months, the one at the front usually between 9 and 18 months."
-  },
-  {
-    q: "How many primary ('baby') teeth does a child normally get?",
-    a: ["16", "20", "24", "32"],
-    correct: 1,
-    why: "There are 20 primary teeth, usually starting to come through at around 6 months. Adults end up with up to 32."
-  },
-  {
-    q: "In the US, what exam do you take to apply to medical school?",
-    a: ["The UCAT", "The SAT", "The MCAT", "The USMLE"],
+    q: "What is glue ear?",
+    a: ["An infection of the ear canal", "Wax blocking the ear", "Sticky fluid trapped behind the eardrum", "A torn eardrum"],
     correct: 2,
-    why: "The MCAT is the US medical school admissions test. The UCAT is the UK equivalent, and the USMLE comes later, during medical school."
+    why: "Glue ear — otitis media with effusion — is thick fluid trapped in the middle ear. It stops the eardrum vibrating properly, so sound is muffled. It's the usual reason children get grommets."
   },
   {
-    q: "Which of these is a real paediatric subspecialty?",
-    a: ["Neonatology", "Geriatrics", "Podiatry", "Radiography"],
-    correct: 0,
-    why: "Neonatology is the care of newborn babies, especially premature or seriously ill ones. Geriatrics is the opposite end of life."
-  },
-  {
-    q: "What's usually the single most important skill in a paediatric consultation?",
-    a: ["Typing quickly", "Communicating with both the child and the parent", "Memorising drug names", "Reading X-rays"],
+    q: "Do grommets stay in the ear forever?",
+    a: ["Yes, they're permanent", "No — they usually fall out on their own", "They're removed in a second operation", "They dissolve within a week"],
     correct: 1,
-    why: "Paediatrics is the specialty where you always have at least two people in the room. Winning the trust of a frightened child and a worried parent at the same time is the core skill."
+    why: "Almost always no. As the eardrum grows and renews itself, it pushes the grommet out — usually within 6 to 12 months. Most children never notice it happen."
   },
   {
-    q: "Roughly how long does it take to become a fully qualified consultant paediatrician in the UK from starting medical school?",
-    a: ["About 5 years", "About 8 years", "About 14–15 years", "About 20 years"],
+    q: "Which part of the ear turns vibrations into nerve signals?",
+    a: ["The eardrum", "The cochlea", "The ear canal", "The pinna"],
+    correct: 1,
+    why: "The cochlea, the snail-shaped part of the inner ear. Tiny hair cells inside it convert movement into electrical signals for the brain."
+  },
+  {
+    q: "What are the semicircular canals for?",
+    a: ["Hearing high notes", "Balance", "Draining wax", "Equalising pressure"],
+    correct: 1,
+    why: "Balance. There are three of them, set at right angles, and they detect your head rotating in each direction."
+  },
+  {
+    q: "Where do most nosebleeds come from?",
+    a: ["Deep at the back of the nose", "The front of the septum, near the tip", "The sinuses", "The throat"],
+    correct: 1,
+    why: "About 90% come from Little's area at the front of the septum, where several small vessels meet. That's why pinching the soft part of the nose works."
+  },
+  {
+    q: "What does the epiglottis do?",
+    a: ["Makes your voice", "Flips over the windpipe when you swallow", "Filters air", "Holds the tongue down"],
+    correct: 1,
+    why: "It's a flap that folds over the entrance to the windpipe as you swallow, so food goes down the oesophagus instead of into your lungs."
+  },
+  {
+    q: "Why do young children get so many more ear infections than adults?",
+    a: ["Their eardrums are thinner", "Their Eustachian tube is shorter and more horizontal", "They have more earwax", "Their ears are colder"],
+    correct: 1,
+    why: "The Eustachian tube connects the middle ear to the back of the nose. In small children it's short, floppy and nearly horizontal, so germs and fluid move up it easily. It improves as they grow."
+  },
+  {
+    q: "Roughly how long does it take to become a consultant ENT surgeon in the UK, from starting medical school?",
+    a: ["About 6 years", "About 10 years", "About 15–16 years", "About 25 years"],
     correct: 2,
-    why: "Around 5–6 years of medical school, 2 years of foundation training and roughly 8 years of specialty training — about 14 to 15 years in total. You're paid for most of it."
+    why: "Around 5–6 years of medical school, 2 foundation years, 2 core surgical years and about 6 years of ENT training — roughly 15 to 16 years, and you're paid for most of it."
   }
 ];
 
 const FLASHCARDS = [
-  { cat: "Body", front: "How many bones does an adult have?", back: "206 — down from around 300 at birth, as bones fuse together." },
-  { cat: "Body", front: "What does the skeleton do besides hold you up?", back: "Protects organs, stores minerals like calcium, and makes blood cells inside bone marrow." },
-  { cat: "Newborns", front: "What are the five parts of the APGAR score?", back: "Appearance, Pulse, Grimace, Activity, Respiration. Each scored 0–2, maximum 10, checked at 1 and 5 minutes." },
-  { cat: "Newborns", front: "Why do babies have soft spots on their heads?", back: "The fontanelles let the skull flex during birth and let the brain grow fast in the first year." },
-  { cat: "Milestones", front: "When does a baby usually give a first social smile?", back: "Around 6–8 weeks." },
-  { cat: "Milestones", front: "When do babies usually sit without support?", back: "Around 6–8 months." },
-  { cat: "Milestones", front: "When do children typically start joining two words together?", back: "Around 2 years old — things like 'more juice'." },
-  { cat: "Body", front: "Why do children's heart rates run faster than adults'?", back: "Smaller hearts pump less blood per beat, so they beat more often to keep up with a fast-growing body." },
-  { cat: "Words", front: "What does 'paediatrics' actually mean?", back: "From the Greek <em>pais</em> (child) and <em>iatros</em> (healer) — literally 'child healer'." },
-  { cat: "Words", front: "What is a 'neonate'?", back: "A baby in its first 28 days of life." },
-  { cat: "Words", front: "What does 'chronic' mean in medicine?", back: "Long-lasting or ongoing — the opposite of 'acute', which means sudden and short-term." },
-  { cat: "Words", front: "What does 'benign' mean?", back: "Not harmful, not cancerous. The opposite is 'malignant'." },
-  { cat: "Career", front: "What is a paediatric subspecialty?", back: "A focused area within child health — neonatology, cardiology, oncology, intensive care, community paediatrics and many others." },
-  { cat: "Career", front: "What's the UK exam series for paediatric trainees?", back: "The MRCPCH — Membership of the Royal College of Paediatrics and Child Health." },
-  { cat: "Career", front: "What does a paediatrician spend most of the day doing?", back: "Talking. Examinations, ward rounds and procedures matter, but explaining, reassuring and listening take up most of it." },
-  { cat: "Body", front: "What is the largest organ in the human body?", back: "The skin. In children it's proportionally larger relative to body weight, which is why they lose heat and fluid faster." },
-  { cat: "Body", front: "Where are red blood cells made?", back: "In the bone marrow — in children, in more bones than in adults." },
-  { cat: "Newborns", front: "Why are premature babies kept in incubators?", back: "They can't regulate their own temperature well yet, and they need protection, humidity and close monitoring." }
+  { cat: "Ear", front: "What are the three parts of the ear?", back: "Outer (pinna and ear canal), middle (eardrum and the three tiny bones), inner (cochlea and balance organs)." },
+  { cat: "Ear", front: "Name the three bones of the middle ear.", back: "Malleus (hammer), incus (anvil) and stapes (stirrup) — together, the ossicles." },
+  { cat: "Ear", front: "What is the eardrum properly called?", back: "The tympanic membrane. It's about 1 cm across and heals itself surprisingly well." },
+  { cat: "Ear", front: "What does the Eustachian tube do?", back: "Connects the middle ear to the back of the nose, letting air in to equalise pressure. It's why your ears pop." },
+  { cat: "Ear", front: "How do the ossicles help you hear?", back: "They act as levers, amplifying the vibration of the eardrum roughly twentyfold before it reaches the fluid of the inner ear." },
+  { cat: "Ear", front: "What is a grommet?", back: "A tiny tube placed through the eardrum to ventilate the middle ear and let trapped fluid drain. It usually falls out by itself in 6–12 months." },
+  { cat: "Ear", front: "Why can't damaged hearing come back?", back: "The hair cells in the human cochlea don't regenerate. Once they're destroyed by noise, illness or age, that hearing is gone for good." },
+  { cat: "Ear", front: "What is glue ear?", back: "Otitis media with effusion — thick fluid behind an intact eardrum, causing muffled hearing. Very common between ages 2 and 5." },
+  { cat: "Balance", front: "Which part of the ear controls balance?", back: "The vestibular system: three semicircular canals for rotation, plus the utricle and saccule for gravity and straight-line movement." },
+  { cat: "Balance", front: "Why do you feel dizzy after spinning?", back: "Fluid in the semicircular canals keeps moving after you stop, so your ears insist you're still turning while your eyes say you're not." },
+  { cat: "Balance", front: "What is BPPV?", back: "Benign paroxysmal positional vertigo — tiny crystals come loose in the balance canals, causing brief violent dizziness on moving the head. It's often cured in one appointment." },
+  { cat: "Nose", front: "What do the turbinates in your nose do?", back: "They warm, moisten and filter incoming air, turning cold dry air into something your lungs can cope with." },
+  { cat: "Nose", front: "Where do most nosebleeds start?", back: "Little's area, at the front of the septum, where several small blood vessels meet just under thin skin." },
+  { cat: "Nose", front: "How do you stop a nosebleed properly?", back: "Sit up, lean forwards, and pinch the soft part of the nose for 10–15 minutes without letting go. Not the bony bridge, and don't tip the head back." },
+  { cat: "Throat", front: "What are tonsils and adenoids?", back: "Lumps of lymphoid tissue guarding the entrance to the throat. They're part of the immune system and usually shrink as you grow." },
+  { cat: "Throat", front: "What does the larynx do?", back: "It's the voice box. Air passing between two vocal folds makes them vibrate, and that vibration is your voice." },
+  { cat: "Throat", front: "How does food avoid going into your lungs?", back: "The epiglottis folds over the entrance to the windpipe every time you swallow, and breathing pauses for that moment." },
+  { cat: "Words", front: "What does 'otolaryngology' mean?", back: "From the Greek: <em>oto</em> (ear), <em>laryngo</em> (throat) and <em>logy</em> (study of). ENT's proper name." },
+  { cat: "Words", front: "What's the difference between conductive and sensorineural hearing loss?", back: "Conductive means sound can't get through the outer or middle ear — often fixable. Sensorineural means the cochlea or nerve is damaged — usually permanent." },
+  { cat: "Words", front: "What is tinnitus?", back: "Hearing a sound — ringing, buzzing, hissing — with no external source. Very common, and often linked to hearing damage." },
+  { cat: "Career", front: "What are the subspecialties within ENT?", back: "Otology and neurotology (ears), rhinology (nose and sinuses), laryngology (voice), head and neck surgery, and paediatric ENT." },
+  { cat: "Career", front: "What's the commonest childhood operation in many countries?", back: "Insertion of grommets. An ENT surgeon may do several in a single morning list." },
+  { cat: "Career", front: "What does an ENT surgeon spend most of the day doing?", back: "Clinic, not theatre. Looking in ears, noses and throats, listening to patients, and deciding who actually needs an operation — most don't." }
 ];
 
 const ROLES = [
-  { name: "Paediatrician", blurb: "Doctor specialising in children's health, from newborns to teenagers.", years: "~14 yrs from starting med school" },
-  { name: "Paediatric nurse", blurb: "Hands-on daily care, often the person a child trusts most on the ward.", years: "3 yr degree" },
-  { name: "Midwife", blurb: "Cares for people through pregnancy, birth and the first weeks after.", years: "3 yr degree" },
-  { name: "Paramedic", blurb: "Emergency care wherever it happens. Fast decisions, huge variety.", years: "3 yr degree" },
-  { name: "Child psychologist", blurb: "Mental health, development and behaviour in children and teens.", years: "Degree + doctorate" },
-  { name: "Health play specialist", blurb: "Uses play to help children cope with hospital, pain and procedures.", years: "Diploma route" },
-  { name: "Paediatric physiotherapist", blurb: "Helps children move, recover and build strength.", years: "3 yr degree" },
-  { name: "Speech & language therapist", blurb: "Helps children communicate, and helps with feeding and swallowing.", years: "3 yr degree" }
+  { name: "ENT surgeon", blurb: "Operates on ears, noses and throats, and runs clinics for people of all ages.", years: "~15 yrs from starting med school" },
+  { name: "Audiologist", blurb: "Tests hearing, diagnoses hearing loss, fits and tunes hearing aids. Works with ENT every day.", years: "3 yr degree" },
+  { name: "Audiovestibular physician", blurb: "A doctor specialising in hearing and balance without doing surgery.", years: "Medical route, non-surgical" },
+  { name: "Speech & language therapist", blurb: "Helps with speech, voice, communication and swallowing — including after ear or throat problems.", years: "3 yr degree" },
+  { name: "Teacher of the Deaf", blurb: "Specialist teacher supporting deaf children in school and at home.", years: "Teaching degree + specialism" },
+  { name: "Hearing therapist", blurb: "Helps people live with hearing loss and tinnitus — the part that isn't surgery.", years: "Postgraduate route" },
+  { name: "Operating department practitioner", blurb: "Runs the theatre alongside the surgeon and anaesthetist. Nothing happens without them.", years: "3 yr degree" },
+  { name: "Sign language interpreter", blurb: "Makes conversations possible between Deaf and hearing people, including in hospitals.", years: "BSL/ASL qualifications" }
 ];
 
 const SHELF = [
-  { title: "Do No Harm", by: "Henry Marsh", note: "A neurosurgeon being unusually honest about mistakes. Best for older teens." },
-  { title: "This Is Going to Hurt", by: "Adam Kay", note: "Funny and brutal diaries from a junior doctor. Contains adult content — best 16+." },
-  { title: "The Body: A Guide for Occupants", by: "Bill Bryson", note: "The friendliest tour of human anatomy there is. Great for any age from ~12." },
-  { title: "When Breath Becomes Air", by: "Paul Kalanithi", note: "A doctor writing about becoming a patient. Moving and short." },
-  { title: "Kay's Anatomy", by: "Adam Kay", note: "The kids' version — genuinely great for ages 9–14." },
-  { title: "Khan Academy — Biology & Health", by: "free online", note: "Free, structured, and covers most school biology plus a lot beyond it." }
+  { title: "Direct Red: A Surgeon's Story", by: "Gabriel Weston", note: "Written by a British ENT surgeon. The closest you'll get to reading the actual job. Best 16+." },
+  { title: "Volume Control", by: "David Owen", note: "All about hearing, deafness, noise and what we're doing to our ears. Very readable." },
+  { title: "The Body: A Guide for Occupants", by: "Bill Bryson", note: "The friendliest tour of human anatomy there is. Great from about 12." },
+  { title: "Kay's Anatomy", by: "Adam Kay", note: "The kids' version, and genuinely good for ages 9–14." },
+  { title: "ENT UK — careers pages", by: "free online", note: "The actual professional body for ENT in the UK. Tells you exactly how the training works." },
+  { title: "Khan Academy — Biology & Physics of sound", by: "free online", note: "Free, structured, and covers school biology plus the physics of waves you'll need." }
 ];
 
 const FACTS = [
-  "The word 'paediatrics' comes from Greek words meaning 'child healer'.",
-  "A newborn's heart beats around twice as fast as yours does right now.",
-  "Babies are born with around 300 bones; adults have about 206.",
-  "Children aren't small adults — their bodies handle medicines, heat and fluid loss very differently.",
-  "A paediatrician usually has to win over two people at once: the child and the parent.",
-  "Most of a doctor's job is listening. Roughly 80% of diagnoses come from the story the patient tells.",
-  "You get paid throughout specialty training — it's a job, not extra school.",
-  "Nobody expects you to know anatomy yet. They expect you to be curious, kind and hard-working."
+  "The three smallest bones in your entire body are all inside your ear.",
+  "The stapes is about 3 mm long — roughly the size of a grain of rice, and an ENT surgeon operates on it.",
+  "Inserting grommets is one of the commonest childhood operations in the world.",
+  "A grommet is usually about 1.5 mm across, and it falls out by itself once the eardrum has grown.",
+  "Your eardrum can heal its own small holes, often within a few weeks.",
+  "The cochlea is coiled up like a snail shell — uncoil it and it's about 3 cm long.",
+  "Hair cells in the human ear never grow back, which is why volume limits genuinely matter.",
+  "Your ears keep working while you're asleep — your brain just stops paying attention.",
+  "Children get more ear infections because the tube from ear to nose is short and nearly horizontal until they grow."
 ];

@@ -199,1238 +199,1231 @@ lessons: [
 ]
 },
 {
-m: 2, name: "February", topic: "The heart and blood",
-intro: "The heart is a muscle that has been squeezing since before you were born and will not stop until the day you die. This month is about how that works.",
+m: 2, name: "February", topic: "The ear: how hearing works",
+intro: "Sound is nothing but moving air. This month is about the astonishing chain of parts that turns a wobble in the air into something you understand.",
 lessons: [
   {
-    title: "The heart is a pump",
-    what: "Your heart is a muscle roughly the size of your own clenched fist. Its only job is to squeeze, pushing blood out into tubes that carry it everywhere in your body. It does this around 100,000 times a day without you ever thinking about it.",
+    title: "The three parts of the ear",
+    what: "The ear is not one thing but three, joined in a line. The outer ear collects sound, the middle ear amplifies it, and the inner ear turns it into signals your brain can read. Almost everything an ear surgeon does happens in one of those three places.",
     facts: [
-      "The heart sits in the middle of your chest, tilted slightly to the left.",
-      "It is made of a special muscle, cardiac muscle, that never gets tired.",
-      "It started beating about three weeks after you began to grow, before your mother even knew you existed."
-    ],
-    words: [{ w: "Cardiac", m: "Anything to do with the heart." }],
-    t1: {
-      d: "Squeeze a rolled-up sock in your fist, once a second, for a minute. That is what your heart is doing — except it never stops for a rest.",
-      task: "Clench your fist. That is roughly the size of your own heart. It grows as you do.",
-      q: "What is the heart's job?",
-      a: "To pump blood around the body."
-    },
-    t2: {
-      d: "Cardiac muscle is unlike any other muscle: it generates its own electrical signal. Even a heart removed from the body will keep beating for a while, because the signal starts inside the heart itself, at a patch called the sinoatrial node.",
-      task: "Feel your pulse, then jump up and down twenty times and feel it again. You just watched your heart respond to demand.",
-      q: "Where does a heartbeat's electrical signal start?",
-      a: "In the sinoatrial node, the heart's own natural pacemaker."
-    },
-    t3: {
-      d: "The conducting system runs sinoatrial node to atrioventricular node, then down the bundle of His and Purkinje fibres. An ECG records exactly this: the P wave is the atria contracting, the QRS complex the ventricles, and the T wave the ventricles resetting.",
-      task: "Find a normal ECG trace and label the P wave, QRS complex and T wave.",
-      q: "What does the QRS complex on an ECG represent?",
-      a: "Depolarisation of the ventricles — the main pumping chambers contracting."
-    }
-  },
-  {
-    title: "The double loop",
-    what: "Blood does not travel in one circle but two. One short loop goes to the lungs to pick up oxygen. One long loop delivers that oxygen to the whole body. The heart is split down the middle so it can run both loops at once.",
-    facts: [
-      "The heart has four chambers: two on the right, two on the left.",
-      "Right side sends blood to the lungs. Left side sends it to the body.",
-      "The left side is more muscular, because it pushes much further."
+      "Outer ear: the bit you can see, plus the canal, ending at the eardrum.",
+      "Middle ear: an air-filled space holding three tiny bones.",
+      "Inner ear: the cochlea for hearing and the balance organs, buried in solid bone."
     ],
     words: [
-      { w: "Artery", m: "A tube carrying blood away from the heart." },
-      { w: "Vein", m: "A tube carrying blood back towards the heart." }
+      { w: "Pinna", m: "The visible flap of the ear, which funnels sound into the canal." },
+      { w: "Middle ear", m: "The small air-filled space behind the eardrum, holding the three tiny hearing bones." }
     ],
     t1: {
-      d: "Picture a bus route with two loops from the same station. The short loop goes to the oxygen depot — your lungs. The long loop delivers oxygen everywhere else.",
-      task: "Trace a finger from your chest to your lungs and back, then from your chest to your toes and back. Two loops, one heart.",
-      q: "Which loop is shorter, the one to the lungs or the one to the body?",
-      a: "The one to the lungs."
+      d: "Think of a letterbox, a hallway and a room. Sound is posted in at the pinna, carried down the hall, and read in the room at the end.",
+      task: "Cup your hands behind your ears and listen. You just made your pinnae bigger, and it genuinely works.",
+      q: "What are the three parts of the ear?",
+      a: "Outer, middle and inner."
     },
     t2: {
-      d: "In order: body → right atrium → right ventricle → lungs → left atrium → left ventricle → body. Valves between the chambers stop blood flowing backwards, and the sound of those valves snapping shut is the lub-dub you hear through a stethoscope.",
-      task: "Say the six-step order out loud until you can do it without looking.",
-      q: "Which chamber pumps blood out to the whole body?",
-      a: "The left ventricle."
+      d: "The dividing lines matter medically. Problems in the outer or middle ear block sound getting through and are often fixable. Problems in the inner ear damage the sensor itself and are usually permanent.",
+      task: "Draw the ear in three labelled boxes and write one problem that can happen in each.",
+      q: "Why does it matter which part of the ear a problem is in?",
+      a: "Outer and middle ear problems are often treatable; inner ear damage is usually permanent."
     },
     t3: {
-      d: "Note the naming trap: pulmonary arteries carry deoxygenated blood and pulmonary veins carry oxygenated blood. Arteries and veins are named by direction of travel, not by what they contain. Before birth the loops are different again — the ductus arteriosus lets blood bypass the lungs, and it normally closes within days of birth.",
-      task: "Look up patent ductus arteriosus and write one sentence on why it matters in premature babies.",
-      q: "Do pulmonary arteries carry oxygenated or deoxygenated blood?",
-      a: "Deoxygenated — they carry blood from the heart to the lungs to collect oxygen."
+      d: "The inner ear sits inside the petrous temporal bone, the densest bone in the body, which is why ear surgery involves drilling. The facial nerve runs right through this area, millimetres from the surgical field — protecting it is a constant consideration in otology.",
+      task: "Find out which cranial nerve is at risk in mastoid surgery and what happens if it is injured.",
+      q: "Why is ear surgery technically demanding?",
+      a: "The structures are millimetre-scale, encased in dense bone, and the facial nerve runs right through the area."
     }
   },
   {
-    title: "What blood is made of",
-    what: "Blood looks like a single red liquid, but it is really four things mixed together: red cells, white cells, platelets, and a straw-coloured liquid called plasma that carries them all.",
+    title: "The eardrum",
+    what: "The eardrum is a thin, tight sheet of tissue about a centimetre across, stretched over the end of the ear canal. Sound waves make it vibrate, and everything that follows depends on that vibration.",
     facts: [
-      "Red cells carry oxygen and give blood its colour.",
-      "White cells fight infection.",
-      "Platelets are tiny fragments that plug leaks.",
-      "Plasma is mostly water and makes up over half of blood."
+      "Its proper name is the tympanic membrane.",
+      "It is roughly a tenth of a millimetre thick — thinner than a sheet of paper.",
+      "It seals the middle ear off from the outside world."
     ],
-    words: [{ w: "Plasma", m: "The pale yellow liquid part of blood that everything else floats in." }],
+    words: [{ w: "Tympanic membrane", m: "The proper name for the eardrum." }],
     t1: {
-      d: "Blood is like a busy river. The water is plasma, and the boats floating in it are the cells — some carrying oxygen, some hunting germs.",
-      task: "Look at a healing scab. That is platelets and clotting proteins that did their job.",
-      q: "Which blood cells carry oxygen?",
-      a: "Red blood cells."
+      d: "Stretch clingfilm over a bowl and tap it. It moves. Your eardrum does exactly that, thousands of times a second, all day long.",
+      task: "Hold a piece of paper near your mouth and hum. Feeling it buzz? That is what sound does to your eardrum.",
+      q: "What is the eardrum's proper name?",
+      a: "The tympanic membrane."
     },
     t2: {
-      d: "Red cells are packed with haemoglobin, an iron-containing protein that grabs oxygen in the lungs and releases it in the tissues. If you do not have enough haemoglobin you have anaemia, and you feel tired and look pale because less oxygen is reaching your body.",
-      task: "Find out which foods are high in iron, and note three of them.",
-      q: "What does haemoglobin do?",
-      a: "Carries oxygen around the body inside red blood cells."
+      d: "It heals itself. Small holes usually close on their own within weeks, which is exactly why a grommet can be put through it and then simply fall out later, leaving the drum intact.",
+      task: "Look up a photo of a normal eardrum through an otoscope. Notice you can see the bone behind it.",
+      q: "What happens to a small hole in the eardrum?",
+      a: "It usually heals itself within a few weeks."
     },
     t3: {
-      d: "A full blood count is one of the commonest tests in medicine, reporting haemoglobin, white cell count and platelets. In paediatrics the normal values shift with age — a newborn's haemoglobin is much higher than a toddler's, then dips at around 2-3 months in the physiological nadir.",
-      task: "Look up sickle cell disease and describe in two sentences what goes wrong with the red cells.",
-      q: "Name the three cell lines reported on a full blood count.",
-      a: "Red cells, white cells and platelets."
+      d: "A healthy drum is pearly grey and translucent, with a visible cone of light and the handle of the malleus showing through. Red and bulging suggests acute infection; dull, retracted and amber suggests fluid behind it. Learning to read a drum is one of the first real skills in ENT.",
+      task: "Compare otoscope images of a normal drum, an infected drum and glue ear, and write down what differs.",
+      q: "What does a dull, retracted, amber eardrum suggest?",
+      a: "Fluid in the middle ear — glue ear."
     }
   },
   {
-    title: "Pulse and blood pressure",
-    what: "Every time your heart squeezes, it sends a pressure wave down your arteries. You can feel that wave at your wrist or neck — that is your pulse. Blood pressure is how hard the blood is pushing on the artery walls.",
+    title: "The three smallest bones you own",
+    what: "Behind the eardrum sit three bones so small they would all fit on a fingernail: the malleus, incus and stapes — hammer, anvil and stirrup. They are the smallest bones in the human body, and they are levers.",
     facts: [
-      "Pulse rate tells you how fast the heart is beating.",
-      "Blood pressure is written as two numbers, like 110/70.",
-      "The top number is when the heart squeezes; the bottom is when it relaxes."
+      "Together they are called the ossicles.",
+      "The stapes is around 3 mm long — the smallest bone you have.",
+      "They amplify the vibration roughly twentyfold on its way in."
+    ],
+    words: [{ w: "Ossicles", m: "The three tiny bones of the middle ear: malleus, incus and stapes." }],
+    t1: {
+      d: "Hammer, anvil, stirrup. Somebody thought they looked like a blacksmith's workshop, and the names stuck for centuries.",
+      task: "Learn the three names in order. Say them out loud three times: malleus, incus, stapes.",
+      q: "Which is the smallest bone in the body?",
+      a: "The stapes, in the middle ear."
+    },
+    t2: {
+      d: "Amplification is needed because sound has to move from air into the fluid of the inner ear, and fluid resists far more than air does. Without the ossicles, most of the sound would simply bounce off, and you would be severely deaf.",
+      task: "Try shouting to someone underwater in a pool. Notice how badly sound crosses from air into water.",
+      q: "Why does sound need amplifying at the middle ear?",
+      a: "Because it has to pass from air into fluid, and most of it would otherwise be reflected."
+    },
+    t3: {
+      d: "This is impedance matching, achieved by the area ratio between eardrum and stapes footplate plus the lever action of the ossicular chain. In otosclerosis the stapes becomes fixed by abnormal bone and stops moving; a stapedotomy replaces it with a tiny prosthesis, and hearing can be restored in a single operation.",
+      task: "Look up otosclerosis and find out who it typically affects.",
+      q: "What goes wrong in otosclerosis?",
+      a: "The stapes becomes fixed by abnormal bone growth, so it can no longer transmit vibration."
+    }
+  },
+  {
+    title: "The cochlea",
+    what: "The cochlea is a fluid-filled tube coiled like a snail shell. Vibration entering it makes waves in the fluid, and thousands of microscopic hair cells lining it convert that movement into electrical signals for the brain.",
+    facts: [
+      "Uncoiled it would be about 3 cm long, with roughly two and a half turns.",
+      "It holds around 15,000 hair cells in each ear.",
+      "Different places along it respond to different pitches."
     ],
     words: [
-      { w: "Systolic", m: "The pressure when the heart squeezes — the top number." },
-      { w: "Diastolic", m: "The pressure when the heart relaxes — the bottom number." }
+      { w: "Cochlea", m: "The spiral part of the inner ear that turns vibration into nerve signals." },
+      { w: "Hair cells", m: "Microscopic sensors in the cochlea that convert movement into electrical signals." }
     ],
     t1: {
-      d: "Press two fingers gently on the thumb side of your wrist. Feel a soft tapping? Each tap is one squeeze of your heart, arriving as a wave.",
-      task: "Count your pulse for 30 seconds and double it. Do it again after ten star jumps.",
-      q: "What causes your pulse?",
-      a: "The pressure wave from each heartbeat travelling down the arteries."
+      d: "Imagine a coiled water slide lined with thousands of tiny sensors. A wave rolls down it, the sensors bend, and each bend sends a message to your brain.",
+      task: "Hum a low note then a high note. Different parts of your cochlea are responding to each.",
+      q: "What do hair cells do?",
+      a: "Turn movement in the cochlea into electrical signals for the brain."
     },
     t2: {
-      d: "Never use your thumb to take a pulse — your thumb has its own noticeable pulse and you can end up counting yourself. Also note the rhythm, not just the rate: is it regular or irregular?",
-      task: "Take a family member's pulse with two fingers, counting for a full 60 seconds. Note rate and rhythm.",
-      q: "Why should you not take a pulse with your thumb?",
-      a: "Because the thumb has a strong pulse of its own, so you might count yours instead."
+      d: "The cochlea is laid out like a piano: high notes are detected at the base, low notes at the tip. Loud noise damages the base first, which is why noise-related hearing loss takes the high notes first — including the consonants that make speech clear.",
+      task: "Find out what frequency range human hearing covers, and how it changes with age.",
+      q: "Which pitches are usually lost first with noise damage?",
+      a: "High-frequency sounds, detected at the base of the cochlea."
     },
     t3: {
-      d: "In children, blood pressure cuff size matters enormously — a cuff that is too small reads falsely high. Tachycardia (a fast heart rate) is often the first vital sign to change in an unwell child, well before blood pressure moves.",
-      task: "Find out what capillary refill time is, how it is measured, and what a normal result is.",
-      q: "Which vital sign usually changes first in a deteriorating child?",
-      a: "Heart rate — tachycardia appears well before blood pressure falls."
+      d: "This is tonotopic organisation, and it is preserved all the way up the auditory pathway to the cortex — which is precisely what makes a cochlear implant possible, since the electrode array can stimulate the right places along the spiral. Human hair cells do not regenerate, unlike those of birds and fish, which is an active area of research.",
+      task: "Read about hair cell regeneration research and write two sentences on why it matters.",
+      q: "What is tonotopic organisation?",
+      a: "Different frequencies being detected, and represented, at different positions along the cochlea and the auditory pathway."
     }
   },
   {
-    title: "How bleeding stops",
-    what: "Cut yourself and the bleeding stops within minutes, without anyone doing anything. That is a remarkable chain of chemical reactions called clotting, and it has to be finely balanced — too little and you bleed, too much and you block a vessel.",
+    title: "The Eustachian tube",
+    what: "A narrow tube runs from the middle ear down to the back of the nose. Its job is to let air in, keeping the pressure behind the eardrum equal to the pressure outside. Almost every common childhood ear problem starts with this tube.",
     facts: [
-      "Platelets arrive first and stick together to plug the hole.",
-      "Then proteins build a mesh of fibrin to hold the plug in place.",
-      "A scab is that mesh, dried out, protecting the repair underneath."
+      "It is normally closed, and opens when you swallow or yawn.",
+      "That opening is what makes your ears pop.",
+      "If it stops working, the middle ear fills with fluid."
     ],
-    words: [{ w: "Clotting", m: "The process that turns liquid blood into a solid plug to stop bleeding." }],
+    words: [{ w: "Eustachian tube", m: "The tube connecting the middle ear to the back of the nose, which equalises air pressure." }],
     t1: {
-      d: "Imagine a hole in a boat. First, crew members throw themselves at the gap — those are platelets. Then they nail netting across it — that is fibrin. Then it dries hard: a scab.",
-      task: "Next time you get a small cut, watch how long it takes to stop bleeding. It is usually only a few minutes.",
-      q: "What is a scab?",
-      a: "A dried clot protecting a wound while the skin repairs underneath."
+      d: "Go up a hill or take off in a plane and your ears feel blocked. Swallow, and they pop. That pop is the tube opening to let air in.",
+      task: "Swallow deliberately and listen. Many people can hear a faint click as the tube opens.",
+      q: "What makes your ears pop?",
+      a: "The Eustachian tube opening to equalise the pressure behind the eardrum."
     },
     t2: {
-      d: "Blood vessels also narrow immediately to reduce flow. The clotting cascade that follows needs vitamin K and calcium to work — which is exactly why newborn babies are offered a vitamin K injection at birth.",
-      task: "Find out why newborn babies are given vitamin K, and write down what it prevents.",
-      q: "Why are newborns given vitamin K?",
-      a: "Because they are born with very little of it, and without it they are at risk of serious bleeding."
+      d: "If the tube is blocked — by a cold, allergy, or large adenoids — air trapped in the middle ear is absorbed, pressure drops, the drum is sucked inwards and fluid seeps in. That is exactly how glue ear begins.",
+      task: "Write the chain of events from blocked tube to glue ear in four steps.",
+      q: "What happens in the middle ear if the Eustachian tube stays blocked?",
+      a: "Air is absorbed, pressure falls, and fluid collects behind the eardrum."
     },
     t3: {
-      d: "Haemophilia is an inherited deficiency of a clotting factor — factor VIII in haemophilia A. It is X-linked recessive, which is why it overwhelmingly affects boys. Unexplained bruising in a child always needs careful thought: it may be a bleeding disorder, or it may be a safeguarding concern.",
-      task: "Look up the pattern of bruising that would worry a paediatrician, and note two features.",
-      q: "Why does haemophilia A mostly affect boys?",
-      a: "It is X-linked recessive, and boys have only one X chromosome."
+      d: "In young children the tube is shorter, floppier and far more horizontal than in adults, so it drains poorly and transmits infection easily. It lengthens and angles downwards as the skull base grows, which is why most children simply grow out of recurrent middle ear problems by about seven or eight.",
+      task: "Find a diagram comparing a child's and an adult's Eustachian tube angle and note the difference.",
+      q: "Why do most children grow out of glue ear?",
+      a: "The Eustachian tube lengthens and becomes more angled as the skull grows, so it drains and ventilates properly."
     }
   },
   {
-    title: "Children's hearts are different",
-    what: "A child's heart is not just a smaller adult heart. It beats faster, it is still developing, and around 1 in 100 babies is born with some difference in how their heart is built.",
+    title: "Earwax and the ear canal",
+    what: "Earwax is not dirt. It is a deliberate mixture of oils and dead skin that traps dust, repels water and keeps the canal slightly acidic so germs struggle to grow. The canal cleans itself, slowly, from the inside out.",
     facts: [
-      "Congenital heart conditions are the commonest type of birth difference.",
-      "Many are mild and need no treatment at all.",
-      "A heart murmur is an extra sound — most in children are completely harmless."
+      "Its proper name is cerumen.",
+      "Skin in the ear canal migrates outwards, carrying wax with it.",
+      "Cotton buds push wax inwards and cause impaction — the exact problem people use them to prevent."
     ],
-    words: [{ w: "Congenital", m: "Present from birth." }],
+    words: [{ w: "Cerumen", m: "The medical word for earwax." }],
     t1: {
-      d: "A murmur is just a whooshing sound between the normal lub-dubs, made by blood swirling. Most children who have one are completely healthy.",
-      task: "Listen to your own heartbeat by pressing an ear against someone's chest. Count the lub-dubs.",
-      q: "What does 'congenital' mean?",
-      a: "Present from birth."
+      d: "The old advice is still the best: never put anything smaller than your elbow in your ear.",
+      task: "Check whether anyone at home uses cotton buds in their ears, and tell them what you have just learned.",
+      q: "Why should you not use cotton buds in your ears?",
+      a: "They push wax deeper in and can damage the canal or eardrum."
     },
     t2: {
-      d: "Paediatric cardiologists tell innocent murmurs from significant ones using where the sound is loudest, when in the beat it happens, and whether the child has any other symptoms — feeding difficulties, poor growth, breathlessness or blue lips.",
-      task: "Write down three symptoms that would make a doctor take a murmur seriously.",
-      q: "What is an innocent murmur?",
-      a: "A harmless heart sound in a healthy child that needs no treatment."
+      d: "Wax only needs removing if it blocks hearing or stops a doctor seeing the eardrum. Olive oil drops soften it; a clinician can remove it by irrigation or, more safely, by microsuction under direct vision.",
+      task: "Find out what microsuction is and why clinics increasingly prefer it to syringing.",
+      q: "When does earwax actually need removing?",
+      a: "Only when it blocks hearing or prevents examination of the eardrum."
     },
     t3: {
-      d: "Newborn pulse oximetry screening is used to detect duct-dependent congenital heart disease before the ductus arteriosus closes, because those babies can collapse suddenly in the first days of life. Every UK newborn also gets a full examination within 72 hours of birth.",
-      task: "Look up the newborn and infant physical examination (NIPE) and list what it checks.",
-      q: "Why is timing critical in duct-dependent congenital heart disease?",
-      a: "Because when the ductus arteriosus closes after birth, the baby can deteriorate very rapidly."
+      d: "Ear canal skin is unique in migrating laterally, effectively a conveyor belt. Otitis externa — inflammation of the canal, often after swimming — is treated with topical drops and aural toilet, and the canal should be kept dry. In diabetic or immunocompromised patients, necrotising otitis externa is a serious complication requiring urgent treatment.",
+      task: "Look up otitis externa and note two things that make it more likely.",
+      q: "Why is the ear canal described as self-cleaning?",
+      a: "Its skin migrates outwards, carrying wax and debris out of the ear on its own."
     }
   }
 ]
 },
 {
-m: 3, name: "March", topic: "Lungs and breathing",
-intro: "You can go weeks without food and days without water, but only minutes without breathing. This month is about why, and about what goes wrong.",
+m: 3, name: "March", topic: "The nose, sinuses and breathing",
+intro: "The middle letter of ENT. The nose is not a hole in your face — it is an air-conditioning unit, a filter, a chemical laboratory and the front door to your lungs.",
 lessons: [
   {
-    title: "Why we breathe at all",
-    what: "Every cell in your body burns fuel to make energy, and burning fuel needs oxygen. The waste product is carbon dioxide, which is poisonous if it builds up. Breathing brings oxygen in and pushes carbon dioxide out.",
+    title: "What the nose is actually for",
+    what: "Air arriving at your nose might be freezing, dry and full of dust. By the time it reaches your throat, a few centimetres later, it is close to body temperature, almost fully humidified and largely filtered.",
     facts: [
-      "You breathe roughly 20,000 times a day without deciding to.",
-      "Air is only about 21% oxygen — most of it is nitrogen you never use.",
-      "You breathe out the same nitrogen, less oxygen, and much more carbon dioxide."
+      "Ridges inside the nose called turbinates create turbulence so air touches wet surfaces.",
+      "Mucus traps dust, pollen and germs.",
+      "Tiny hairs called cilia sweep that mucus backwards to be swallowed."
     ],
-    words: [{ w: "Oxygen", m: "The gas in air that your cells need to release energy from food." }],
+    words: [{ w: "Turbinates", m: "Curled ridges inside the nose that warm, moisten and filter incoming air." }],
     t1: {
-      d: "A fire needs air to keep burning. Your cells are like millions of tiny controlled fires, and oxygen keeps them going.",
-      task: "Hold your breath and count. Notice that the urge to breathe comes back long before you run out of oxygen.",
-      q: "Which gas do you need to take in, and which do you need to get rid of?",
-      a: "Take in oxygen, get rid of carbon dioxide."
+      d: "Your nose is a radiator, a sponge and a filter all in one, and it does the whole job in the length of your thumb.",
+      task: "Breathe in through your nose and then through your mouth on a cold day. Notice which feels harsher on your throat.",
+      q: "Name two jobs the nose does to incoming air.",
+      a: "Warms it and filters it (also moistens it)."
     },
     t2: {
-      d: "Here is the surprise: the urge to breathe is driven mainly by rising carbon dioxide, not by falling oxygen. Sensors in your brainstem detect CO2 and force you to breathe.",
-      task: "Breathe fast for a few seconds, then notice you do not need to breathe for a moment afterwards. You blew off CO2 — do not repeat this more than once.",
-      q: "What mainly triggers the urge to breathe?",
-      a: "A rise in carbon dioxide, detected by the brainstem."
+      d: "You produce and swallow around a litre of nasal mucus a day without noticing. You only become aware of it when a cold makes it thicker or more plentiful.",
+      task: "Find out what cilia are and how fast they beat.",
+      q: "Where does all your nasal mucus normally go?",
+      a: "It is swept backwards and swallowed, without you noticing."
     },
     t3: {
-      d: "Central chemoreceptors in the medulla respond to CO2 via changes in cerebrospinal fluid pH; peripheral chemoreceptors in the carotid and aortic bodies respond to low oxygen but only kick in significantly at low levels. That is why a pulse oximeter reading can look acceptable in a child who is already working extremely hard to breathe.",
-      task: "Look up what a pulse oximeter measures and one situation where it can be misleading.",
-      q: "Why can a normal oxygen saturation be falsely reassuring?",
-      a: "Because a child can maintain saturation by working very hard to breathe, right up until they tire and drop suddenly."
+      d: "Nasal airflow is deliberately turbulent to maximise contact with the mucosa, and the nasal cycle means one side is usually more congested than the other at any moment, alternating every few hours. This is normal physiology, not disease, and it surprises a lot of patients.",
+      task: "Block one nostril, then the other, and compare airflow. Repeat in four hours.",
+      q: "What is the nasal cycle?",
+      a: "The normal alternating congestion of each side of the nose over a few hours."
     }
   },
   {
-    title: "The journey of a breath",
-    what: "Air travels in through your nose or mouth, down your windpipe, and into branching tubes that get smaller and smaller until they end in millions of tiny air sacs where the real work happens.",
+    title: "Smell",
+    what: "Right at the top of the nose sits a patch of nerve endings that detect chemicals in the air. It is the only place in the body where your brain is almost directly exposed to the outside world.",
     facts: [
-      "The windpipe is called the trachea.",
-      "It splits into two bronchi, one per lung, which branch into bronchioles.",
-      "At the end sit the alveoli — around 300 million tiny air sacs."
+      "The olfactory nerve is the first cranial nerve.",
+      "Humans can distinguish an enormous range of smells — far more than people once assumed.",
+      "Most of what you call taste is actually smell."
+    ],
+    words: [{ w: "Anosmia", m: "Loss of the sense of smell." }],
+    t1: {
+      d: "Pinch your nose and eat something. Most of the flavour vanishes, because flavour is mostly smell arriving from the back of the mouth.",
+      task: "Try the nose-pinching test with something strongly flavoured, then let go mid-mouthful.",
+      q: "Why does food taste bland when your nose is blocked?",
+      a: "Because most of what we call taste is really smell."
+    },
+    t2: {
+      d: "Smell is strongly linked to memory because the olfactory pathway connects closely to brain areas handling emotion and memory. That is why a particular smell can throw you straight back to a place you had forgotten.",
+      task: "Write down one smell that instantly reminds you of somewhere specific.",
+      q: "Why do smells trigger such strong memories?",
+      a: "The olfactory pathway connects directly to brain regions handling memory and emotion."
+    },
+    t3: {
+      d: "Anosmia matters clinically: it is a safety risk (gas, smoke, spoiled food), it causes genuine loss of quality of life, and it can be an early sign of neurodegenerative disease. Smell training is an evidence-based treatment after post-viral loss.",
+      task: "Look up smell training and describe how it is done.",
+      q: "Why is losing your sense of smell a safety problem?",
+      a: "You cannot detect gas, smoke or spoiled food."
+    }
+  },
+  {
+    title: "The sinuses",
+    what: "Your skull contains four pairs of air-filled spaces around the nose. Nobody is completely certain what they are all for — likely lightening the skull, warming air and adding resonance to your voice — but everybody notices them when they block.",
+    facts: [
+      "The four pairs are maxillary, frontal, ethmoid and sphenoid.",
+      "Each drains into the nose through a small opening.",
+      "Frontal sinuses are barely present in young children and develop later."
+    ],
+    words: [{ w: "Sinusitis", m: "Inflammation or infection of the sinuses, usually causing blockage, pressure and pain." }],
+    t1: {
+      d: "Your face is not solid bone. There are air-filled caves in it, and when they block, your face aches.",
+      task: "Press gently on your cheekbones and above your eyebrows. Sinuses sit behind both spots.",
+      q: "What are sinuses?",
+      a: "Air-filled spaces in the bones around the nose."
+    },
+    t2: {
+      d: "Because the drainage openings are narrow, swelling from a cold or allergy can block them, trapping mucus which then gets infected. Most sinusitis follows a viral cold and settles without antibiotics.",
+      task: "Find out how long sinusitis symptoms usually last before doctors consider antibiotics.",
+      q: "Why do sinuses become infected after a cold?",
+      a: "Swelling blocks the small drainage openings, so mucus is trapped and becomes infected."
+    },
+    t3: {
+      d: "Functional endoscopic sinus surgery works by restoring drainage rather than removing the lining, and the ostiomeatal complex is the key area. Because the sinuses sit next to the orbit and the skull base, complications such as periorbital cellulitis are taken seriously, particularly in children.",
+      task: "Look up periorbital cellulitis and why it is an emergency in a child.",
+      q: "What is the principle behind endoscopic sinus surgery?",
+      a: "Restoring natural drainage and ventilation rather than stripping the sinus lining."
+    }
+  },
+  {
+    title: "Nosebleeds",
+    what: "The wall between your nostrils is called the septum, and just inside the tip several small blood vessels meet under very thin skin. That spot causes the vast majority of nosebleeds.",
+    facts: [
+      "It is called Little's area.",
+      "Around 90% of nosebleeds come from there.",
+      "The right first aid is to lean forwards and pinch the soft part, not the bony bridge."
+    ],
+    words: [{ w: "Septum", m: "The wall of cartilage and bone dividing the two sides of the nose." }],
+    t1: {
+      d: "Never tip the head back during a nosebleed. The blood does not stop — it just runs down the throat where you cannot see it, and it makes people sick.",
+      task: "Learn it properly: sit up, lean forwards, pinch the soft part for 10 to 15 minutes without letting go.",
+      q: "Should you tip your head back during a nosebleed?",
+      a: "No — lean forwards instead."
+    },
+    t2: {
+      d: "Pinching works because it presses Little's area directly against the septum. Letting go every minute to check restarts the clock, which is the commonest mistake people make.",
+      task: "Time 15 minutes and see how long that actually feels. That is why people let go too early.",
+      q: "Why must you keep pinching for the full 10 to 15 minutes?",
+      a: "Releasing early disrupts the forming clot and the bleeding restarts."
+    },
+    t3: {
+      d: "Persistent bleeding may need cautery with silver nitrate or nasal packing. Posterior bleeds, more common in older patients, are harder to control and may require admission. Recurrent unexplained bleeding, easy bruising or a family history should prompt thought about a clotting disorder.",
+      task: "Look up how nasal cautery is performed and why only one side of the septum is treated at a time.",
+      q: "Why is cautery not performed on both sides of the septum at once?",
+      a: "Because it risks damaging the blood supply and causing a septal perforation."
+    }
+  },
+  {
+    title: "Blocked noses",
+    what: "A blocked nose has many causes, and telling them apart is a big part of ENT clinic. Colds block noses for days, allergy for seasons, large adenoids for years, and a bent septum for life.",
+    facts: [
+      "Allergic rhinitis causes sneezing, itching and clear runny discharge.",
+      "Enlarged adenoids block the back of the nose in children.",
+      "A deviated septum blocks one side consistently."
+    ],
+    words: [{ w: "Rhinitis", m: "Inflammation of the lining of the nose, causing blockage and running." }],
+    t1: {
+      d: "One side always blocked, for years, is a very different story from both sides blocked for four days. Doctors listen hard to that difference.",
+      task: "Ask someone with hay fever what their symptoms are and how long they last each year.",
+      q: "What is allergic rhinitis usually called in everyday speech?",
+      a: "Hay fever."
+    },
+    t2: {
+      d: "Duration and pattern are diagnostic. Seasonal and itchy suggests allergy; constant and one-sided suggests a structural cause; a child who snores, mouth-breathes and sounds blocked all year suggests adenoids.",
+      task: "Write three questions that would help you tell allergy from adenoids in a seven-year-old.",
+      q: "What does a consistently one-sided blockage suggest?",
+      a: "A structural cause, such as a deviated septum."
+    },
+    t3: {
+      d: "Unilateral blockage with bloody discharge in an adult is a red flag requiring nasendoscopy to exclude tumour. In a small child, unilateral offensive discharge is a foreign body until proven otherwise — usually something they pushed up there and forgot.",
+      task: "Look up the commonest objects removed from children's noses and how they are retrieved.",
+      q: "What does one-sided smelly nasal discharge in a toddler suggest?",
+      a: "A foreign body in the nose until proven otherwise."
+    }
+  },
+  {
+    title: "Why nose breathing matters",
+    what: "Breathing through your mouth bypasses everything the nose does. In children, long-term mouth breathing is linked with disturbed sleep, daytime tiredness and effects on facial growth, so ENT surgeons take it seriously.",
+    facts: [
+      "Mouth breathing skips warming, filtering and humidifying.",
+      "Persistent snoring in a child is not normal and deserves assessment.",
+      "The commonest cause in children is large tonsils and adenoids."
+    ],
+    words: [{ w: "Obstructive sleep apnoea", m: "Repeated pauses in breathing during sleep caused by the airway blocking." }],
+    t1: {
+      d: "A child who snores loudly every night, sleeps restlessly and is exhausted all day is not lazy. Their airway may be blocking while they sleep.",
+      task: "Find out what adenoids are and where they sit.",
+      q: "Is loud snoring every night normal in a child?",
+      a: "No — it should be assessed."
+    },
+    t2: {
+      d: "In children, obstructive sleep apnoea often shows as hyperactivity, poor concentration and irritability rather than sleepiness — and it is sometimes mistaken for ADHD. Removing tonsils and adenoids frequently transforms it.",
+      task: "Write down three daytime signs that a child might not be sleeping properly.",
+      q: "How does sleep apnoea often present in children?",
+      a: "As hyperactivity, poor concentration and irritability rather than obvious sleepiness."
+    },
+    t3: {
+      d: "Paediatric OSA is assessed by history, observed apnoeas, and where necessary sleep studies or oximetry. Adenotonsillectomy is the first-line treatment and outcomes are generally excellent, with measurable improvements in behaviour, growth and school performance.",
+      task: "Look up how a sleep study is performed in children and what it records.",
+      q: "What is the usual first-line treatment for childhood obstructive sleep apnoea?",
+      a: "Removing the tonsils and adenoids."
+    }
+  }
+]
+},
+{
+m: 4, name: "April", topic: "The throat: voice, swallowing and tonsils",
+intro: "The last letter of ENT, and the busiest crossroads in the body — where the tube for air and the tube for food cross over each other several hundred times a day.",
+lessons: [
+  {
+    title: "The crossroads",
+    what: "Air and food both enter through your mouth and nose, then have to go to different places: air to the lungs, food to the stomach. The throat is where those paths cross, and getting it wrong is dangerous.",
+    facts: [
+      "The windpipe (trachea) carries air, and sits in front.",
+      "The food pipe (oesophagus) sits behind it.",
+      "Choking is food taking the wrong turning."
     ],
     words: [
-      { w: "Trachea", m: "The windpipe, the main tube from throat to lungs." },
-      { w: "Alveoli", m: "The tiny air sacs at the end of the airways where oxygen crosses into the blood." }
+      { w: "Pharynx", m: "The medical name for the throat." },
+      { w: "Trachea", m: "The windpipe, carrying air to the lungs." }
     ],
     t1: {
-      d: "Turn a tree upside down. The trunk is your windpipe, the branches are the tubes, and the leaves are the tiny air sacs. That is what your lungs look like inside.",
-      task: "Breathe in through your nose slowly. Notice the air is warmed and moistened on the way — that is your nose doing a job.",
-      q: "What is the trachea?",
-      a: "The windpipe — the main tube carrying air to the lungs."
+      d: "Imagine a railway junction where two trains use the same track for a moment. It works perfectly, thousands of times a day — but it has to be timed exactly right.",
+      task: "Put your fingers gently on the front of your neck and swallow. Feel the whole structure lift.",
+      q: "Which tube is in front, the windpipe or the food pipe?",
+      a: "The windpipe."
     },
     t2: {
-      d: "Spread all your alveoli out flat and they would cover roughly half a tennis court. That enormous surface area is packed into your chest by folding it into millions of microscopic bubbles.",
-      task: "Draw the airway from nose to alveolus and label five parts.",
-      q: "Why do lungs need such a huge internal surface area?",
-      a: "So enough oxygen can cross into the blood quickly enough to keep the body supplied."
+      d: "The pharynx is divided into three: nasopharynx behind the nose, oropharynx behind the mouth, and laryngopharynx leading down to the voice box and the oesophagus. ENT surgeons use these names constantly.",
+      task: "Draw a side view of the head and neck and label the three parts of the pharynx.",
+      q: "Which part of the pharynx sits behind the nose?",
+      a: "The nasopharynx."
     },
     t3: {
-      d: "Children's airways are proportionally much narrower, and airway resistance rises with the fourth power of the radius — so a small amount of swelling causes a dramatic increase in the work of breathing. This single fact explains why croup and bronchiolitis hit small children so much harder than adults.",
-      task: "Find out what stridor is and what it tells you about where the obstruction lies.",
-      q: "Why does mild airway swelling affect a small child far more than an adult?",
-      a: "Their airways are much narrower, and resistance rises steeply as the radius falls."
+      d: "The upper airway is the ENT surgeon's territory, and airway emergencies are the specialty's most time-critical work. In a completely obstructed airway, a surgical airway — cricothyroidotomy or tracheostomy — may be the only option, and ENT is usually the team called.",
+      task: "Find out what a tracheostomy is and one reason a child might need one.",
+      q: "Why is ENT called to airway emergencies?",
+      a: "Because the upper airway is their specialty, and they can create a surgical airway if needed."
     }
   },
   {
-    title: "The muscle you never think about",
-    what: "You do not breathe with your lungs. Lungs are passive bags. You breathe with muscles — mainly the diaphragm, a dome of muscle under your lungs that flattens and pulls air in.",
+    title: "How you make a voice",
+    what: "Your voice box sits at the front of your neck and contains two folds of tissue. Push air between them and they vibrate, hundreds of times a second. That vibration is sound; your mouth and tongue then shape it into words.",
     facts: [
-      "The diaphragm separates the chest from the abdomen.",
-      "When it flattens, the chest gets bigger and air rushes in.",
-      "Muscles between your ribs help too, especially when you exert yourself."
+      "The voice box is the larynx.",
+      "The two folds are the vocal folds, often called vocal cords.",
+      "Tighter folds vibrate faster and produce a higher pitch."
     ],
-    words: [{ w: "Diaphragm", m: "The dome-shaped muscle under the lungs that does most of the work of breathing." }],
+    words: [{ w: "Larynx", m: "The voice box, at the front of the neck, containing the vocal folds." }],
     t1: {
-      d: "Pull the plunger on a syringe and air rushes in. Your diaphragm is the plunger, and your chest is the syringe.",
-      task: "Put a hand on your tummy and breathe deeply. If your hand rises, you are using your diaphragm properly.",
-      q: "Which muscle does most of the work of breathing?",
-      a: "The diaphragm."
+      d: "Stretch the neck of a balloon and let air out. The squeal is the rubber vibrating, and that is exactly how your voice works.",
+      task: "Put your fingers on the front of your throat and hum. Feel the buzz — that is your vocal folds.",
+      q: "What vibrates to make your voice?",
+      a: "The vocal folds in the larynx."
     },
     t2: {
-      d: "Breathing in is active — muscles contract. Breathing out at rest is passive: the muscles relax and the elastic lungs spring back. Hiccups are a sudden involuntary spasm of the diaphragm.",
-      task: "Time how long your breath in takes compared with your breath out. Most people breathe out for longer.",
-      q: "Is breathing out at rest active or passive?",
-      a: "Passive — the lungs and chest wall recoil on their own."
+      d: "Children's vocal folds are short, so they vibrate fast and give a high voice. During puberty the larynx grows, the folds lengthen, and the voice drops — dramatically in boys, which is why voices break.",
+      task: "Find out roughly how many times per second vocal folds vibrate for a low note and a high one.",
+      q: "Why do voices get deeper during puberty?",
+      a: "The larynx grows and the vocal folds lengthen, so they vibrate more slowly."
     },
     t3: {
-      d: "Infants are diaphragm-dependent and have very compliant chest walls, which is why they show recession — the chest wall sucking in between and below the ribs — when they struggle. Recession, nasal flaring, head bobbing and grunting are the classic signs of increased work of breathing in a child.",
-      task: "Look up a video of intercostal recession in an infant and note what you can see.",
-      q: "Name three signs of increased work of breathing in an infant.",
-      a: "Recession, nasal flaring, grunting (also head bobbing and tracheal tug)."
+      d: "The recurrent laryngeal nerve supplies almost all the muscles of the larynx and loops down into the chest before returning up the neck, which makes it vulnerable during thyroid surgery. Injury causes vocal fold palsy, a hoarse breathy voice, and sometimes an unsafe swallow.",
+      task: "Look up the course of the recurrent laryngeal nerve and why it is such an unusual route.",
+      q: "What happens if the recurrent laryngeal nerve is damaged?",
+      a: "The vocal fold on that side is paralysed, causing hoarseness and sometimes swallowing difficulty."
     }
   },
   {
-    title: "Where the swap happens",
-    what: "In the alveoli, oxygen crosses from air into blood and carbon dioxide crosses the other way. The wall between them is astonishingly thin — thinner than a sheet of tissue paper.",
+    title: "Swallowing safely",
+    what: "Swallowing looks simple and is not. It is a precisely timed sequence involving more than twenty muscles, in which breathing briefly stops and a flap seals the airway.",
     facts: [
-      "Gases move from where there is more of them to where there is less.",
-      "The alveolar wall is about one cell thick.",
-      "Each alveolus is wrapped in tiny blood vessels called capillaries."
+      "That flap is the epiglottis.",
+      "You swallow roughly 600 times a day, mostly without noticing.",
+      "The first part is voluntary; after that it runs automatically."
     ],
-    words: [{ w: "Diffusion", m: "Molecules spreading out from where they are crowded to where they are not." }],
+    words: [{ w: "Epiglottis", m: "The flap that folds over the windpipe during swallowing to keep food out of the lungs." }],
     t1: {
-      d: "Open a bottle of perfume in one corner of a room and eventually the whole room smells of it. Nobody carried it — it spread on its own. That is diffusion, and it is how oxygen gets into your blood.",
-      task: "Breathe onto a cold mirror. The mist is water you breathed out — evidence your lungs give things back.",
-      q: "How does oxygen get from the air sac into the blood?",
-      a: "By diffusion — spreading from high concentration to low."
+      d: "Try to breathe in and swallow at exactly the same moment. You cannot — your body will not let you, and that is a safety feature.",
+      task: "Swallow while holding your fingers on your throat and count how many separate movements you can feel.",
+      q: "What stops food going into your lungs?",
+      a: "The epiglottis folding over the windpipe."
     },
     t2: {
-      d: "The alveoli are lined with a slippery substance called surfactant that stops them collapsing shut. Premature babies often have not made enough of it yet, which is a major reason they need help breathing.",
-      task: "Find out what surfactant does and why premature babies may be given it.",
-      q: "What does surfactant do?",
-      a: "Reduces surface tension so the alveoli do not collapse when you breathe out."
+      d: "When this goes wrong food enters the airway — aspiration — which can cause choking or pneumonia. It becomes far more likely after a stroke or with some neurological conditions, and speech and language therapists assess it.",
+      task: "Find out what a speech and language therapist assesses besides speech.",
+      q: "What is aspiration?",
+      a: "Food or liquid entering the airway instead of the food pipe."
     },
     t3: {
-      d: "Surfactant production ramps up from around 24-28 weeks of gestation and is more complete by 34-36 weeks. Antenatal corticosteroids given to the mother accelerate it, and artificial surfactant given down the endotracheal tube transformed survival in respiratory distress syndrome from the 1990s onwards.",
-      task: "Read about neonatal respiratory distress syndrome and note how it is treated today.",
-      q: "Why are corticosteroids given to a mother in preterm labour?",
-      a: "To speed up fetal lung maturation and surfactant production before delivery."
+      d: "Swallowing has oral, pharyngeal and oesophageal phases, assessed by videofluoroscopy or FEES — fibreoptic endoscopic evaluation of swallowing, performed with a flexible scope. Persistent unilateral throat pain, dysphagia or a neck lump in an adult are red flags requiring urgent two-week-wait referral.",
+      task: "Look up FEES and note what it lets clinicians see that a bedside assessment cannot.",
+      q: "Name two red flag throat symptoms in an adult.",
+      a: "Persistent difficulty swallowing and an unexplained neck lump (also persistent hoarseness and one-sided pain)."
     }
   },
   {
-    title: "Coughs, sneezes and mucus",
-    what: "Your airways are lined with sticky mucus and microscopic hairs that trap dust and germs and sweep them back up. Coughing and sneezing are how the rubbish gets ejected. They are not the illness — they are the defence.",
+    title: "Tonsils and adenoids",
+    what: "Tonsils sit either side at the back of the mouth; adenoids sit higher up, behind the nose, where you cannot see them. Both are lumps of immune tissue guarding the entrance to the airway, and both usually shrink as you grow.",
     facts: [
-      "The tiny hairs are called cilia and they beat constantly.",
-      "A sneeze can travel surprisingly fast and spread germs metres away.",
-      "Green mucus does not automatically mean you need antibiotics."
+      "They are part of a ring of immune tissue around the throat.",
+      "Adenoids are largest around ages 3 to 7 and then shrink.",
+      "Removing them does not leave a child defenceless — the rest of the immune system covers it."
     ],
-    words: [{ w: "Cilia", m: "Microscopic hairs lining the airways that sweep mucus upwards." }],
+    words: [{ w: "Adenoids", m: "Immune tissue at the back of the nose, above the tonsils, which cannot be seen through the mouth." }],
     t1: {
-      d: "Picture an escalator made of tiny waving hairs, carrying sticky rubbish up and out of your lungs all day long. That escalator is running right now.",
-      task: "Sneeze into your elbow, not your hand. Work out why that stops more germs spreading.",
-      q: "What is mucus in the airways for?",
-      a: "To trap dust and germs so they can be swept out."
+      d: "Think of them as guard posts at the entrance to the airway, sampling everything that comes in. Useful when you are small, less necessary later.",
+      task: "Open your mouth in a mirror and look for your tonsils either side of the back of your tongue.",
+      q: "Can you see your adenoids in a mirror?",
+      a: "No — they sit behind the nose, out of sight."
     },
     t2: {
-      d: "Smoke paralyses the cilia, which is why smokers cough — the escalator stops and the rubbish has to be shifted the hard way. Colds are caused by viruses, and antibiotics do nothing at all against viruses.",
-      task: "Count how many times you touch your face in ten minutes. Now think about handwashing.",
-      q: "Do antibiotics work on the common cold?",
-      a: "No — colds are viral, and antibiotics only work on bacteria."
+      d: "Big adenoids block the back of the nose, causing mouth breathing, snoring and a blocked-sounding voice — and they also block the Eustachian tube openings, which is one route to glue ear. That is why adenoids are often removed at the same time as grommets are put in.",
+      task: "Explain in two sentences how adenoids and glue ear are connected.",
+      q: "How can adenoids cause ear problems?",
+      a: "They block the Eustachian tube openings at the back of the nose, so the middle ear cannot ventilate."
     },
     t3: {
-      d: "In cystic fibrosis a faulty CFTR channel makes secretions thick and sticky, the mucociliary escalator fails, and chronic lung infection follows. It is screened for in the UK newborn blood spot test in the first week of life.",
-      task: "Find out what the newborn blood spot test screens for and name three of the conditions.",
-      q: "Why do children with cystic fibrosis get repeated chest infections?",
-      a: "Thick sticky mucus cannot be cleared, so bacteria colonise the airways."
+      d: "Tonsils and adenoids form part of Waldeyer's ring. Persistently asymmetrical tonsils, particularly with systemic symptoms, warrant investigation. Tonsillectomy indications in the UK follow criteria based on frequency of documented episodes — commonly seven in one year, five a year for two years, or three a year for three years.",
+      task: "Look up the SIGN criteria for tonsillectomy and note why thresholds exist.",
+      q: "Why are there strict criteria for tonsillectomy?",
+      a: "Because the operation carries real risks, so it is only worthwhile when episodes are frequent enough to outweigh them."
     }
   },
   {
-    title: "When breathing goes wrong: asthma",
-    what: "Asthma is a condition where the airways become inflamed and twitchy. They narrow, swell and fill with mucus, making it hard to push air out. It is one of the commonest long-term conditions in children.",
+    title: "Sore throats: what's serious",
+    what: "Almost all sore throats are viral and settle in a few days. A small number are not, and ENT exists partly to recognise those quickly.",
     facts: [
-      "Typical symptoms are wheeze, cough, breathlessness and chest tightness.",
-      "Triggers include colds, exercise, cold air, dust, pets and pollen.",
-      "Blue inhalers relax the airways quickly; brown ones prevent inflammation over time."
+      "Most sore throats need fluids, rest and pain relief, not antibiotics.",
+      "Difficulty breathing, drooling, or being unable to swallow saliva is an emergency.",
+      "A muffled voice with one-sided swelling can mean an abscess."
     ],
-    words: [{ w: "Wheeze", m: "A whistling sound made by air squeezing through narrowed airways." }],
+    words: [{ w: "Quinsy", m: "A collection of pus beside the tonsil — a peritonsillar abscess. It usually needs draining." }],
     t1: {
-      d: "Try breathing out through a straw. That tightness is roughly what an asthma attack feels like — and it is worse breathing out than in.",
-      task: "Ask an adult if anyone in your family has asthma, and what their triggers are.",
-      q: "What does a blue reliever inhaler do?",
-      a: "Relaxes the muscles around the airways so they open up quickly."
+      d: "A sore throat that stops someone swallowing their own saliva is completely different from an ordinary one. That is an emergency.",
+      task: "Learn three warning signs that a sore throat needs urgent help.",
+      q: "Name one emergency sign with a sore throat.",
+      a: "Drooling because they cannot swallow their own saliva (also difficulty breathing)."
     },
     t2: {
-      d: "Two things narrow the airway: muscle spasm around it and inflammation inside it. Relievers fix the spasm within minutes; preventers reduce the inflammation over weeks. That is why preventers must be taken every day even when you feel completely well.",
-      task: "Find out what a spacer is and why children are advised to use one with an inhaler.",
-      q: "Why must a preventer inhaler be taken even on good days?",
-      a: "Because it works slowly on inflammation, preventing attacks rather than treating them."
+      d: "Croup is a viral illness causing a barking cough and a harsh noise on breathing in, called stridor. Stridor tells you the narrowing is in the upper airway, and it is a sound worth learning to recognise.",
+      task: "Listen to a recording of stridor and of a croup cough, and note how distinctive both are.",
+      q: "What does stridor tell you?",
+      a: "That the airway is narrowed at or above the level of the voice box."
     },
     t3: {
-      d: "A silent chest in an acute asthma attack is an emergency sign, not an improvement: it means too little air is moving to make any wheeze at all. Severity is assessed on work of breathing, ability to talk, oxygen saturation and peak flow against the child's own best.",
-      task: "Look up the features of life-threatening asthma in children and note four of them.",
-      q: "Why is a silent chest alarming in an asthma attack?",
-      a: "Because airflow has fallen so low that no wheeze can be produced — it signals imminent respiratory failure."
+      d: "Acute epiglottitis, once a classic paediatric emergency, is now rare because of the Hib vaccine — a good demonstration of vaccination reshaping a specialty. A child sitting forward, drooling and quiet should never be examined with a tongue depressor; the airway is secured first, in theatre.",
+      task: "Read about epiglottitis before and after Hib vaccination and note the change in incidence.",
+      q: "Why must you not examine the throat of a child with suspected epiglottitis?",
+      a: "It can precipitate complete airway obstruction — the airway must be secured first, by an experienced team."
+    }
+  },
+  {
+    title: "Looking after your voice",
+    what: "Your voice is a physical structure that can be strained, swollen and injured. Teachers, singers and shouters all get voice problems, and most are preventable.",
+    facts: [
+      "Hoarseness means the vocal folds are not vibrating cleanly.",
+      "Shouting, whispering and dehydration all strain the voice.",
+      "Hoarseness lasting more than three weeks in an adult needs checking."
+    ],
+    words: [{ w: "Hoarseness", m: "A rough, breathy or weak voice caused by the vocal folds not vibrating normally." }],
+    t1: {
+      d: "Whispering is not resting your voice. It strains the folds in a different way. Genuine rest means quiet, normal speech, or silence.",
+      task: "After the next noisy event you go to, notice how your voice sounds and how long it takes to recover.",
+      q: "Is whispering a good way to rest a sore voice?",
+      a: "No — it strains the vocal folds too."
+    },
+    t2: {
+      d: "Repeated strain causes vocal nodules — small thickenings on the folds, common in children who shout a lot and in singers. They are usually treated with voice therapy rather than surgery.",
+      task: "Find out what a speech and language therapist does in voice therapy.",
+      q: "How are vocal nodules usually treated?",
+      a: "With voice therapy rather than an operation."
+    },
+    t3: {
+      d: "Persistent hoarseness beyond three weeks in an adult, especially a smoker, requires laryngoscopy to exclude malignancy. In clinic this is examined with a flexible nasendoscope passed through the nose — a routine outpatient procedure that ENT trainees perform constantly.",
+      task: "Look up flexible nasendoscopy and describe what the patient experiences.",
+      q: "Why is persistent hoarseness in an adult investigated urgently?",
+      a: "To rule out laryngeal cancer, which is treatable when caught early."
     }
   }
 ]
 },
 {
-m: 4, name: "April", topic: "Bones and muscles",
-intro: "The skeleton is not a dead frame. It is living, growing tissue that makes your blood, stores your minerals and rebuilds itself constantly — and in a child it is still under construction.",
+m: 5, name: "May", topic: "Balance and dizziness",
+intro: "The other job your ears do, and the one nobody thinks about until it goes wrong. Balance problems are among the most distressing things a patient can experience, and the ear is usually where they start.",
 lessons: [
   {
-    title: "Bones are alive",
-    what: "People imagine bones as dry sticks, but living bone is moist, pink where blood runs through it, and full of cells. It has its own blood supply and nerves, which is exactly why breaking one hurts so much.",
+    title: "The balance organs",
+    what: "Next to the cochlea sits a set of fluid-filled loops and chambers that detect movement. Three loops set at right angles detect turning; two chambers detect gravity and straight-line movement.",
     facts: [
-      "Bone is constantly broken down and rebuilt throughout your life.",
-      "It stores calcium and phosphate for the rest of the body to use.",
-      "Blood cells are made in the soft marrow inside."
+      "The three loops are the semicircular canals.",
+      "The two chambers are the utricle and saccule.",
+      "Together they are called the vestibular system."
     ],
-    words: [{ w: "Marrow", m: "The soft tissue inside bones where new blood cells are made." }],
+    words: [{ w: "Vestibular system", m: "The parts of the inner ear that detect movement and keep you balanced." }],
     t1: {
-      d: "Bone is more like a living tree than a dead stick. It grows, repairs itself, and is busy inside all the time.",
-      task: "Press along your shin bone. That hard edge just under the skin is the front of your tibia.",
-      q: "What is made inside bone marrow?",
-      a: "New blood cells."
+      d: "Imagine three loops of tubing set at right angles, like the corner of a box. Whichever way you turn your head, at least one of them notices.",
+      task: "Shake your head gently while staring at one word on this page. It stays sharp — that is your balance system moving your eyes to compensate.",
+      q: "What do the semicircular canals detect?",
+      a: "Your head turning."
     },
     t2: {
-      d: "Two cell types run the rebuilding: osteoblasts build bone up, osteoclasts break it down. Weight-bearing exercise tells osteoblasts to work harder, which is why running and jumping build stronger bones than sitting still.",
-      task: "List three activities that load your bones, and three that do not.",
-      q: "Which cells build new bone?",
-      a: "Osteoblasts."
+      d: "The reflex you just used is the vestibulo-ocular reflex: your ears tell your eyes exactly how far to move so the world stays still. It is faster than anything driven by vision alone.",
+      task: "Now hold your head still and shake this page instead. Notice the text blurs — the reflex only works one way round.",
+      q: "What is the vestibulo-ocular reflex for?",
+      a: "Keeping your vision steady by moving your eyes to cancel out head movement."
     },
     t3: {
-      d: "In children, most blood production happens in the marrow of many bones; in adults it retreats mainly to the axial skeleton — pelvis, sternum, vertebrae. Rickets, caused by vitamin D deficiency, softens growing bone and still occurs in the UK today.",
-      task: "Look up the signs of rickets in a child and note two.",
-      q: "Which vitamin deficiency causes rickets?",
-      a: "Vitamin D."
+      d: "The utricle and saccule contain otoconia — tiny calcium carbonate crystals resting on a gel — which shift under gravity and acceleration. Displaced otoconia cause BPPV, the commonest cause of vertigo, and understanding that anatomy is what makes it treatable.",
+      task: "Find out what otoconia are made of and where they sit.",
+      q: "What do the utricle and saccule detect?",
+      a: "Gravity and straight-line acceleration."
     }
   },
   {
-    title: "300 bones down to 206",
-    what: "A newborn baby has around 300 bones. An adult has about 206. Nothing is lost — many separate bones simply fuse together as a child grows.",
+    title: "Three senses, one answer",
+    what: "Balance is not one sense. Your brain constantly compares three streams of information: what your ears feel, what your eyes see, and what your joints and muscles report. When they agree, you feel fine.",
     facts: [
-      "A baby's skull is in separate plates so the head can pass through birth.",
-      "The gaps between the plates are the fontanelles, the soft spots.",
-      "The last bones to finish fusing do so in the early twenties."
+      "Eyes, inner ears and body position sense all feed in.",
+      "Losing one is usually manageable; losing two is not.",
+      "Balance gets harder in the dark because vision drops out."
     ],
-    words: [{ w: "Fontanelle", m: "A soft gap between the bones of a baby's skull." }],
+    words: [{ w: "Proprioception", m: "Your sense of where your body parts are without looking at them." }],
     t1: {
-      d: "Imagine a jigsaw where the pieces slowly glue together as you get older. That is your skeleton growing up.",
-      task: "Feel the top of your own head. Yours fused long ago — but a baby's has a soft, pulsing patch.",
-      q: "Why does a baby have soft spots on its head?",
-      a: "So the skull can flex during birth and the brain can grow quickly."
+      d: "Stand on one leg with your eyes open, then close them. Much harder — because you have just removed one of the three sources your brain was using.",
+      task: "Try it safely near a wall. Time yourself with eyes open and eyes closed.",
+      q: "Why is balancing harder with your eyes shut?",
+      a: "Your brain loses one of the three information streams it uses."
     },
     t2: {
-      d: "The posterior fontanelle usually closes around 2 months and the anterior between about 9 and 18 months. Doctors check them: a sunken fontanelle can suggest dehydration, and a bulging one can suggest raised pressure inside the skull.",
-      task: "Write down what a sunken and a bulging fontanelle might each suggest.",
-      q: "Roughly when does the anterior fontanelle close?",
-      a: "Usually between 9 and 18 months."
+      d: "This is why older people fall more often: eyesight, inner ear function and joint sensation all decline together, and losing several at once removes the redundancy the system depends on.",
+      task: "List three things that would make balancing harder for an 80-year-old at night.",
+      q: "Why do balance problems get worse with age?",
+      a: "Because vision, inner ear function and proprioception all decline together."
     },
     t3: {
-      d: "Growth happens at the epiphyseal growth plates, which are cartilage until they fuse. Because they are weaker than surrounding bone, children fracture through them — the Salter-Harris classification describes these injuries, and damage there can affect future growth.",
-      task: "Look up the Salter-Harris classification and note how many types there are.",
-      q: "Why are growth plate injuries taken so seriously in children?",
-      a: "Damage there can disturb future bone growth, causing deformity or limb length difference."
+      d: "Vestibular rehabilitation exploits central compensation: the brain can be retrained to reweight its inputs after a peripheral vestibular loss. Exercises deliberately provoke mild symptoms, because avoidance prevents compensation — which is counterintuitive and needs explaining carefully to patients.",
+      task: "Look up vestibular rehabilitation and note why avoidance makes things worse.",
+      q: "Why do vestibular rehabilitation exercises deliberately provoke symptoms?",
+      a: "Because the brain only compensates if it experiences the mismatch it needs to correct."
     }
   },
   {
-    title: "Joints: how you bend",
-    what: "A joint is anywhere two bones meet. Different shapes allow different movements, and slippery cartilage plus lubricating fluid stops the ends grinding against each other.",
+    title: "Motion sickness",
+    what: "Motion sickness happens when your ears and eyes disagree. Reading in a moving car, your eyes say still and your ears say moving, and your brain reacts badly to the contradiction.",
     facts: [
-      "Hinge joints like the elbow and knee bend one way only.",
-      "Ball and socket joints like the hip and shoulder rotate in all directions.",
-      "Ligaments hold bone to bone; tendons attach muscle to bone."
+      "It is a sensory mismatch, not a weakness.",
+      "Children between about 2 and 12 are most affected.",
+      "Looking at the horizon helps because it restores agreement."
+    ],
+    words: [{ w: "Sensory mismatch", m: "When two senses report different things about the same situation." }],
+    t1: {
+      d: "Your eyes say the book is still. Your ears say you are moving. Your brain cannot reconcile it, and makes you feel sick.",
+      task: "Next car journey, look at the horizon instead of down. Notice the difference.",
+      q: "Why does reading in a car make people sick?",
+      a: "Because the eyes report stillness while the ears report movement."
+    },
+    t2: {
+      d: "Drivers get travel sick far less than passengers, because they can anticipate every movement before it happens. Prediction lets the brain expect what the ears are about to report.",
+      task: "Ask around whether drivers in your family ever feel travel sick as passengers.",
+      q: "Why do drivers rarely get travel sick?",
+      a: "They anticipate the movements, so the senses no longer conflict unexpectedly."
+    },
+    t3: {
+      d: "The leading explanation is the sensory conflict theory, with the emetic response possibly an evolved reaction to neurotoxins that produce similar mismatch. Antihistamines and hyoscine act centrally, and habituation with repeated exposure is genuinely effective.",
+      task: "Look up why sailors stop feeling seasick after several days.",
+      q: "What is habituation in the context of motion sickness?",
+      a: "The brain gradually adapting to a repeated sensory mismatch until it stops reacting."
+    }
+  },
+  {
+    title: "When crystals come loose",
+    what: "The commonest cause of severe dizziness is also one of the most satisfying things in medicine to treat. Tiny crystals come loose in the inner ear and drift into a balance canal, where they make it report movement that is not happening.",
+    facts: [
+      "It is called BPPV: benign paroxysmal positional vertigo.",
+      "Attacks are brief, violent, and triggered by moving the head.",
+      "It can often be cured in a single appointment."
+    ],
+    words: [{ w: "Vertigo", m: "The false sensation that you or the world is spinning. It is not the same as feeling faint." }],
+    t1: {
+      d: "Imagine grit falling into a spirit level. The bubble now reports a tilt that is not there. That is roughly what BPPV does.",
+      task: "Learn the difference between vertigo, which spins, and light-headedness, which does not.",
+      q: "Is vertigo the same as feeling faint?",
+      a: "No — vertigo is a spinning sensation."
+    },
+    t2: {
+      d: "Treatment is a sequence of head movements that rolls the crystals back where they belong. It is called the Epley manoeuvre, it takes a few minutes, and it works for most people.",
+      task: "Watch a video of the Epley manoeuvre and follow along with the positions.",
+      q: "How is BPPV usually treated?",
+      a: "With the Epley manoeuvre — a sequence of head positions that repositions the crystals."
+    },
+    t3: {
+      d: "Diagnosis uses the Dix-Hallpike test, which provokes characteristic torsional nystagmus with a brief latency and fatigue on repetition. Those features distinguish peripheral from central causes — and a central cause, such as posterior circulation stroke, is what you must not miss.",
+      task: "Look up the Dix-Hallpike test and the features that suggest a central rather than peripheral cause.",
+      q: "Why does distinguishing peripheral from central vertigo matter?",
+      a: "Because central causes can include stroke, which needs urgent treatment."
+    }
+  },
+  {
+    title: "When balance fails properly",
+    what: "Some inner ear conditions cause dizziness lasting hours or days rather than seconds. They are frightening, exhausting and often misunderstood by people around the patient.",
+    facts: [
+      "Vestibular neuritis causes sudden severe vertigo lasting days, without hearing loss.",
+      "Labyrinthitis is similar but affects hearing too.",
+      "Ménière's disease causes attacks with vertigo, hearing loss, tinnitus and a feeling of fullness in the ear."
+    ],
+    words: [{ w: "Tinnitus", m: "Hearing a sound with no external source — ringing, buzzing or hissing." }],
+    t1: {
+      d: "Severe vertigo is not just feeling a bit dizzy. People cannot stand, cannot read, and are often violently sick. It is genuinely disabling.",
+      task: "Spin around ten times and try to walk a straight line, safely. Now imagine that lasting two days.",
+      q: "What is tinnitus?",
+      a: "Hearing a sound, like ringing or buzzing, that has no external source."
+    },
+    t2: {
+      d: "Because you cannot see dizziness, patients are often disbelieved or told it is anxiety. Taking it seriously and explaining the mechanism is a large part of the treatment, and patients remember whoever finally did.",
+      task: "Write down how you would explain vertigo to a classmate who has never had it.",
+      q: "Why are people with balance disorders often disbelieved?",
+      a: "Because the symptoms are invisible to everyone else."
+    },
+    t3: {
+      d: "Ménière's is diagnosed clinically on the combination of episodic vertigo lasting 20 minutes to 12 hours, documented low-frequency sensorineural hearing loss, tinnitus and aural fullness. Management ranges from salt restriction and betahistine through intratympanic injections to, rarely, surgery.",
+      task: "Look up how Ménière's disease is managed and why treatment is stepped.",
+      q: "Which four features characterise Ménière's disease?",
+      a: "Episodic vertigo, fluctuating hearing loss, tinnitus and a feeling of fullness in the ear."
+    }
+  },
+  {
+    title: "The nerve that carries it all",
+    what: "Hearing and balance leave the inner ear together, on a single nerve, and travel into the brainstem. Running right alongside is the nerve that moves your face — which is why ear surgeons think about facial movement constantly.",
+    facts: [
+      "The vestibulocochlear nerve is the eighth cranial nerve.",
+      "The facial nerve is the seventh, and passes through the same part of the skull.",
+      "Damage to the facial nerve causes one side of the face to droop."
+    ],
+    words: [{ w: "Vestibulocochlear nerve", m: "The nerve carrying both hearing and balance information from the inner ear to the brain." }],
+    t1: {
+      d: "Two of the most important nerves in your head run side by side through a tunnel of bone smaller than a pea. That is what an ear surgeon works around.",
+      task: "Raise your eyebrows, close your eyes tightly and smile. That is your facial nerve working on both sides.",
+      q: "Which nerve carries hearing to the brain?",
+      a: "The vestibulocochlear nerve, the eighth cranial nerve."
+    },
+    t2: {
+      d: "Bell's palsy is a sudden weakness of the facial nerve, usually on one side and usually temporary. Because it can look like a stroke, anyone with sudden facial weakness must be assessed urgently rather than waiting.",
+      task: "Find out one way doctors distinguish Bell's palsy from a stroke on examination.",
+      q: "Why must sudden facial weakness be assessed urgently?",
+      a: "Because it could be a stroke, which needs immediate treatment."
+    },
+    t3: {
+      d: "In mastoid and cochlear implant surgery the facial nerve is identified and protected, often with continuous intraoperative nerve monitoring. A vestibular schwannoma — a benign tumour on the eighth nerve — classically presents with unilateral hearing loss and tinnitus, and is a key reason asymmetrical hearing loss is investigated with MRI.",
+      task: "Look up vestibular schwannoma and note the classic presenting symptom.",
+      q: "Why is one-sided hearing loss investigated with an MRI scan?",
+      a: "To exclude a vestibular schwannoma or other tumour on the hearing nerve."
+    }
+  }
+]
+},
+{
+m: 6, name: "June", topic: "Children's ears: glue ear and grommets",
+intro: "This is the unit that started all of it. If you had grommets yourself, this month explains exactly what was happening in your ears, why somebody decided to operate, and what those tiny tubes were doing in there.",
+lessons: [
+  {
+    title: "Why children's ears are different",
+    what: "Children get far more ear trouble than adults, and it is not bad luck. It comes down to one tube being the wrong shape until they grow.",
+    facts: [
+      "A child's Eustachian tube is shorter, floppier and almost horizontal.",
+      "That means it drains badly and lets infection travel up easily from the nose.",
+      "As the skull grows the tube lengthens and tips downwards, and the problem usually fades."
+    ],
+    words: [{ w: "Eustachian tube", m: "The tube from the middle ear to the back of the nose that lets air in and fluid out." }],
+    t1: {
+      d: "Picture a drainpipe lying flat instead of sloping down. Water sits in it instead of running out. A small child's ear tube is the flat one.",
+      task: "Ask how old you were when you had ear trouble. Most children's worst years are between two and five.",
+      q: "Why do young children get more ear problems than adults?",
+      a: "Their Eustachian tube is short and nearly horizontal, so it drains badly."
+    },
+    t2: {
+      d: "Add to that: children get far more colds, they have large adenoids sitting right where the tube opens, and their immune systems are still learning. Several things stack up at once, in exactly the years the tube is at its worst.",
+      task: "List the four reasons a four-year-old is more likely to get glue ear than a fourteen-year-old.",
+      q: "Name two reasons besides the tube shape.",
+      a: "Frequent colds and large adenoids blocking the tube opening (also a still-developing immune system)."
+    },
+    t3: {
+      d: "Eustachian tube angle changes from roughly 10 degrees in infancy to about 45 degrees in adults, alongside growth of the skull base. Risk is higher with cleft palate, Down syndrome, and passive smoke exposure — and glue ear is near-universal in children with cleft palate because the tensor veli palatini cannot open the tube properly.",
+      task: "Find out why children with cleft palate almost always need grommets.",
+      q: "Why does cleft palate cause persistent glue ear?",
+      a: "The muscle that opens the Eustachian tube does not work properly, so the middle ear cannot ventilate."
+    }
+  },
+  {
+    title: "Ear infections",
+    what: "An acute ear infection means germs multiplying in the middle ear. Pressure builds behind the eardrum, which is why it hurts so sharply and so suddenly, usually at night.",
+    facts: [
+      "The medical name is acute otitis media.",
+      "It usually follows a cold, with germs travelling up the Eustachian tube.",
+      "Most cases settle by themselves within a few days."
+    ],
+    words: [{ w: "Acute otitis media", m: "A sudden infection of the middle ear, causing pain, fever and a red bulging eardrum." }],
+    t1: {
+      d: "The pain comes from pressure. Sometimes the eardrum bursts, pus comes out, and the pain suddenly stops — alarming to see, but the drum almost always heals.",
+      task: "Find out how many children have at least one ear infection before they turn five. The number is very high.",
+      q: "What causes the pain in an ear infection?",
+      a: "Pressure building up behind the eardrum."
+    },
+    t2: {
+      d: "Antibiotics are not automatic. Most ear infections are viral or settle on their own, so doctors often use a delayed prescription — take it only if things are not improving in a couple of days. Pain relief matters more than antibiotics in most cases.",
+      task: "Find out what a delayed antibiotic prescription is and why doctors use them.",
+      q: "Why are antibiotics not given for every ear infection?",
+      a: "Most settle on their own, and unnecessary antibiotics drive resistance."
+    },
+    t3: {
+      d: "Antibiotics are recommended for children under two with bilateral infection, for otorrhoea, and for systemically unwell children. Mastoiditis — infection spreading into the mastoid bone behind the ear, with a pushed-forward pinna and swelling — is the complication to know, and it needs admission and often surgery.",
+      task: "Look up the signs of mastoiditis and why the ear looks pushed forward.",
+      q: "What is mastoiditis and why does it matter?",
+      a: "Infection spreading into the bone behind the ear — a serious complication needing urgent treatment."
+    }
+  },
+  {
+    title: "Glue ear",
+    what: "Glue ear is different from an ear infection. There is no fever and often no pain at all — just thick, sticky fluid sitting behind the eardrum, stopping it vibrating properly. The child simply cannot hear well.",
+    facts: [
+      "Its proper name is otitis media with effusion.",
+      "The main symptom is muffled hearing, not pain.",
+      "It is extremely common between the ages of about 2 and 5."
+    ],
+    words: [{ w: "Glue ear", m: "Thick fluid trapped behind an intact eardrum, causing muffled hearing." }],
+    t1: {
+      d: "Put your fingers in your ears and get someone to talk to you. That muffled, underwater sound is roughly what glue ear is like — all day, for months.",
+      task: "Try the fingers-in-ears test while someone reads aloud. Write down how many words you miss.",
+      q: "What is the main symptom of glue ear?",
+      a: "Muffled hearing."
+    },
+    t2: {
+      d: "Because it does not hurt, it is often missed for a long time. The clues are behavioural: turning the television up, not answering when called, seeming to daydream, mispronouncing words, or falling behind at school. Children are frequently thought to be inattentive when in fact they cannot hear.",
+      task: "Write down five things a teacher might notice in a child with undiagnosed glue ear.",
+      q: "Why is glue ear often missed?",
+      a: "It is usually painless, so it shows up as behaviour or speech problems rather than illness."
+    },
+    t3: {
+      d: "UK guidance recommends watchful waiting with two hearing tests over three months, because a large proportion resolve spontaneously. Intervention is considered for persistent bilateral effusion with hearing loss affecting development, education or behaviour — the threshold is functional impact, not the fluid itself.",
+      task: "Look up why a three-month period of watchful waiting is recommended before grommets.",
+      q: "Why wait three months before treating glue ear?",
+      a: "Because most cases resolve on their own, and surgery should be reserved for those that do not."
+    }
+  },
+  {
+    title: "What a grommet actually is",
+    what: "A grommet is a tiny tube, usually about a millimetre and a half across, placed through a small cut in the eardrum. It does not drain fluid out through the tube like a plughole — it lets air in, which is what the middle ear was missing.",
+    facts: [
+      "It does the job the blocked Eustachian tube stopped doing.",
+      "Hearing usually improves immediately.",
+      "Other names for it are tympanostomy tube or ventilation tube."
+    ],
+    words: [{ w: "Grommet", m: "A tiny tube placed through the eardrum to let air into the middle ear." }],
+    t1: {
+      d: "Think of a sealed juice carton. Push a straw in and air can get in, so the liquid can move. A grommet is that air hole for your middle ear.",
+      task: "Look up a photograph of a grommet next to a coin. They are far smaller than most people imagine.",
+      q: "What does a grommet actually let in?",
+      a: "Air — it ventilates the middle ear."
+    },
+    t2: {
+      d: "With air behind it again, the eardrum can vibrate normally, the sticky fluid clears, and hearing returns. Many children describe the world as suddenly loud afterwards, because they had slowly forgotten what normal hearing sounded like.",
+      task: "Ask whether anyone remembers what you said in the days after your grommets went in.",
+      q: "Why does hearing improve once air is back in the middle ear?",
+      a: "The eardrum can vibrate freely again, so sound is transmitted normally."
+    },
+    t3: {
+      d: "The operation is a myringotomy — a small radial incision, usually in the anteroinferior quadrant — with the tube inserted through it. Short-term Shepard or Shah tubes extrude within months; T-tubes stay far longer but carry a higher risk of persistent perforation.",
+      task: "Look up the difference between a short-term grommet and a T-tube, and when each is chosen.",
+      q: "What is a myringotomy?",
+      a: "A small surgical incision in the eardrum, through which a grommet is placed."
+    }
+  },
+  {
+    title: "The day of the operation",
+    what: "Grommet surgery is short, done under general anaesthetic, and almost always a day case — in and home the same day. Knowing what actually happens takes most of the fear out of it.",
+    facts: [
+      "The operation itself usually takes around 15 minutes.",
+      "You are asleep for it, and feel nothing.",
+      "Most children are home within a few hours and back at school quickly."
+    ],
+    words: [{ w: "Day case", m: "An operation where you come in and go home on the same day." }],
+    t1: {
+      d: "Nothing is cut on the outside at all. The surgeon works down the ear canal through a microscope, so there is no scar to see afterwards.",
+      task: "Ask your family what you remember, or do not remember, about your operation day.",
+      q: "Is there a scar after grommet surgery?",
+      a: "No — the surgeon works through the ear canal."
+    },
+    t2: {
+      d: "The order is usually: arrive and get checked in, meet the surgeon and anaesthetist, no food beforehand, then off to theatre. Children often go to sleep breathing through a mask rather than with a needle. Waking up feeling confused or upset is normal and passes quickly.",
+      task: "Write, in order, the steps of a day-case operation from arriving to going home.",
+      q: "Why can you not eat before an operation?",
+      a: "Because food in the stomach is dangerous under anaesthetic if it comes back up."
+    },
+    t3: {
+      d: "Adenoidectomy is often performed at the same sitting where nasal obstruction or recurrent effusion is a factor, and there is evidence it reduces the need for repeat grommets. Risks discussed at consent include persistent perforation, early extrusion, infection and, rarely, tympanosclerosis.",
+      task: "Look up what informed consent involves and why risks must be discussed even when small.",
+      q: "Why are adenoids sometimes removed at the same time as grommets are inserted?",
+      a: "Because they block the Eustachian tube openings, and removing them reduces the chance of the fluid returning."
+    }
+  },
+  {
+    title: "Afterwards",
+    what: "Grommets are temporary by design. As the eardrum constantly renews itself, it slowly pushes the tube outwards until it falls out on its own — usually without anyone noticing.",
+    facts: [
+      "Most fall out within 6 to 12 months.",
+      "The eardrum then heals over the small hole.",
+      "Sometimes glue ear returns and a second set is needed. That is common, not a failure."
+    ],
+    words: [{ w: "Extrusion", m: "The grommet working its way out of the eardrum on its own." }],
+    t1: {
+      d: "The eardrum grows outwards, like a fingernail. It simply carries the grommet along with it until it drops out into the ear canal.",
+      task: "Find out whether anyone knows when yours came out. Most families never notice it happening.",
+      q: "Do grommets have to be taken out in another operation?",
+      a: "Usually not — they fall out by themselves."
+    },
+    t2: {
+      d: "Advice about swimming has changed. Most children with grommets can swim normally without earplugs; the main things to avoid are diving deep and getting dirty water in. Always follow the surgeon's own advice, since it varies with the type of tube.",
+      task: "Find out what current advice says about swimming with grommets, and how it has changed.",
+      q: "Can most children swim with grommets in?",
+      a: "Yes — routine earplugs are usually not needed, though deep diving is avoided."
+    },
+    t3: {
+      d: "Follow-up includes audiometry to confirm hearing has recovered and otoscopy to check tube position and patency. A small proportion develop a persistent perforation requiring later myringoplasty, and tympanosclerosis — white chalky patches on the drum — is common and usually harmless.",
+      task: "Look up myringoplasty and when it is offered.",
+      q: "What is checked at a grommet follow-up appointment?",
+      a: "Whether hearing has improved, and whether the grommet is still in place and open."
+    }
+  }
+]
+},
+{
+m: 7, name: "July", topic: "Hearing loss and how we help",
+intro: "What happens when hearing does not come back — how it is measured, what can be done, and how to treat deaf people as people rather than as problems to fix.",
+lessons: [
+  {
+    title: "Measuring hearing",
+    what: "Hearing is measured in two directions at once: how loud a sound has to be before you notice it, and at which pitches. The result is drawn as a graph called an audiogram.",
+    facts: [
+      "Loudness is measured in decibels (dB).",
+      "Pitch is measured in hertz (Hz) — how many vibrations per second.",
+      "Human hearing normally covers roughly 20 Hz to 20,000 Hz."
+    ],
+    words: [{ w: "Audiogram", m: "A graph showing the quietest sound a person can hear at each pitch." }],
+    t1: {
+      d: "A whisper is about 30 decibels, conversation about 60, a lawnmower about 90. Every step up that scale is much bigger than it looks.",
+      task: "Find out how loud a concert is in decibels, and compare it with a conversation.",
+      q: "What are the two things an audiogram measures?",
+      a: "Loudness in decibels and pitch in hertz."
+    },
+    t2: {
+      d: "The decibel scale is logarithmic, so 10 dB more is around twice as loud to your ear, and 100 dB is enormously more energy than 90. Damage risk rises steeply with both loudness and time — which is why the safe listening time halves for every few decibels.",
+      task: "Check whether your phone has a headphone volume limiter, and set it.",
+      q: "Why is the decibel scale not a simple linear one?",
+      a: "It is logarithmic, so each step represents a large multiplication of sound energy."
+    },
+    t3: {
+      d: "Pure tone audiometry tests air and bone conduction separately; a gap between them indicates a conductive loss, while both being reduced together indicates sensorineural. Tympanometry measures middle ear compliance, and a flat type B trace is the classic finding in glue ear.",
+      task: "Look up what a type B tympanogram looks like and what it indicates.",
+      q: "What does an air-bone gap on an audiogram indicate?",
+      a: "A conductive hearing loss — sound is not getting through the outer or middle ear."
+    }
+  },
+  {
+    title: "Two kinds of hearing loss",
+    what: "The single most useful distinction in ear medicine is whether the problem is getting sound in, or detecting it once it arrives. The first is usually fixable; the second usually is not.",
+    facts: [
+      "Conductive loss: a blockage in the outer or middle ear.",
+      "Sensorineural loss: damage to the cochlea or the hearing nerve.",
+      "Mixed loss means both at once."
     ],
     words: [
-      { w: "Ligament", m: "A tough band joining bone to bone." },
-      { w: "Tendon", m: "A tough cord joining muscle to bone." }
+      { w: "Conductive loss", m: "Hearing loss because sound cannot get through to the inner ear." },
+      { w: "Sensorineural loss", m: "Hearing loss because the cochlea or nerve is damaged." }
     ],
     t1: {
-      d: "Your elbow works like a door hinge — one direction only. Your shoulder works like a joystick — it goes everywhere.",
-      task: "Try to bend your elbow sideways. Now circle your arm at the shoulder. Two different joint designs.",
-      q: "What does a ligament join?",
-      a: "Bone to bone."
+      d: "Conductive is like a door being shut — open it and the sound comes through. Sensorineural is like the microphone itself being broken.",
+      task: "Sort these into the two types: wax blockage, glue ear, loud-noise damage, ageing.",
+      q: "Which type of hearing loss is usually permanent?",
+      a: "Sensorineural."
     },
     t2: {
-      d: "A sprain is a stretched or torn ligament; a strain is a stretched or torn muscle or tendon. Cartilage on the bone ends is smoother than ice on ice, and joint fluid makes it smoother still.",
-      task: "Find your Achilles tendon at the back of your ankle and feel it move as you rise onto your toes.",
-      q: "What is the difference between a sprain and a strain?",
-      a: "A sprain injures a ligament; a strain injures a muscle or tendon."
+      d: "Glue ear and wax cause conductive loss, so grommets or wax removal fix them. Noise damage, ageing, some infections and some medicines cause sensorineural loss, where the aim is to help someone hear better rather than to restore what has gone.",
+      task: "Find out what ototoxic means and name one medicine that can damage hearing.",
+      q: "Which type of hearing loss do grommets treat?",
+      a: "Conductive — they restore sound transmission through the middle ear."
     },
     t3: {
-      d: "Developmental dysplasia of the hip is screened for in every newborn using the Ortolani and Barlow manoeuvres, because a hip that is not seated properly in its socket must be treated early — often in a Pavlik harness — to develop normally.",
-      task: "Look up the risk factors for developmental dysplasia of the hip and note three.",
-      q: "Why is DDH screened for in the first days of life?",
-      a: "Because early treatment allows the hip joint to develop normally; late treatment is much harder."
+      d: "Weber and Rinne tuning fork tests localise the loss at the bedside: in conductive loss Weber lateralises to the affected ear and Rinne is negative on that side. Sudden sensorineural hearing loss is an emergency requiring steroids within days, and it is frequently missed by non-specialists.",
+      task: "Look up the Weber and Rinne tests and work out the pattern for a left conductive loss.",
+      q: "Why is sudden one-sided sensorineural hearing loss an emergency?",
+      a: "Because early steroid treatment substantially improves the chance of recovery."
     }
   },
   {
-    title: "Muscles only pull",
-    what: "A muscle can do exactly one thing: shorten. It can pull, but it can never push. That is why muscles come in opposing pairs — one pulls a joint one way, its partner pulls it back.",
+    title: "Testing a newborn",
+    what: "Almost every baby in the UK has their hearing screened within the first few weeks of life. This matters enormously, because hearing is what language is built from, and the brain has a limited window in which to build it.",
     facts: [
-      "You have over 600 skeletal muscles.",
-      "Biceps and triceps are a classic opposing pair at the elbow.",
-      "Some muscles, like the heart and those in your gut, work without you deciding."
+      "The first test measures a faint echo the healthy cochlea produces itself.",
+      "A second test measures the brain's electrical response to sound.",
+      "Neither test hurts, and babies usually sleep through both."
     ],
-    words: [{ w: "Skeletal muscle", m: "Muscle attached to bone that you can control on purpose." }],
+    words: [{ w: "Otoacoustic emissions", m: "A faint sound produced by a healthy cochlea, used to screen newborn hearing." }],
     t1: {
-      d: "A muscle is like a rope: you can pull something with it, but you cannot push anything with a rope. So you need a second rope on the other side.",
-      task: "Bend your elbow and feel the top of your arm bulge. Straighten it and feel the back go firm instead.",
-      q: "Can a muscle push?",
-      a: "No — it can only pull by shortening."
+      d: "A healthy inner ear does not just receive sound — it makes a tiny sound of its own. The screening test listens for that echo coming back.",
+      task: "Find out how old a baby usually is when hearing screening happens.",
+      q: "Does newborn hearing screening hurt?",
+      a: "No — the baby usually sleeps through it."
     },
     t2: {
-      d: "There are three muscle types: skeletal (voluntary), smooth (in gut and blood vessels, involuntary) and cardiac (heart only). Muscle burns energy even at rest, which is part of how your body makes heat.",
-      task: "Name the opposing muscle pair at the front and back of your thigh.",
-      q: "Name the three types of muscle.",
-      a: "Skeletal, smooth and cardiac."
+      d: "Not passing the first screen does not mean a baby is deaf. Fluid or debris left over from birth is a common reason, and most babies pass on retesting. Explaining that clearly to a frightened parent is part of the job.",
+      task: "Write two sentences you would say to a parent whose baby needs a repeat hearing screen.",
+      q: "Does failing the first newborn screen mean a baby is deaf?",
+      a: "No — it means a further test is needed, and most babies pass it."
     },
     t3: {
-      d: "Muscular dystrophies are inherited conditions where muscle progressively breaks down. Duchenne muscular dystrophy is X-linked, usually noticed between ages 2 and 5, and Gower's sign — a child walking their hands up their legs to stand — is a classic finding.",
-      task: "Look up Gower's sign and describe what it demonstrates.",
-      q: "What does Gower's sign indicate?",
-      a: "Weakness of the proximal muscles around the hips and thighs."
+      d: "Screening uses automated otoacoustic emissions followed by automated auditory brainstem response. Early identification and amplification before six months is associated with markedly better language outcomes, which is the entire justification for a universal programme.",
+      task: "Look up the language outcomes of children identified before and after six months.",
+      q: "Why must congenital hearing loss be identified in the first months?",
+      a: "Because language development depends on hearing input during a critical early period."
     }
   },
   {
-    title: "Breaks and how they heal",
-    what: "Bone heals itself. A blood clot forms at the break, soft tissue bridges the gap, then new bone hardens across it. A cast does not heal the bone — it just holds it still so the bone can do its own work.",
+    title: "Hearing aids",
+    what: "A hearing aid is a microphone, a computer and a speaker, small enough to sit in or behind an ear. It does not simply make everything louder — it selectively amplifies the frequencies that person has lost.",
     facts: [
-      "Children's bones heal faster than adults'.",
-      "Children can get greenstick fractures, where the bone bends and cracks like a young twig.",
-      "A broken bone in a non-mobile baby is always taken very seriously."
+      "Modern aids are programmed to the individual's audiogram.",
+      "They can reduce background noise and connect to phones directly.",
+      "They work for most kinds of hearing loss, but not all."
     ],
-    words: [{ w: "Fracture", m: "The medical word for a broken bone — any break, big or small." }],
+    words: [{ w: "Amplification", m: "Making sound louder in a controlled, targeted way." }],
     t1: {
-      d: "Snap a dry twig and it breaks clean through. Bend a fresh green twig and it splits partway but stays joined. Children's bones behave like the green twig.",
-      task: "Ask someone in your family if they have ever broken a bone, and how long it took to heal.",
-      q: "What does a plaster cast actually do?",
-      a: "Holds the bone still so it can heal itself in the right position."
+      d: "A hearing aid is not like glasses, which make things instantly sharp. Brains take weeks to relearn sounds they had stopped hearing, and that adjustment is normal.",
+      task: "Find out how small a modern hearing aid is, and what it costs the NHS.",
+      q: "Does a hearing aid simply make everything louder?",
+      a: "No — it amplifies the specific frequencies that person has lost."
     },
     t2: {
-      d: "Healing runs through stages: haematoma, soft callus, hard callus, then remodelling that can take months. Children remodel so well that a slightly imperfect alignment often straightens out on its own.",
-      task: "Draw the four stages of fracture healing in order.",
-      q: "Why do children's fractures often need less perfect alignment than adults'?",
-      a: "Because growing bone remodels and straightens itself over time."
+      d: "There is still stigma about wearing them, which stops people getting help for years — and untreated hearing loss is linked to isolation, low mood and worse outcomes in later life. Normalising them is a genuinely useful thing to do.",
+      task: "Ask someone who wears a hearing aid what they wish other people understood about it.",
+      q: "Why do many people delay getting a hearing aid?",
+      a: "Stigma and embarrassment, despite the real harm of untreated hearing loss."
     },
     t3: {
-      d: "Certain fracture patterns raise safeguarding concerns: fractures in a child who is not yet walking, posterior rib fractures, metaphyseal corner fractures, or multiple fractures of different ages. Recognising these and escalating appropriately is a core paediatric responsibility.",
-      task: "Read about the paediatric safeguarding process and write down who a doctor would involve.",
-      q: "Why is a femoral fracture in a non-mobile infant concerning?",
-      a: "A baby who cannot walk cannot generate that force accidentally, so non-accidental injury must be considered."
+      d: "Bone conduction devices bypass the outer and middle ear entirely, which suits atresia or chronic discharging ears, and can be worn on a softband in young children. Fitting uses real ear measurement to verify output at the eardrum rather than relying on prescription alone.",
+      task: "Look up bone conduction hearing devices and who they suit.",
+      q: "When is a bone conduction device used instead of a conventional aid?",
+      a: "When the outer or middle ear cannot transmit sound — for example a malformed or chronically discharging ear."
     }
   },
   {
-    title: "Building a skeleton that lasts",
-    what: "Most of the bone you will ever have is laid down before you turn about 20. What you do as a child and teenager sets your peak bone mass for the rest of your life.",
+    title: "Cochlear implants",
+    what: "When the hair cells are destroyed, no amount of amplification helps — there is nothing left to stimulate. A cochlear implant skips them entirely, converting sound into electrical pulses delivered straight to the hearing nerve.",
     facts: [
-      "Calcium is the main mineral in bone; dairy, tinned fish, leafy greens and fortified foods supply it.",
-      "Vitamin D lets you absorb calcium, and most of it comes from sunlight on skin.",
-      "Jumping, running and lifting all signal bone to strengthen."
+      "An electrode array is surgically threaded into the cochlea.",
+      "An external processor picks up sound and sends it across the skin.",
+      "It does not restore normal hearing — it creates a different, learnable kind."
     ],
-    words: [{ w: "Peak bone mass", m: "The maximum bone strength you reach, usually in your twenties." }],
+    words: [{ w: "Cochlear implant", m: "A surgically implanted device that stimulates the hearing nerve directly." }],
     t1: {
-      d: "You are building the skeleton you will use when you are eighty. Every run, jump and glass of milk goes into it.",
-      task: "Do twenty jumps today. You just sent a build signal to your bones.",
-      q: "Which mineral makes bones hard?",
-      a: "Calcium."
+      d: "The implant does the job the broken hair cells used to do, sending signals straight to the nerve instead.",
+      task: "Watch a video of an implant being switched on for the first time, and notice how varied people's reactions are.",
+      q: "What does a cochlear implant bypass?",
+      a: "The damaged hair cells in the cochlea."
     },
     t2: {
-      d: "In the UK, everyone is advised to consider a vitamin D supplement in autumn and winter because the sunlight is too weak to make enough. Breastfed babies are advised a daily supplement all year.",
-      task: "Check whether anyone in your house takes vitamin D, and find out the recommended daily amount.",
-      q: "Why is vitamin D advised in UK winters?",
-      a: "Sunlight is too weak from October to March for the skin to make enough."
+      d: "Switch-on is not instant understanding. Early sound is often described as robotic or beeping, and it takes months of rehabilitation for the brain to learn to interpret it. Videos of people crying at switch-on show a real moment, but not the whole story.",
+      task: "Find out how long rehabilitation usually takes after an implant is switched on.",
+      q: "Why is rehabilitation needed after a cochlear implant?",
+      a: "The brain has to learn to interpret an entirely new kind of signal."
     },
     t3: {
-      d: "Osteoporosis is often described as a paediatric disease with geriatric consequences: bone accrued in adolescence largely determines fracture risk fifty years later. Adolescents with restrictive eating, chronic illness or long-term steroid use are at particular risk.",
-      task: "Find out how a DEXA scan works and what it measures.",
-      q: "Why is osteoporosis called a paediatric disease with geriatric consequences?",
-      a: "Because peak bone mass is built in childhood and adolescence, and that determines later fracture risk."
+      d: "Candidacy depends on degree of loss, aided benefit and, in children, on timing — outcomes are strongly better with earlier implantation. Surgery carries risks including facial nerve injury, meningitis, and loss of any residual hearing in that ear, all of which must be discussed honestly.",
+      task: "Look up why children receiving implants are vaccinated against pneumococcus beforehand.",
+      q: "Why does age at implantation matter so much in children?",
+      a: "Because the auditory pathway develops best when stimulated early, during the critical period."
+    }
+  },
+  {
+    title: "Deaf people are not broken",
+    what: "Not everyone who is deaf wants to be fixed. Many Deaf people regard deafness as an identity and a culture with its own rich language, not as a medical defect — and a good ear surgeon has to understand that properly.",
+    facts: [
+      "British Sign Language is a full language with its own grammar, not English with hands.",
+      "Deaf with a capital D usually refers to cultural identity rather than hearing level.",
+      "Cochlear implants have been genuinely controversial within Deaf communities."
+    ],
+    words: [{ w: "BSL", m: "British Sign Language — a complete language, recognised in its own right." }],
+    t1: {
+      d: "Sign language is not mime and it is not English spelled out. It is a full language, with its own grammar, jokes, poetry and regional accents.",
+      task: "Learn to fingerspell your own name in BSL or ASL this week.",
+      q: "Is sign language just English done with hands?",
+      a: "No — it is a complete language with its own grammar."
+    },
+    t2: {
+      d: "The practical rules are simple: face the person, do not cover your mouth, do not shout, do not talk to the interpreter instead of the patient, and never say it does not matter. Most complaints from deaf patients are about being talked past, not about treatment.",
+      task: "Practise having a conversation without any sound, using only writing and gesture. Notice what is hard.",
+      q: "Who should you look at when speaking through an interpreter?",
+      a: "The patient, not the interpreter."
+    },
+    t3: {
+      d: "The tension between the medical model of deafness and the social or cultural model is genuine, and it matters most in decisions made for children who cannot yet consent. A surgeon who understands both positions can counsel families honestly; one who dismisses either will lose their trust immediately.",
+      task: "Read one account by a Deaf adult about cochlear implants, then one from an implant surgeon, and note where they disagree.",
+      q: "Why should a surgeon understand the cultural model of deafness?",
+      a: "Because families make decisions within it, and dismissing it destroys trust and worsens care."
     }
   }
 ]
 },
 {
-m: 5, name: "May", topic: "The brain and nerves",
-intro: "Three pounds of tissue that runs everything, learns constantly, and is more changeable in childhood than at any other time in life.",
+m: 8, name: "August", topic: "The operations an ENT surgeon does",
+intro: "ENT is a surgical specialty, so at some point you have to be the person holding the instruments. This month is about what actually happens in an operating theatre.",
 lessons: [
   {
-    title: "The control room",
-    what: "Your brain is made of about 86 billion nerve cells called neurons. They talk to each other with tiny electrical and chemical signals. Every thought, movement, memory and feeling you have ever had is those signals firing.",
+    title: "Inside an operating theatre",
+    what: "A theatre is a room kept deliberately clean, cool and organised, run by a team where everyone has a defined job. The surgeon is one member of it, not the whole thing.",
     facts: [
-      "The brain uses about a fifth of your body's energy despite being only 2% of your weight.",
-      "Neurons pass signals across small gaps called synapses.",
-      "The brain never switches off, not even in deep sleep."
+      "The team includes surgeons, an anaesthetist, scrub nurse, ODP and healthcare assistants.",
+      "Everything touching the patient is sterile.",
+      "Before any operation the whole team stops and runs a safety checklist out loud."
     ],
-    words: [
-      { w: "Neuron", m: "A nerve cell that carries electrical signals." },
-      { w: "Synapse", m: "The tiny gap where one neuron passes a message to the next." }
-    ],
+    words: [{ w: "Sterile field", m: "The area around the operation kept completely free of germs." }],
     t1: {
-      d: "Think of billions of tiny wires passing messages by lighting up in patterns. Reading this sentence is one of those patterns.",
-      task: "Close your eyes and touch your nose. Your brain just did complex maths without you noticing.",
-      q: "What is a neuron?",
-      a: "A nerve cell that carries electrical signals."
+      d: "Nobody operates alone. A grommet operation lasting fifteen minutes still needs a team of about six people, all doing different jobs.",
+      task: "List five different people who might be in theatre and what each one does.",
+      q: "What does sterile mean?",
+      a: "Completely free of germs."
     },
     t2: {
-      d: "Signals cross synapses using chemicals called neurotransmitters — dopamine, serotonin and others. Many medicines, from painkillers to antidepressants, work by changing what happens at these gaps.",
-      task: "Look up one neurotransmitter and write a sentence on what it is involved in.",
-      q: "What carries a signal across a synapse?",
-      a: "A neurotransmitter — a chemical messenger."
+      d: "The WHO surgical safety checklist asks the team to confirm the patient's name, the operation, the correct side, allergies and equipment — out loud, before starting. It was introduced worldwide because these simple confirmations measurably reduce deaths and complications.",
+      task: "Look up the WHO surgical safety checklist and note three things it confirms.",
+      q: "Why does the whole team stop to run a checklist?",
+      a: "Because saying it out loud catches errors — it measurably reduces complications and deaths."
     },
     t3: {
-      d: "A neuron fires by action potential: sodium rushes in, the membrane depolarises, and the signal travels down the axon. Myelin insulates the axon so signals jump between gaps — saltatory conduction — making transmission far faster. Myelination continues well into the twenties.",
-      task: "Find out what happens in multiple sclerosis and relate it to myelin.",
-      q: "What does myelin do?",
-      a: "Insulates axons so electrical signals travel much faster."
+      d: "Wrong-site surgery is a never event, and in ENT that risk is real because ears, tonsils and sinuses are paired or bilateral. Marking, the team brief and the sign-in exist precisely to make it impossible for one person's error to reach the patient.",
+      task: "Find out what a never event is and why the term is used.",
+      q: "Why is wrong-site surgery a particular risk in ENT?",
+      a: "Because so many structures are paired, so left and right must be confirmed explicitly."
     }
   },
   {
-    title: "Parts of the brain",
-    what: "Different regions of the brain specialise. Damage one area and you lose a specific ability, which is how scientists first worked out what each part does.",
+    title: "Being asleep for an operation",
+    what: "General anaesthesia is not sleep. It is a carefully controlled, reversible state of unconsciousness, maintained by an anaesthetist who watches every breath and heartbeat for the whole operation.",
     facts: [
-      "The cerebrum handles thinking, senses and voluntary movement.",
-      "The cerebellum at the back coordinates balance and fine movement.",
-      "The brainstem controls breathing, heart rate and consciousness."
+      "Children often go to sleep breathing a gas through a mask rather than by needle.",
+      "The anaesthetist stays with the patient throughout.",
+      "You wake up in a recovery area with a nurse beside you."
     ],
-    words: [{ w: "Cerebellum", m: "The part at the back of the brain that coordinates movement and balance." }],
+    words: [{ w: "Anaesthetist", m: "The doctor who puts you to sleep safely and looks after you throughout the operation." }],
     t1: {
-      d: "Think of a company: the cerebrum makes the decisions, the cerebellum makes the movements smooth, and the brainstem keeps the lights on.",
-      task: "Stand on one leg with your eyes shut. That wobble is your cerebellum working overtime.",
-      q: "Which part controls balance and coordination?",
-      a: "The cerebellum."
+      d: "The anaesthetist's whole job is you: your breathing, your heart, your temperature, your comfort. They never leave the room.",
+      task: "Find out what numbing cream is and why it is put on a child's hand before theatre.",
+      q: "Who looks after you while you are asleep for an operation?",
+      a: "The anaesthetist."
     },
     t2: {
-      d: "The cerebrum has four lobes: frontal (planning, personality, decisions), parietal (touch and space), temporal (hearing and memory) and occipital (vision). The frontal lobe is the last to fully mature — well into the twenties.",
-      task: "Draw a side view of the brain and label the four lobes.",
-      q: "Which lobe processes vision?",
-      a: "The occipital lobe, at the back."
+      d: "Being unable to eat beforehand is a safety rule, not fussiness: an anaesthetised person loses the reflexes that stop stomach contents entering the lungs. Waking up confused, shivery or tearful is common and settles quickly.",
+      task: "Find out how many hours before surgery children usually stop eating and drinking, and why clear fluids differ.",
+      q: "Why must the stomach be empty before an anaesthetic?",
+      a: "Because the reflexes that protect the airway are lost, so stomach contents could enter the lungs."
     },
     t3: {
-      d: "Late frontal lobe maturation has real consequences: adolescent risk-taking is partly neurodevelopmental, not simply behavioural. Understanding this changes how you talk to teenagers about risk — and it is a genuine part of adolescent medicine.",
-      task: "Read about adolescent brain development and note one implication for how doctors counsel teenagers.",
-      q: "Why is adolescent risk-taking partly biological?",
-      a: "The frontal lobe, which handles impulse control and long-term planning, matures later than the reward systems."
+      d: "Paediatric anaesthesia is its own subspecialty: airway anatomy, drug handling and physiological reserve all differ. Shared-airway ENT surgery adds a specific challenge, since surgeon and anaesthetist are working in the same small space, which demands constant communication.",
+      task: "Look up what a shared airway means in ENT surgery and why it needs careful planning.",
+      q: "What makes ENT anaesthesia distinctive?",
+      a: "Surgeon and anaesthetist share the same airway, so they must coordinate closely throughout."
     }
   },
   {
-    title: "The body's wiring",
-    what: "Nerves run from the brain down the spinal cord and out to every part of your body. Some carry information in — touch, pain, temperature. Others carry commands out to your muscles.",
+    title: "Grommets and adenoids",
+    what: "This is the bread and butter of paediatric ENT. A surgeon may do several grommet operations in a single morning list, and it is often the operation trainees learn first.",
     facts: [
-      "The spinal cord is protected inside the bones of your spine.",
-      "Sensory nerves carry information towards the brain.",
-      "Motor nerves carry instructions away from the brain."
+      "The whole operation takes around 15 minutes.",
+      "The surgeon works down the ear canal using an operating microscope.",
+      "Adenoids are often removed at the same time, through the mouth."
     ],
-    words: [{ w: "Spinal cord", m: "The thick bundle of nerves running down inside your backbone." }],
+    words: [{ w: "Operating list", m: "The sequence of operations a surgical team does in one session." }],
     t1: {
-      d: "Imagine a school with one huge cable running from the head teacher's office to every classroom, carrying messages both ways all day.",
-      task: "Get someone to touch your back lightly while your eyes are closed and try to say exactly where. Some areas are far more sensitive than others.",
-      q: "Which nerves carry instructions to your muscles?",
-      a: "Motor nerves."
+      d: "Everything happens through the ear canal, using a microscope. Nothing is cut on the outside, and there is nothing to see afterwards.",
+      task: "Find out roughly how many grommet operations are done each year in the UK. It is a very large number.",
+      q: "How does the surgeon reach the eardrum?",
+      a: "Down the ear canal, using an operating microscope."
     },
     t2: {
-      d: "There is also an automatic system you never control: the autonomic nervous system. Its sympathetic branch produces fight or flight, and its parasympathetic branch produces rest and digest.",
-      task: "List three things your body does automatically when you are frightened.",
-      q: "Which branch of the autonomic system causes fight or flight?",
-      a: "The sympathetic branch."
+      d: "Children on a list are usually done youngest first, because the youngest tolerate fasting worst. Small organisational decisions like that are a real part of surgical care, not an afterthought.",
+      task: "Work out why fasting is harder for a two-year-old than a twelve-year-old.",
+      q: "Why are the youngest children usually operated on first?",
+      a: "Because they cope least well with going without food and drink."
     },
     t3: {
-      d: "Spina bifida occurs when the neural tube fails to close in early pregnancy, and folic acid taken before conception and in early pregnancy substantially reduces the risk. That is why folic acid supplementation is public health advice for anyone who might become pregnant.",
-      task: "Look up when the neural tube closes in pregnancy and why timing matters for folic acid.",
-      q: "Why must folic acid be taken before conception rather than later?",
-      a: "The neural tube closes within the first month, often before pregnancy is even known."
+      d: "Adenoidectomy is performed transorally with a mirror, using curettage, suction diathermy or coblation. Bleeding is the main early risk, and post-tonsillectomy or post-adenoidectomy bleeding presents as swallowing repeatedly — an important sign, because children swallow blood rather than spit it out.",
+      task: "Look up why repeated swallowing is a warning sign after throat surgery in a child.",
+      q: "Why can bleeding after throat surgery be hidden in children?",
+      a: "Because they swallow the blood instead of spitting it out, so the only sign may be repeated swallowing."
     }
   },
   {
-    title: "Reflexes: acting before you think",
-    what: "Touch something hot and your hand pulls back before you feel the pain. That is a reflex: the signal goes to the spinal cord and straight back out, skipping the brain entirely to save time.",
+    title: "Taking tonsils out",
+    what: "Tonsillectomy is one of the oldest operations still performed, and one where deciding whether to operate matters more than the operating. The recovery is genuinely uncomfortable, so the threshold has to be high.",
     facts: [
-      "Reflexes are faster because the message travels a shorter route.",
-      "Doctors test reflexes with a tendon hammer to check the nervous system.",
-      "Babies have special reflexes that disappear as they develop."
+      "It is done through the mouth, with no external cut.",
+      "Recovery typically takes around two weeks and is painful.",
+      "Eating normally afterwards actually helps healing."
     ],
-    words: [{ w: "Reflex", m: "An automatic response that happens without you deciding to do it." }],
+    words: [{ w: "Tonsillectomy", m: "An operation to remove the tonsils." }],
     t1: {
-      d: "It is like a fire alarm wired directly to the sprinklers. Nobody has to phone the head teacher first — that would take too long.",
-      task: "Sit with your legs crossed and tap just below your kneecap. Your leg may kick on its own.",
-      q: "Why are reflexes faster than deliberate movements?",
-      a: "The signal goes only to the spinal cord and back, not up to the brain."
+      d: "The old story about eating ice cream afterwards has some truth, but the real advice is to eat normal food. Chewing keeps the area clean and helps it heal.",
+      task: "Ask anyone you know who has had their tonsils out how long the recovery really took.",
+      q: "Is there a scar on the outside after tonsillectomy?",
+      a: "No — it is done entirely through the mouth."
     },
     t2: {
-      d: "Newborn reflexes include the Moro or startle reflex, the rooting reflex that helps a baby find the breast, the grasp reflex and the stepping reflex. They should fade on a predictable schedule; reflexes that persist too long can signal a developmental problem.",
-      task: "Look up the Moro reflex and describe what a baby does.",
-      q: "What is the rooting reflex for?",
-      a: "It helps a newborn turn towards a touch on the cheek to find milk."
+      d: "Because recovery is hard, surgery is only offered when infections are frequent enough to justify it. Doctors count documented episodes over one to three years rather than relying on memory, which is why keeping a record matters.",
+      task: "Find out how many sore throats a year make tonsillectomy worth considering.",
+      q: "Why is tonsillectomy not offered to everyone with sore throats?",
+      a: "The recovery is difficult and it carries risks, so it must be justified by frequent, documented episodes."
     },
     t3: {
-      d: "Primitive reflexes are assessed as part of neurodevelopmental examination. Persistence beyond the expected age, marked asymmetry, or reappearance later can point to cerebral palsy or another neurological condition, prompting referral.",
-      task: "Find the usual age by which the Moro reflex disappears.",
-      q: "Why does a persisting primitive reflex concern a paediatrician?",
-      a: "It can indicate a problem with normal neurological development."
+      d: "Secondary haemorrhage occurs in roughly one in twenty cases, typically five to ten days postoperatively, and is the reason patients are told to stay near a hospital. It usually relates to infection of the healing bed rather than technique, and a small herald bleed can precede a major one.",
+      task: "Look up primary versus secondary post-tonsillectomy haemorrhage and how each is managed.",
+      q: "Why are patients told not to travel far after tonsillectomy?",
+      a: "Because bleeding can occur days later and needs urgent hospital treatment."
     }
   },
   {
-    title: "How a brain learns",
-    what: "Learning physically changes your brain. Connections that get used repeatedly grow stronger; connections that go unused are pruned away. A child's brain does this faster than at any other time in life.",
+    title: "Operating on the ear itself",
+    what: "Beyond grommets lies the surgery that defines otology: repairing eardrums, clearing disease out of the bone behind the ear, rebuilding the chain of tiny bones, and implanting devices.",
     facts: [
-      "This ability to rewire is called neuroplasticity.",
-      "Sleep is when a lot of learning gets consolidated into memory.",
-      "Repeating something over spaced-out days beats cramming it in one go."
+      "Myringoplasty repairs a hole in the eardrum.",
+      "Mastoid surgery clears disease from the bone behind the ear.",
+      "Cholesteatoma is skin growing where it should not be, and it must be removed surgically."
     ],
-    words: [{ w: "Neuroplasticity", m: "The brain's ability to change and rewire itself through experience." }],
+    words: [{ w: "Cholesteatoma", m: "A growth of skin in the middle ear that slowly destroys bone and must be removed." }],
     t1: {
-      d: "Walk across a field once and you leave no path. Walk the same line every day and a track appears. Your brain works exactly like that field.",
-      task: "Pick one fact from this lesson and say it out loud tomorrow morning without looking. That is you strengthening a path.",
-      q: "What happens to brain connections you never use?",
-      a: "They get pruned away."
+      d: "Cholesteatoma is not cancer, but it is not harmless either. Skin ends up growing inside the ear, where it slowly eats away at bone, so it has to come out.",
+      task: "Find out one warning sign of cholesteatoma. A smelly, persistently discharging ear is the classic one.",
+      q: "What is cholesteatoma?",
+      a: "Skin growing in the middle ear, which slowly destroys the bone around it."
     },
     t2: {
-      d: "This is why spaced repetition works: reviewing something after a day, then three days, then a week, produces far stronger memory than the same total time spent in one session. Use it for every exam you ever take.",
-      task: "Take one fact you learned this month and schedule three reviews: tomorrow, in three days, in a week.",
-      q: "What is spaced repetition?",
-      a: "Reviewing material at increasing intervals rather than all at once."
+      d: "These are long, delicate operations, often two or three hours through a microscope, working on structures a few millimetres across, right beside the facial nerve. This is the point at which ear surgery becomes a genuine craft.",
+      task: "Watch a short clip of ear microsurgery and note how small the instruments are.",
+      q: "Why is ear surgery slow and delicate work?",
+      a: "The structures are millimetre-sized and sit right beside the facial nerve."
     },
     t3: {
-      d: "Plasticity is greatest during critical periods, which is why untreated congenital cataract or hearing loss must be corrected early — the visual or auditory cortex needs input during that window to develop normally. It is also why newborn hearing screening exists.",
-      task: "Look up the newborn hearing screening programme and note when it is done.",
-      q: "Why is early treatment of congenital hearing loss so important?",
-      a: "The brain needs sound input during a critical developmental period to develop language and hearing pathways normally."
+      d: "Approaches range from permeatal to endaural to postauricular; canal wall up preserves anatomy but carries a higher recurrence rate than canal wall down. Ossiculoplasty reconstructs the hearing mechanism, and outcomes are reported using audiometric criteria rather than impressions.",
+      task: "Look up canal wall up versus canal wall down mastoidectomy and the trade-off between them.",
+      q: "What is the trade-off between canal wall up and canal wall down mastoidectomy?",
+      a: "Canal wall up preserves normal anatomy but has a higher recurrence rate; canal wall down is more definitive but leaves a cavity."
     }
   },
   {
-    title: "Protecting your head",
-    what: "The brain floats in fluid inside a hard skull, but a hard enough knock still shakes it. Concussion is a temporary disturbance of brain function after a head injury, and it needs real rest to recover.",
+    title: "Working smaller than a pea",
+    what: "ENT surgeons operate on some of the smallest structures in the body, through openings barely wide enough for an instrument, watching a screen or a microscope rather than their own hands.",
     facts: [
-      "You do not have to be knocked out to have concussion.",
-      "Headache, confusion, dizziness, nausea and blurred vision are common signs.",
-      "Going back to sport too soon, before recovery, is genuinely dangerous."
+      "The stapes is 3 mm long, and there are operations performed on it.",
+      "Microscopes and endoscopes are standard equipment.",
+      "Steady hands can be trained — this is a skill, not a gift."
     ],
-    words: [{ w: "Concussion", m: "A temporary disturbance of brain function caused by a knock to the head." }],
+    words: [{ w: "Microsurgery", m: "Surgery performed under a microscope on very small structures." }],
     t1: {
-      d: "Think of a jelly in a plastic box. Shake the box and the jelly wobbles even though the box is fine. Your brain is the jelly.",
-      task: "Check that any helmet you own actually fits — two fingers above the eyebrows, straps snug.",
-      q: "Do you have to be knocked out to have concussion?",
-      a: "No."
+      d: "Surgeons practise fine movements deliberately, for years. Nobody starts steady. Playing an instrument, drawing, model-making and sewing all build the same control.",
+      task: "Try threading a needle while looking only in a mirror. That is roughly the coordination challenge of endoscopic surgery.",
+      q: "Are surgeons born with steady hands?",
+      a: "No — precision is a trained skill."
     },
     t2: {
-      d: "Red flags after a head injury include repeated vomiting, worsening headache, drowsiness, a seizure, weakness, clear fluid from the nose or ears, or unequal pupils. Any of those means urgent medical assessment.",
-      task: "Memorise three head injury red flags you would tell a friend to watch for.",
-      q: "Name two red flag symptoms after a head injury.",
-      a: "Repeated vomiting and increasing drowsiness (others include seizure, weakness, worsening headache)."
+      d: "Working from a screen means your hands and your eyes are pointing in different directions, and instruments move the opposite way to your hand. Surgeons train on simulators for exactly this reason.",
+      task: "Try drawing a simple shape while watching only its reflection in a mirror. Notice how quickly you improve with practice.",
+      q: "Why is endoscopic surgery harder than it looks?",
+      a: "Because you work from a screen, with instruments that move counter-intuitively."
     },
     t3: {
-      d: "The Glasgow Coma Scale scores eye, verbal and motor responses out of 15, and paediatric versions adapt the verbal component for pre-verbal children. Decision tools such as NICE head injury guidance determine who needs a CT scan, balancing missed injury against radiation exposure in a developing brain.",
-      task: "Find the three components of the Glasgow Coma Scale and their maximum scores.",
-      q: "Why is a paediatric version of the Glasgow Coma Scale needed?",
-      a: "Because a baby or toddler cannot give the verbal responses the adult scale expects."
-    }
-  }
-]
-},
-{
-m: 6, name: "June", topic: "Growing up: birth to teenager",
-intro: "This is the heart of paediatrics. Children are not small adults — they are people in the middle of the fastest change a human body ever goes through.",
-lessons: [
-  {
-    title: "Nine months of building",
-    what: "A whole person is built from a single cell in about forty weeks. By eight weeks every major organ has started forming; the rest of the pregnancy is mostly growing and maturing what is already there.",
-    facts: [
-      "The heart starts beating at around three weeks.",
-      "By around 20 weeks the baby can hear sounds from outside.",
-      "The last weeks matter enormously for the lungs and the brain."
-    ],
-    words: [{ w: "Gestation", m: "The time a baby spends developing before birth, counted in weeks." }],
-    t1: {
-      d: "You started as one single cell — smaller than a full stop. Everything you are was built from that one cell dividing again and again.",
-      task: "Ask a family member how much you weighed when you were born.",
-      q: "Roughly how long is a full pregnancy?",
-      a: "About 40 weeks, or nine months."
-    },
-    t2: {
-      d: "Term is 37 to 42 weeks. Before 37 weeks a baby is premature, and the earlier the birth, the more support they need — feeding, warmth, and often help with breathing because the lungs are the last thing to be ready.",
-      task: "Work out how many weeks early a baby born at 32 weeks would be.",
-      q: "What counts as a premature birth?",
-      a: "Birth before 37 completed weeks of gestation."
-    },
-    t3: {
-      d: "Organogenesis in the first trimester is when the developing baby is most vulnerable to teratogens — alcohol, certain medicines, some infections. This is why medication in pregnancy is scrutinised so carefully and why rubella immunity is checked.",
-      task: "Look up one medicine that is avoided in pregnancy and find out why.",
-      q: "Why is the first trimester the most vulnerable period?",
-      a: "Because that is when the major organs are forming, so disruption causes structural abnormalities."
-    }
-  },
-  {
-    title: "The first ten minutes of life",
-    what: "Being born means changing, in seconds, from getting oxygen through a cord to breathing air. It is the single biggest physiological change a human ever makes.",
-    facts: [
-      "That first cry inflates the lungs for the very first time.",
-      "The circulation reroutes within minutes as the lungs take over.",
-      "The APGAR score checks how the baby is doing at 1 and 5 minutes."
-    ],
-    words: [{ w: "Neonate", m: "A baby in its first 28 days of life." }],
-    t1: {
-      d: "Before birth a baby gets oxygen from its mother through the cord, like a diver on an air line. The first cry is the moment the baby takes over breathing for itself.",
-      task: "Learn the five APGAR words: Appearance, Pulse, Grimace, Activity, Respiration.",
-      q: "What does the first cry do?",
-      a: "Inflates the lungs so the baby can breathe air."
-    },
-    t2: {
-      d: "Each APGAR letter scores 0, 1 or 2, so 10 is the maximum. It is not a prediction of the child's future — it is a quick snapshot to guide whether the baby needs help right now.",
-      task: "Write out the APGAR table and score an imaginary baby who is pink, crying, active, with a heart rate of 140.",
-      q: "What is the maximum APGAR score?",
-      a: "10 — five components scored 0 to 2 each."
-    },
-    t3: {
-      d: "At birth, pulmonary vascular resistance falls sharply, the ductus arteriosus and foramen ovale functionally close, and the fetal circulation converts to the adult pattern. Delayed cord clamping is now standard practice in many settings because it improves the newborn's iron stores.",
-      task: "Read about the transition from fetal to neonatal circulation and note the two shunts that close.",
-      q: "Which two fetal shunts close after birth?",
-      a: "The ductus arteriosus and the foramen ovale."
-    }
-  },
-  {
-    title: "Milestones in the first year",
-    what: "Babies develop in a predictable order, though the timing varies a lot between individuals. Doctors track four areas: gross motor, fine motor, speech and language, and social behaviour.",
-    facts: [
-      "Social smile at around 6 to 8 weeks.",
-      "Sitting without support at around 6 to 8 months.",
-      "First words around 12 months; walking around 12 to 15 months."
-    ],
-    words: [{ w: "Milestone", m: "A skill most children reach at roughly a certain age." }],
-    t1: {
-      d: "Babies build skills like a staircase: hold up the head, roll over, sit, crawl, stand, walk. Almost always in that order, even if the timing differs.",
-      task: "Ask when you first walked and first talked. Families usually remember.",
-      q: "Which normally comes first, sitting or walking?",
-      a: "Sitting."
-    },
-    t2: {
-      d: "What matters more than an exact date is the pattern: is the child progressing, and is development even across all four areas? Losing a skill already gained — regression — always needs urgent assessment.",
-      task: "Draw a timeline from birth to 18 months and mark six milestones on it.",
-      q: "Why is losing a skill more worrying than gaining one late?",
-      a: "Regression can signal an underlying neurological or metabolic condition and needs urgent assessment."
-    },
-    t3: {
-      d: "Limit ages define when a milestone is definitively delayed: not sitting unsupported by 9 months, not walking by 18 months, no words by 18 months. Corrected age is used for premature babies until about 2 years, otherwise you wrongly label them as delayed.",
-      task: "Calculate the corrected age of a 9-month-old born at 30 weeks.",
-      q: "What is corrected age and why use it?",
-      a: "Age adjusted for prematurity, so a preterm baby's development is judged fairly."
-    }
-  },
-  {
-    title: "Children are not small adults",
-    what: "This sentence is the founding idea of paediatrics. A child's body handles medicines, fluid, heat and injury differently — not just in scale, but in kind.",
-    facts: [
-      "Medicine doses are calculated by weight, sometimes by body surface area.",
-      "Children lose heat faster because they have more skin relative to their size.",
-      "The same illness can look completely different in a baby than in a teenager."
-    ],
-    words: [{ w: "Paediatrics", m: "The branch of medicine dealing with children, from birth to around 18." }],
-    t1: {
-      d: "A tiny cup of water cools down far quicker than a big pot. Small bodies lose heat the same way, which is why babies are wrapped up so carefully.",
-      task: "Work out roughly how many times heavier an adult is than a newborn. Now imagine giving them the same dose of medicine.",
-      q: "Why are children's medicine doses worked out by weight?",
-      a: "Because their bodies are much smaller, so a fixed adult dose could be dangerous."
-    },
-    t2: {
-      d: "A baby with a serious infection may not have a fever at all — they may simply feed poorly, be floppy, or be unusually sleepy. The younger the child, the vaguer the signs, and the lower the threshold for investigating.",
-      task: "Write down three ways a baby might show illness without any obvious symptom.",
-      q: "Why is a very young baby with an infection harder to assess?",
-      a: "Their signs are non-specific — poor feeding, floppiness or sleepiness rather than clear symptoms."
-    },
-    t3: {
-      d: "Pharmacokinetics genuinely differ: neonates have immature hepatic enzymes and reduced renal clearance, and body water proportion falls from around 75% at birth to about 60% in adults. This changes both drug dosing and fluid management, and it is why paediatric prescribing is checked so obsessively.",
-      task: "Find out why chloramphenicol caused grey baby syndrome and what it teaches about neonatal metabolism.",
-      q: "Name two reasons neonates handle medicines differently.",
-      a: "Immature liver enzymes and reduced kidney clearance (also different body water and protein binding)."
-    }
-  },
-  {
-    title: "Puberty: the second big build",
-    what: "Puberty is the process of a child's body becoming an adult one. It is driven by hormones, it takes several years, and it starts at very different ages in different people — all of which is normal.",
-    facts: [
-      "It usually begins around 8 to 13 in girls and 9 to 14 in boys.",
-      "The growth spurt happens earlier in girls than in boys.",
-      "The brain is changing at the same time, not just the body."
-    ],
-    words: [{ w: "Hormone", m: "A chemical messenger released into the blood to tell distant parts of the body what to do." }],
-    t1: {
-      d: "Hormones are like text messages sent through your blood. During puberty the body sends a lot of them, and different parts respond at different speeds.",
-      task: "Write down one thing you would want a doctor to be good at, if you had to talk to them about growing up.",
-      q: "What is a hormone?",
-      a: "A chemical messenger carried in the blood that tells the body what to do."
-    },
-    t2: {
-      d: "It begins in the brain: the hypothalamus and pituitary gland release hormones that switch on the ovaries or testes. Because the range of normal is so wide, comparing yourself to friends is not a useful measure of anything.",
-      task: "Find out which gland is called the master gland and what it controls.",
-      q: "Which part of the body starts puberty off?",
-      a: "The brain — the hypothalamus and pituitary gland."
-    },
-    t3: {
-      d: "Tanner staging describes pubertal development objectively. Precocious puberty (before 8 in girls, 9 in boys) and delayed puberty both warrant investigation, since either can indicate an underlying endocrine or structural cause.",
-      task: "Look up what Tanner stages describe and how many there are.",
-      q: "What is precocious puberty?",
-      a: "Puberty starting unusually early — before about 8 in girls or 9 in boys."
-    }
-  },
-  {
-    title: "Growth charts and centiles",
-    what: "Doctors plot every child's height and weight on a growth chart. The chart does not say what a child should weigh — it shows how they compare with other children, and, far more importantly, whether they are following their own line.",
-    facts: [
-      "The lines on the chart are centiles.",
-      "Being on the 9th centile means 9 out of 100 children that age are smaller.",
-      "A low centile is not a problem in itself. Crossing downwards through centiles is."
-    ],
-    words: [{ w: "Centile", m: "A line on a growth chart showing how a child compares with others of the same age." }],
-    t1: {
-      d: "If a hundred children your age stood in a line by height, the centile tells you roughly where you would stand. There is no good or bad place in that line.",
-      task: "Find your own height in centimetres and write it down with today's date. Do it again in six months.",
-      q: "What does a growth chart compare?",
-      a: "A child's growth with that of other children the same age."
-    },
-    t2: {
-      d: "What doctors look for is the trend. A child steadily on the 2nd centile is usually just small. A child who drops from the 75th to the 9th over a year needs investigating — that change is the signal.",
-      task: "Sketch two lines on a chart: one steady low line, one falling line. Which would worry a doctor, and why?",
-      q: "Which is more concerning: a consistently low centile, or falling across centiles?",
-      a: "Falling across centiles."
-    },
-    t3: {
-      d: "Faltering growth is assessed against the child's own trajectory and mid-parental height, using WHO-based UK-WHO charts, with corrected age plotted for preterm infants. Head circumference is plotted too, since it tracks brain growth.",
-      task: "Find out what mid-parental height is and how it is calculated.",
-      q: "Why is head circumference plotted in infancy?",
-      a: "It reflects brain growth, so unusual patterns can flag neurological problems."
-    }
-  }
-]
-},
-{
-m: 7, name: "July", topic: "Skin and the senses",
-intro: "Your entire experience of the world arrives through a handful of sensors, wrapped in the largest organ you own.",
-lessons: [
-  {
-    title: "Skin: the organ you wear",
-    what: "Skin is the body's biggest organ. It is waterproof, self-repairing, self-renewing, and it is the first line of defence against everything outside you.",
-    facts: [
-      "The outer layer is the epidermis; the living layer beneath is the dermis.",
-      "You shed and replace your outer skin roughly every month.",
-      "Skin also makes vitamin D when sunlight hits it."
-    ],
-    words: [{ w: "Epidermis", m: "The thin outer layer of skin you can see and touch." }],
-    t1: {
-      d: "Skin is a raincoat that repairs itself, keeps germs out, holds water in, and tells you what things feel like — all at once.",
-      task: "Look closely at the skin on your knuckle and your forearm. Notice how different the thickness and texture are.",
-      q: "What is the outer layer of skin called?",
-      a: "The epidermis."
-    },
-    t2: {
-      d: "The dermis holds blood vessels, nerve endings, hair roots and sweat glands. Because the epidermis has no blood supply of its own, a shallow graze does not really bleed — you have to reach the dermis for that.",
-      task: "Find out why a paper cut hurts so much despite being tiny.",
-      q: "Which layer contains the nerve endings and blood vessels?",
-      a: "The dermis."
-    },
-    t3: {
-      d: "Burn depth is classified by how far it reaches: superficial, superficial partial thickness, deep partial thickness and full thickness. Full thickness burns are painless in the centre because the nerve endings have been destroyed — a counterintuitive and important sign.",
-      task: "Look up how burn surface area is estimated in children and why the adult rule of nines is modified.",
-      q: "Why can a full thickness burn be painless?",
-      a: "The nerve endings in the dermis have been destroyed."
-    }
-  },
-  {
-    title: "Keeping your temperature",
-    what: "Your body works hard to stay near 37°C. Sweating cools you as it evaporates; shivering warms you by making muscles work; goosebumps are a leftover from when humans had far more body hair.",
-    facts: [
-      "Blood vessels in the skin widen to lose heat and narrow to keep it.",
-      "That is why you go red when hot and pale when cold.",
-      "Babies cannot control their temperature well and rely on adults to help."
-    ],
-    words: [{ w: "Core temperature", m: "The temperature deep inside your body, where it matters." }],
-    t1: {
-      d: "Sweat cools you because evaporating water takes heat with it. That is why a breeze on damp skin feels so cold.",
-      task: "Wet the back of one hand and blow on both. Feel the difference.",
-      q: "Why does sweating cool you down?",
-      a: "Because evaporating sweat carries heat away from your skin."
-    },
-    t2: {
-      d: "Newborns cannot shiver effectively. Instead they burn a special tissue called brown fat to make heat. That store is limited, which is why keeping a newborn warm is an immediate priority at every birth.",
-      task: "Find out why a newborn is dried and wrapped immediately after birth.",
-      q: "How does a newborn generate heat if it cannot shiver?",
-      a: "By burning brown fat."
-    },
-    t3: {
-      d: "Hypothermia in neonates increases oxygen consumption, worsens acidosis and impairs surfactant function, so thermoregulation is part of the resuscitation algorithm. Very preterm babies are placed straight into a plastic bag under a radiant heater without drying.",
-      task: "Look up the recommended delivery room temperature for a preterm birth.",
-      q: "Why is temperature control part of newborn resuscitation?",
-      a: "Because cold stress increases oxygen demand and worsens outcomes."
-    }
-  },
-  {
-    title: "How you see",
-    what: "Light enters the eye, gets focused by the lens onto the retina at the back, and is converted into nerve signals. Your brain then turns those signals into a picture — and does a lot of editing on the way.",
-    facts: [
-      "The pupil is a hole; the coloured iris changes its size.",
-      "The retina contains rods for dim light and cones for colour.",
-      "The image lands upside down and your brain flips it."
-    ],
-    words: [{ w: "Retina", m: "The light-sensitive layer at the back of the eye." }],
-    t1: {
-      d: "An eye works like a camera: a hole to let light in, a lens to focus it, and a screen at the back. Your brain does the rest.",
-      task: "Look in a mirror in dim light, then switch on a bright lamp. Watch your pupils shrink.",
-      q: "What is the retina?",
-      a: "The light-sensitive layer at the back of the eye."
-    },
-    t2: {
-      d: "In short-sightedness the eye focuses light in front of the retina, so distant things blur. Children often do not report it — they assume everyone sees what they see, which is exactly why vision screening exists.",
-      task: "Cover one eye and read something across the room, then swap. Are they equally sharp?",
-      q: "Why might a child not report poor vision?",
-      a: "Because they have nothing to compare it with and assume everyone sees the same."
-    },
-    t3: {
-      d: "Amblyopia — lazy eye — develops when one eye's input is not used during the critical period, and the visual cortex suppresses it. Treatment with patching or glasses works well if started early and poorly if left, which is why the red reflex is checked at every newborn examination.",
-      task: "Find out what an absent red reflex in a newborn can indicate.",
-      q: "Why must amblyopia be treated early?",
-      a: "The visual cortex only develops normally if it receives input during the critical period of early childhood."
-    }
-  },
-  {
-    title: "Ears: hearing and balance",
-    what: "Sound is vibrating air. Your ear catches those vibrations, amplifies them with three tiny bones, and converts them into nerve signals in a snail-shaped structure called the cochlea. The same organ also keeps you balanced.",
-    facts: [
-      "The three smallest bones in your body are in your middle ear.",
-      "The cochlea turns vibration into nerve signals.",
-      "Fluid-filled loops next to it detect head movement — that is balance."
-    ],
-    words: [{ w: "Cochlea", m: "The spiral part of the inner ear that turns vibrations into nerve signals." }],
-    t1: {
-      d: "Spin around fast and then stop. The dizziness is fluid still sloshing in the loops of your inner ear while your eyes insist you have stopped.",
-      task: "Cup your hands behind your ears and listen. You just made your ears bigger, and it works.",
-      q: "Which part of the ear turns vibrations into nerve signals?",
-      a: "The cochlea."
-    },
-    t2: {
-      d: "Ear infections are extremely common in small children because the tube connecting the middle ear to the throat is shorter and more horizontal than in adults, so germs travel up it easily. It usually improves as the child grows.",
-      task: "Find out what glue ear is and how it can affect a child's speech.",
-      q: "Why do young children get so many ear infections?",
-      a: "Their Eustachian tube is short and horizontal, so infection spreads easily from the throat."
-    },
-    t3: {
-      d: "Newborn hearing screening uses otoacoustic emissions, with automated auditory brainstem response as a second-line test. Early detection matters because language acquisition depends on auditory input during the first years of life; cochlear implants have far better outcomes when fitted early.",
-      task: "Read how an otoacoustic emissions test works — it is genuinely elegant.",
-      q: "Why is newborn hearing screening done in the first weeks?",
-      a: "Because early detection and treatment protects normal language development."
-    }
-  },
-  {
-    title: "Taste, smell and touch",
-    what: "Taste and smell work together far more than people realise; most of what you call flavour is actually smell. Touch is not one sense but several — pressure, temperature, vibration and pain all have separate receptors.",
-    facts: [
-      "Block your nose and most food loses its flavour.",
-      "Fingertips and lips have the densest touch receptors.",
-      "Pain is a sense, and it exists to protect you."
-    ],
-    words: [{ w: "Receptor", m: "A sensor that detects something and turns it into a nerve signal." }],
-    t1: {
-      d: "Hold your nose and eat something. Most of the flavour disappears, because most of taste is really smell.",
-      task: "Try the nose-holding test with a piece of fruit, then let go halfway through.",
-      q: "Why does food taste bland when you have a cold?",
-      a: "Because a blocked nose stops smell, and most flavour comes from smell."
-    },
-    t2: {
-      d: "Very rarely, people are born unable to feel pain. It sounds like a gift and is in fact dangerous — they injure themselves constantly without noticing. Pain is a protective alarm system.",
-      task: "Get someone to touch your back with one or two fingers and guess which. Repeat on your fingertip — you will be far more accurate there.",
-      q: "Why is the ability to feel pain useful?",
-      a: "It warns you about damage so you can stop it getting worse."
-    },
-    t3: {
-      d: "Assessing pain in children who cannot speak requires observational tools such as FLACC (face, legs, activity, cry, consolability), and self-report scales like Wong-Baker faces for older children. Undertreated pain in neonates has measurable long-term effects, which is why the old belief that babies do not feel pain was such a serious error.",
-      task: "Look up the FLACC scale and note its five components.",
-      q: "How do you assess pain in a pre-verbal child?",
-      a: "With an observational tool such as FLACC, scoring behaviour rather than self-report."
-    }
-  },
-  {
-    title: "Sun, burns and skin care",
-    what: "Sunlight lets your skin make vitamin D, but ultraviolet radiation also damages the DNA in skin cells. Sunburn in childhood measurably increases skin cancer risk decades later.",
-    facts: [
-      "UV goes through cloud, so you can burn on a grey day.",
-      "Babies under six months should be kept out of direct sun entirely.",
-      "Cool running water for 20 minutes is the first aid for a burn — never ice, never butter."
-    ],
-    words: [{ w: "Ultraviolet (UV)", m: "Invisible radiation in sunlight that damages skin cells." }],
-    t1: {
-      d: "Sunburn is real damage, not just redness. Every burn adds up over a lifetime.",
-      task: "Learn the burn first aid rule: cool running water, 20 minutes, then cover loosely with cling film.",
-      q: "What is the first aid for a burn?",
-      a: "Cool running water for 20 minutes."
-    },
-    t2: {
-      d: "Sunscreen needs applying generously and reapplying, especially after swimming. Shade and clothing protect better than sunscreen alone, and the sun is strongest between 11am and 3pm.",
-      task: "Check the SPF on any sunscreen in your house and find out what SPF actually measures.",
-      q: "Why is shade better protection than sunscreen alone?",
-      a: "Sunscreen is usually applied too thinly and wears off; shade and clothing do not."
-    },
-    t3: {
-      d: "Burns in children need careful assessment of depth and total body surface area, using a Lund and Browder chart rather than the adult rule of nines, because a child's head accounts for a much greater proportion of surface area. Certain burn patterns — glove and stocking distribution, clear margins — raise safeguarding concerns.",
-      task: "Find out why a scald with a sharp, symmetrical margin is a safeguarding concern.",
-      q: "Why is the adult rule of nines inaccurate in children?",
-      a: "A child's head is proportionally much larger and their legs smaller, so the percentages differ."
-    }
-  }
-]
-},
-{
-m: 8, name: "August", topic: "Food, guts and digestion",
-intro: "Nine metres of tube that takes a meal apart into molecules small enough to enter your blood, and does it without you thinking about it once.",
-lessons: [
-  {
-    title: "Why we eat",
-    what: "Food does two jobs: it provides energy to run your body, and it provides raw materials to build and repair it. Children need proportionally more of both, because they are still under construction.",
-    facts: [
-      "Energy from food is measured in calories or kilojoules.",
-      "Growth means you need building materials, not just fuel.",
-      "A baby roughly triples its birth weight in the first year."
-    ],
-    words: [{ w: "Nutrient", m: "Anything in food your body needs — protein, fat, carbohydrate, vitamins, minerals." }],
-    t1: {
-      d: "A car needs petrol to run. But a house being built needs bricks as well. You need both, because you are running and being built at the same time.",
-      task: "Look at what you ate today and split it into fuel and building materials.",
-      q: "Why do growing children need proportionally more food than adults?",
-      a: "Because they need materials to build new body as well as fuel to run it."
-    },
-    t2: {
-      d: "Protein supplies amino acids for building; carbohydrate is the quickest fuel; fat is dense energy and is essential for brain development, which is why low-fat diets are not recommended for young children.",
-      task: "Find out how much of the brain is made of fat. The answer is higher than most people guess.",
-      q: "Why are low-fat diets not recommended for under-fives?",
-      a: "Because fat is essential for brain development and provides concentrated energy for growth."
-    },
-    t3: {
-      d: "Exclusive breastfeeding is recommended for around the first six months, with solids introduced from about six months alongside continued milk feeds. Nutritional requirements per kilogram of body weight are far higher in infancy than adulthood, and faltering growth is often the first sign of chronic disease.",
-      task: "Look up the recommended age for introducing solid foods and two signs of readiness.",
-      q: "Why is faltering growth an important clinical sign?",
-      a: "It is often the earliest indicator of underlying chronic illness or inadequate intake."
-    }
-  },
-  {
-    title: "The journey of a meal",
-    what: "Food goes: mouth, oesophagus, stomach, small intestine, large intestine. Chewing and enzymes break it down, the small intestine absorbs the nutrients, and the large intestine reclaims water from what is left.",
-    facts: [
-      "The whole tube is around nine metres long in an adult.",
-      "Muscles squeeze food along in waves called peristalsis.",
-      "Most absorption happens in the small intestine, not the stomach."
-    ],
-    words: [{ w: "Peristalsis", m: "Waves of muscle squeezing that push food along the gut." }],
-    t1: {
-      d: "Squeeze toothpaste along the tube with your fingers. That is peristalsis — and it works even if you are upside down, which is why astronauts can eat in space.",
-      task: "Swallow a sip of water and notice you cannot stop it once it has started. That is peristalsis taking over.",
-      q: "Where are most nutrients absorbed?",
-      a: "In the small intestine."
-    },
-    t2: {
-      d: "The stomach is mainly a mixing tank with strong acid that kills germs and starts protein digestion. The small intestine is lined with millions of tiny folds and finger-like villi, giving it an enormous absorbing surface.",
-      task: "Find out what pH stomach acid is and compare it with lemon juice.",
-      q: "What are villi and why do they matter?",
-      a: "Tiny finger-like projections that hugely increase the surface area for absorbing nutrients."
-    },
-    t3: {
-      d: "Coeliac disease is an immune reaction to gluten that flattens the villi, causing malabsorption, faltering growth and abdominal symptoms. Diagnosis needs the child to still be eating gluten when tested, which is a common and important practical trap.",
-      task: "Look up why a child must remain on gluten before coeliac testing.",
-      q: "Why does villous atrophy cause malabsorption?",
-      a: "Losing the villi drastically reduces the surface area available to absorb nutrients."
-    }
-  },
-  {
-    title: "What is in food",
-    what: "Food contains macronutrients you need in large amounts — carbohydrate, protein and fat — and micronutrients you need in tiny amounts but cannot do without, like iron, calcium, vitamin D and vitamin C.",
-    facts: [
-      "Missing a micronutrient can cause serious illness even if you eat plenty.",
-      "Scurvy is vitamin C deficiency; rickets is vitamin D deficiency.",
-      "Iron deficiency is the commonest nutritional problem in children worldwide."
-    ],
-    words: [
-      { w: "Macronutrient", m: "A nutrient needed in large amounts: carbohydrate, protein or fat." },
-      { w: "Micronutrient", m: "A vitamin or mineral needed in tiny amounts." }
-    ],
-    t1: {
-      d: "Sailors used to get scurvy on long voyages with no fresh fruit — bleeding gums, exhaustion, old wounds reopening. All from one missing vitamin.",
-      task: "Name three foods high in vitamin C without looking them up.",
-      q: "Which vitamin prevents scurvy?",
-      a: "Vitamin C."
-    },
-    t2: {
-      d: "Iron deficiency anaemia in toddlers is often caused by drinking large volumes of cow's milk, which is low in iron and reduces absorption. It causes tiredness, pallor and can affect development.",
-      task: "Find out why vitamin C helps you absorb iron from plant foods.",
-      q: "Why can too much cow's milk cause anaemia in a toddler?",
-      a: "It is low in iron, fills the child up, and interferes with iron absorption."
-    },
-    t3: {
-      d: "Iron deficiency in infancy is associated with impaired neurodevelopment that may not fully reverse with treatment, which is why prevention matters more than correction. A microcytic hypochromic picture on a full blood count is the classic laboratory finding.",
-      task: "Look up what mean cell volume (MCV) tells you in anaemia.",
-      q: "What blood film picture suggests iron deficiency?",
-      a: "Microcytic, hypochromic red cells — small and pale."
-    }
-  },
-  {
-    title: "Water and dehydration",
-    what: "You are mostly water, and children are more water than adults. Losing too much — through vomiting, diarrhoea, fever or heat — is one of the commonest reasons children need hospital care worldwide.",
-    facts: [
-      "A newborn is around 75% water; an adult around 60%.",
-      "Small bodies have less reserve, so they dehydrate faster.",
-      "Signs include dry mouth, fewer wet nappies, sunken eyes and floppiness."
-    ],
-    words: [{ w: "Dehydration", m: "Not having enough water in the body for it to work properly." }],
-    t1: {
-      d: "A small puddle dries up far faster than a lake. A small body loses water faster too, which is why babies get ill from a tummy bug much quicker than adults do.",
-      task: "Learn three signs of dehydration you could spot in a younger child.",
-      q: "Name two signs of dehydration.",
-      a: "Dry mouth and fewer wet nappies (also sunken eyes, floppiness, no tears)."
-    },
-    t2: {
-      d: "Oral rehydration solution is one of the most important medical inventions of the last century. It works because glucose and sodium are absorbed together, dragging water across the gut wall with them. It has saved tens of millions of children's lives.",
-      task: "Find out roughly how many child deaths a year oral rehydration therapy is credited with preventing.",
-      q: "Why does oral rehydration solution contain both salt and sugar?",
-      a: "Because sodium and glucose are absorbed together, pulling water across the gut wall."
-    },
-    t3: {
-      d: "Dehydration is graded clinically and by percentage weight loss, since weight change is the most accurate measure. Assessment covers capillary refill, skin turgor, mucous membranes, urine output and conscious level; hypernatraemic dehydration needs particularly careful, slow correction to avoid cerebral oedema.",
-      task: "Look up why rapid correction of hypernatraemia is dangerous.",
-      q: "What is the most accurate measure of a child's fluid deficit?",
-      a: "Change in body weight against a recent well weight."
-    }
-  },
-  {
-    title: "The bugs that live in you",
-    what: "Your gut contains trillions of bacteria, collectively called the microbiome. Most are harmless or actively helpful — they digest things you cannot, make some vitamins, and help train your immune system.",
-    facts: [
-      "You carry roughly as many bacterial cells as human cells.",
-      "A baby's microbiome starts forming at birth.",
-      "Antibiotics kill helpful bacteria as well as harmful ones."
-    ],
-    words: [{ w: "Microbiome", m: "The community of microbes living in and on your body." }],
-    t1: {
-      d: "Not all germs are enemies. Most of the bacteria in your gut are more like helpful tenants who pay rent by doing jobs for you.",
-      task: "Find out which everyday foods contain live helpful bacteria.",
-      q: "Are all bacteria harmful?",
-      a: "No — most in your gut are harmless or helpful."
-    },
-    t2: {
-      d: "This is one reason antibiotics are not prescribed casually: they wipe out useful bacteria too, which can cause diarrhoea and lets resistant organisms take hold.",
-      task: "Write down two reasons a doctor might refuse to prescribe antibiotics for a cold.",
-      q: "Why can antibiotics cause diarrhoea?",
-      a: "They kill helpful gut bacteria along with the harmful ones."
-    },
-    t3: {
-      d: "Early microbiome development is influenced by mode of delivery, feeding and antibiotic exposure, with associations reported for later allergy, asthma and obesity. The evidence is still developing, so it is a good example of a field where you must hold claims loosely.",
-      task: "Find one microbiome claim in the news and check whether it comes from human trials or mouse studies.",
-      q: "Why should you be cautious about strong microbiome claims?",
-      a: "Much of the evidence is associational or from animal studies rather than human trials."
-    }
-  },
-  {
-    title: "Tummy ache: what doctors think",
-    what: "Abdominal pain is one of the commonest reasons a child sees a doctor. Most causes are harmless, but a few are emergencies, so the doctor's job is to sort one from the other reliably.",
-    facts: [
-      "Constipation is a very common and often missed cause.",
-      "Appendicitis classically starts centrally and moves to the lower right.",
-      "Pain plus green vomit, a very swollen tummy, or a child who will not move needs urgent help."
-    ],
-    words: [{ w: "Appendicitis", m: "Inflammation of the appendix, a small pouch off the large intestine. It usually needs surgery." }],
-    t1: {
-      d: "Most tummy aches are nothing serious. Doctors are trained to spot the small number that are, which is why they ask so many questions.",
-      task: "Write down three questions you would ask a child with tummy ache.",
-      q: "Where does appendicitis pain typically end up?",
-      a: "In the lower right side of the abdomen."
-    },
-    t2: {
-      d: "Doctors ask about site, onset, character, radiation, timing, what makes it better or worse, and severity — often remembered as SOCRATES. In children they also always ask about eating, drinking, wee, poo, and whether the child is behaving normally.",
-      task: "Learn what the letters of SOCRATES stand for.",
-      q: "Why does a doctor ask whether the child is behaving normally?",
-      a: "Because a child who is playing normally is far less likely to be seriously unwell."
-    },
-    t3: {
-      d: "Intussusception — one part of bowel telescoping into another — classically presents in infants with intermittent severe pain, drawing up the legs, and later redcurrant jelly stool. It is a surgical emergency, and bilious (green) vomiting in any child means obstruction until proven otherwise.",
-      task: "Look up how intussusception is diagnosed and how it is often treated non-surgically.",
-      q: "What does bilious vomiting in a child suggest?",
-      a: "Intestinal obstruction until proven otherwise — it needs urgent assessment."
+      d: "Surgical skill acquisition follows a measurable learning curve, and simulation training genuinely transfers to theatre performance. Ergonomics matter too: microsurgery under load causes real musculoskeletal injury among surgeons, and posture is taught deliberately.",
+      task: "Look up how surgical simulators are used in ENT training.",
+      q: "Why is simulation used in surgical training?",
+      a: "Because skills learned on a simulator transfer measurably to real operating performance."
     }
   }
 ]
@@ -1614,7 +1607,7 @@ lessons: [
 },
 {
 m: 10, name: "October", topic: "Being ill and getting better",
-intro: "How a doctor turns a worried family and a vague set of symptoms into a diagnosis and a plan. This is the actual craft of medicine.",
+intro: "How a surgeon turns a worried family and a vague set of symptoms into a diagnosis and a plan — and decides who actually needs an operation. This is the craft of the job.",
 lessons: [
   {
     title: "Symptoms and signs",
@@ -1676,59 +1669,59 @@ lessons: [
     }
   },
   {
-    title: "Examining a patient",
-    what: "Examination follows a discipline: look, feel, listen, and sometimes tap. In children the order gets rearranged around the child's mood — you do the least distressing things first and save the worst until last.",
+    title: "Looking in an ear, nose and throat",
+    what: "ENT examination is mostly about light and access. Everything you need to see is inside a small dark hole, so the specialty is built around instruments that let you look into places the eye cannot reach.",
     facts: [
-      "Inspection alone reveals an enormous amount.",
-      "A stethoscope makes internal sounds audible: heart, lungs, gut.",
-      "Never wake or upset a child for something that can wait."
+      "An otoscope is the handheld light used to look at the eardrum.",
+      "A flexible nasendoscope is a thin camera passed through the nose to see the throat and voice box.",
+      "Tuning forks are still used, because they answer a question no machine answers faster."
     ],
-    words: [{ w: "Auscultation", m: "Listening to the body with a stethoscope." }],
+    words: [{ w: "Otoscope", m: "The handheld instrument with a light and lens used to look inside the ear." }],
     t1: {
-      d: "With a nervous child, doctors often examine a teddy first. It sounds silly. It works, and it is a genuine clinical technique.",
-      task: "Get down to a small child's eye level next time you talk to one and notice how differently they respond.",
-      q: "What does a stethoscope let you do?",
-      a: "Listen to sounds inside the body, like the heart and lungs."
+      d: "Almost every ENT examination starts the same way: a light, a careful look, and a doctor telling the child exactly what they are about to do.",
+      task: "Next time a doctor looks in your ear, ask them what they can see. Most are pleased to be asked.",
+      q: "What is an otoscope used for?",
+      a: "Looking inside the ear at the ear canal and eardrum."
     },
     t2: {
-      d: "Warm hands, warm stethoscope, and permission asked first. Examine a distressed toddler on a parent's lap rather than on a couch. Getting cooperation is not being nice for its own sake — it is what makes the examination reliable.",
-      task: "Practise explaining what a stethoscope does to a five-year-old in one friendly sentence.",
-      q: "Why examine a toddler on their parent's lap?",
-      a: "They stay calmer, so the examination is more accurate and less distressing."
+      d: "With a small child you pull the pinna gently backwards to straighten the canal — and downwards in babies, because the canal points differently before it has grown. Getting the child on a parent's lap and letting them hold the otoscope first buys more cooperation than any amount of persuading.",
+      task: "Write three things you would say to a frightened four-year-old before looking in their ear.",
+      q: "Why do you pull the ear gently backwards during examination?",
+      a: "To straighten the ear canal so you can see the eardrum."
     },
     t3: {
-      d: "Opportunistic examination is the paediatric skill: auscultate while the child is quiet, count the respiratory rate before they notice you, and leave the throat and ears until last because they reliably end cooperation. In a very unwell child, ABCDE assessment takes priority over completeness.",
-      task: "Write the order you would examine a settled 2-year-old with a cough, and justify it.",
-      q: "Why leave examining the throat until last?",
-      a: "It is the most distressing part and usually ends the child's cooperation."
+      d: "Examination includes otoscopy, tuning fork tests, anterior rhinoscopy, oral cavity and neck palpation, and flexible nasendoscopy where indicated. Pneumatic otoscopy assesses drum mobility and improves the accuracy of diagnosing effusion, which a static view alone can miss.",
+      task: "Look up pneumatic otoscopy and why it improves diagnosis of glue ear.",
+      q: "What does pneumatic otoscopy add to a normal look in the ear?",
+      a: "It shows whether the eardrum moves, which reveals fluid behind it."
     }
   },
   {
-    title: "Tests and scans",
-    what: "Tests do not replace thinking. A good doctor forms an idea first, then chooses a test that will confirm or rule it out. Testing everything indiscriminately produces confusing results and unnecessary distress.",
+    title: "Tests in ENT",
+    what: "Tests do not replace thinking. A good clinician forms an idea first, then chooses the test that will confirm or rule it out. In ENT the commonest tests measure hearing rather than look at pictures.",
     facts: [
-      "Blood tests, urine tests, x-rays, ultrasound, CT and MRI all answer different questions.",
-      "X-rays and CT use radiation; ultrasound and MRI do not.",
-      "Children are more sensitive to radiation than adults, so scans are chosen carefully."
+      "An audiogram maps the quietest sound you can hear at each pitch.",
+      "A tympanogram measures whether the eardrum moves properly.",
+      "CT shows bone in detail; MRI shows soft tissue and nerves."
     ],
-    words: [{ w: "Ultrasound", m: "A scan using sound waves, with no radiation, safe to repeat." }],
+    words: [{ w: "Tympanogram", m: "A quick test measuring how well the eardrum moves, used to detect fluid behind it." }],
     t1: {
-      d: "A test is a question you ask the body. Asking a hundred random questions gets you noise; asking the right one gets you an answer.",
-      task: "Match each: broken wrist, appendix, brain detail. Which scan would you choose for each?",
-      q: "Which scan uses sound waves and no radiation?",
-      a: "Ultrasound."
+      d: "A hearing test is not a school test. There is nothing to revise and no way to fail — it simply measures what your ears do.",
+      task: "Find out what happens in a hearing test and how long it takes.",
+      q: "What does an audiogram show?",
+      a: "The quietest sound a person can hear at each pitch."
     },
     t2: {
-      d: "Every test has false positives and false negatives, so a result must always be interpreted alongside the story and the examination. A normal test in a child who looks very unwell does not make them well.",
-      task: "Find out what a false negative is and why it can be dangerous.",
-      q: "Why is a test result never interpreted on its own?",
-      a: "Because tests can be wrong, and the clinical picture must guide interpretation."
+      d: "Tympanometry takes seconds and is genuinely powerful: a flat trace means the drum is not moving, which usually means fluid behind it. Together with the audiogram it can confirm glue ear before anyone reaches for a scan.",
+      task: "Find out why children under about four are tested differently from adults.",
+      q: "What does a flat tympanogram usually mean?",
+      a: "The eardrum is not moving — typically because of fluid in the middle ear."
     },
     t3: {
-      d: "Bayesian reasoning underlies all of this: the same result means different things depending on pre-test probability, which is why screening low-risk populations generates so many false positives. In children, ionising radiation carries a higher lifetime risk, so ultrasound and MRI are preferred where they can answer the question.",
-      task: "Look up sensitivity and specificity and write a one-line definition of each.",
-      q: "Why does the same test result mean different things in different patients?",
-      a: "Because pre-test probability changes how likely a positive result is to be a true positive."
+      d: "Imaging is chosen by question: high-resolution CT of the temporal bone for bony anatomy and cholesteatoma, MRI for vestibular schwannoma and soft tissue. Children are more radiosensitive, so scans are justified individually rather than ordered routinely.",
+      task: "Look up why MRI is preferred for investigating one-sided sensorineural hearing loss.",
+      q: "Which scan is used to look for a tumour on the hearing nerve?",
+      a: "MRI, because it shows soft tissue and nerves rather than bone."
     }
   },
   {
@@ -1964,35 +1957,35 @@ lessons: [
 ]
 },
 {
-m: 12, name: "December", topic: "Becoming a doctor",
-intro: "The last unit is about the job itself: how doctors think, how they behave, and how you get from where you are now to there.",
+m: 12, name: "December", topic: "Becoming a surgeon",
+intro: "The last unit is about the job itself: what an ENT surgeon does all day, how surgeons think, how they behave, and how you get from where you are now to there.",
 lessons: [
   {
-    title: "What doctors actually do",
-    what: "Far less of the job is dramatic than television suggests. Most of it is talking, examining, thinking, explaining, writing things down, and coordinating other people.",
+    title: "What an ENT surgeon actually does",
+    what: "Far less of the job is dramatic than television suggests, and far less of it is operating than people assume. Most ENT work is clinic: looking, listening, explaining, and deciding who does not need surgery.",
     facts: [
-      "Ward rounds, clinics, procedures, phone calls and notes fill most days.",
-      "Doctors work in teams; almost nothing is done alone.",
-      "Communication takes up more time than anything else."
+      "A typical week mixes outpatient clinics, operating lists, ward rounds and on-call.",
+      "Most patients seen in clinic never have an operation.",
+      "ENT sees the widest age range of any surgical specialty, from newborns to the very old."
     ],
-    words: [{ w: "Ward round", m: "The daily visit to every patient on a ward to review and plan their care." }],
+    words: [{ w: "Clinic", m: "An outpatient session where patients are assessed and decisions are made, without an operation." }],
     t1: {
-      d: "Television shows the ten dramatic minutes. Real medicine is mostly the hundred careful ones around them.",
-      task: "Write down what you imagine a doctor does all day, then compare it with the timetable earlier on this page.",
-      q: "What takes up most of a doctor's day?",
-      a: "Talking with patients, families and colleagues."
+      d: "An ENT surgeon might see a baby with glue ear, a teenager with a broken nose and an eighty-year-old with a hoarse voice, all in the same morning.",
+      task: "Write down three completely different patients an ENT surgeon might see in one clinic.",
+      q: "Do most ENT patients end up having an operation?",
+      a: "No — most are managed in clinic without surgery."
     },
     t2: {
-      d: "Documentation matters enormously: notes are a legal record, a communication tool for the next team, and a safety net. If it is not written down, in practice it did not happen.",
-      task: "Write three sentences of notes about an imaginary patient, clearly enough for a stranger to understand.",
-      q: "Why are clinical notes so important?",
-      a: "They are a legal record and the way the next team knows what happened."
+      d: "ENT is often described as having one of the better balances in surgery: real operating, a lot of children, plenty of clinic, and comparatively fewer nights than some specialties. It is also one of the smaller specialties, so competition for training places is genuine.",
+      task: "Look up how many ENT consultants there are in the UK compared with, say, general surgeons.",
+      q: "Why is ENT competitive to get into?",
+      a: "It is a small specialty with relatively few training places for the number applying."
     },
     t3: {
-      d: "Structured handover tools such as SBAR (Situation, Background, Assessment, Recommendation) exist because handover is where errors cluster. Human factors research — borrowed largely from aviation — now underpins much of patient safety practice.",
-      task: "Look up SBAR and use it to hand over an imaginary patient in four sentences.",
-      q: "Why is handover a high-risk moment?",
-      a: "Because information is easily lost between teams, and errors cluster at transitions of care."
+      d: "Deciding not to operate is a clinical skill in its own right, and often the harder decision. Documentation matters equally: notes are a legal record, a communication tool for the next team, and a safety net. If it is not written down, in practice it did not happen.",
+      task: "Write three sentences of clinic notes about an imaginary patient, clearly enough for a stranger to follow.",
+      q: "Why is deciding not to operate a skill?",
+      a: "Because surgery carries real risks, and knowing when the risks outweigh the benefit protects the patient."
     }
   },
   {
@@ -2084,7 +2077,7 @@ lessons: [
   },
   {
     title: "Nobody works alone",
-    what: "A hospital runs on a team. Nurses, pharmacists, physiotherapists, dietitians, play specialists, radiographers, healthcare assistants, cleaners and administrators are all essential, and a doctor who does not respect them is a worse doctor.",
+    what: "A hospital runs on a team. Audiologists, speech and language therapists, nurses, operating department practitioners, play specialists, interpreters and administrators are all essential, and a surgeon who does not respect them is a worse surgeon.",
     facts: [
       "Nurses spend far more time with a patient than a doctor does.",
       "Pharmacists catch prescribing errors every single day.",
@@ -2112,30 +2105,30 @@ lessons: [
   },
   {
     title: "Your path from here",
-    what: "You are years away from any of this, and that is completely fine. The things that actually matter now are curiosity, kindness, consistency, and getting comfortable around children and around people who are unwell.",
+    what: "You are years away from any of this, and that is completely fine. What matters now is curiosity, kindness, consistency, and getting comfortable around people who are frightened or unwell.",
     facts: [
       "Nobody expects medical knowledge from a school student.",
-      "Consistent volunteering beats a single impressive week.",
-      "Plenty of excellent doctors took an indirect route in."
+      "You do not choose ENT until years after medical school — so you keep every option open.",
+      "Having had grommets yourself is a genuine advantage: you know what the patient's side feels like."
     ],
     words: [{ w: "Work experience", m: "Time spent watching or helping in a workplace to learn what a job is really like." }],
     t1: {
-      d: "You do not need to be brilliant at everything. You need to keep being curious, keep being kind, and keep turning up.",
+      d: "You already know something most surgeons had to be told: what it is like to be the small person in the waiting room. Do not lose that.",
       task: "Write down one thing you will do this month that moves you a step closer.",
       q: "What matters most at your age?",
       a: "Curiosity, kindness and consistency — not medical knowledge."
     },
     t2: {
-      d: "Depth beats breadth in an application. A year of helping at the same club, and what you noticed and learned there, is worth far more than a list of one-off placements you cannot say anything about.",
+      d: "Depth beats breadth in an application. A year of helping at the same club, and what you noticed there, is worth far more than a list of one-off placements you cannot say anything about. And you do not have to commit to ENT now — you commit to medicine, and choose later.",
       task: "Start a short log of anything you do with children or with people who are unwell, and what you learned each time.",
-      q: "Why does long-term volunteering count for more?",
-      a: "Because it shows commitment and gives you real experiences to reflect on."
+      q: "When do you actually choose ENT?",
+      a: "Years after medical school, during or after foundation training."
     },
     t3: {
-      d: "Applications and interviews test reflection, not activity: what you did matters less than what you understood from it. Graduate entry, foundation years and access courses all exist, so a first attempt that does not work out is a delay, not an ending.",
-      task: "Write a 150-word reflection on something you have done that taught you about caring for others.",
-      q: "What do medical school interviews actually test?",
-      a: "Your ability to reflect on experience — insight, not a list of achievements."
+      d: "Surgical applications test reflection and evidence of commitment: audit, teaching, courses, presentations. Competition ratios for ENT are high, so a portfolio built steadily from early on matters — but graduate entry, foundation years and access courses all exist, so a first attempt that does not work is a delay, not an ending.",
+      task: "Write a 150-word reflection on something you have experienced that taught you about being a patient.",
+      q: "Why does being a former patient help a surgeon?",
+      a: "It gives you a real understanding of what the experience feels like from the other side, which patients notice."
     }
   }
 ]

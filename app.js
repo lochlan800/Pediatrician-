@@ -1,4 +1,4 @@
-/* Pediatrician Pathway — behaviour. Vanilla JS, no build step. */
+/* ENT Pathway — behaviour. Vanilla JS, no build step. */
 (function () {
   "use strict";
 
@@ -331,6 +331,7 @@
   /* ---------------- the daily lesson ---------------- */
   const DEFAULT_BIRTHDAY = "2015-06-16";
   const MONTH_NAMES = CURRICULUM.map(function (u) { return u.name; });
+  const TOTAL_LESSONS = CURRICULUM.reduce(function (n, u) { return n + u.lessons.length; }, 0);
 
   const ageSel = $("#ageSel");
   const monthSel = $("#monthSel");
@@ -496,7 +497,7 @@
     });
 
     const count = Object.keys(learned).filter(function (k) { return learned[k]; }).length;
-    $("#learnedCount").textContent = count + " of 72 lessons learned";
+    $("#learnedCount").textContent = count + " of " + TOTAL_LESSONS + " lessons learned";
   }
 
   function shiftDay(step) {
