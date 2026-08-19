@@ -187,7 +187,7 @@ const CHECKLISTS = [
     band: "Right now (any age)",
     icon: "👂",
     items: [
-      "Ask your family exactly what happened when you had your grommets — why, how old you were, what changed afterwards",
+      "Find out what grommets are for, and why so many children end up needing them",
       "Learn the three parts of the ear: outer, middle, inner",
       "Learn a few signs in British or American Sign Language, and keep going",
       "Protect your own hearing: keep headphones under about 60% volume, and take breaks",

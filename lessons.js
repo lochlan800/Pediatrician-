@@ -905,7 +905,7 @@ lessons: [
 },
 {
 m: 6, name: "June", topic: "Children's ears: glue ear and grommets",
-intro: "This is the unit that started all of it. If you had grommets yourself, this month explains exactly what was happening in your ears, why somebody decided to operate, and what those tiny tubes were doing in there.",
+intro: "The heart of children's ENT. Glue ear and grommets are the commonest reason a child ever meets an ear surgeon, and this month covers exactly what goes wrong, why somebody decides to operate, and what those tiny tubes actually do.",
 lessons: [
   {
     title: "Why children's ears are different",
@@ -918,7 +918,7 @@ lessons: [
     words: [{ w: "Eustachian tube", m: "The tube from the middle ear to the back of the nose that lets air in and fluid out." }],
     t1: {
       d: "Picture a drainpipe lying flat instead of sloping down. Water sits in it instead of running out. A small child's ear tube is the flat one.",
-      task: "Ask how old you were when you had ear trouble. Most children's worst years are between two and five.",
+      task: "Find out which years children get the most ear trouble. The answer is usually between two and five.",
       q: "Why do young children get more ear problems than adults?",
       a: "Their Eustachian tube is short and nearly horizontal, so it drains badly."
     },
@@ -1008,7 +1008,7 @@ lessons: [
     },
     t2: {
       d: "With air behind it again, the eardrum can vibrate normally, the sticky fluid clears, and hearing returns. Many children describe the world as suddenly loud afterwards, because they had slowly forgotten what normal hearing sounded like.",
-      task: "Ask whether anyone remembers what you said in the days after your grommets went in.",
+      task: "Find out what children commonly say in the days after grommets go in. \"Why is everything so loud?\" is the classic.",
       q: "Why does hearing improve once air is back in the middle ear?",
       a: "The eardrum can vibrate freely again, so sound is transmitted normally."
     },
@@ -1030,7 +1030,7 @@ lessons: [
     words: [{ w: "Day case", m: "An operation where you come in and go home on the same day." }],
     t1: {
       d: "Nothing is cut on the outside at all. The surgeon works down the ear canal through a microscope, so there is no scar to see afterwards.",
-      task: "Ask your family what you remember, or do not remember, about your operation day.",
+      task: "Find out what a child is told before a day-case operation, and in what order the day happens.",
       q: "Is there a scar after grommet surgery?",
       a: "No — the surgeon works through the ear canal."
     },
@@ -1058,7 +1058,7 @@ lessons: [
     words: [{ w: "Extrusion", m: "The grommet working its way out of the eardrum on its own." }],
     t1: {
       d: "The eardrum grows outwards, like a fingernail. It simply carries the grommet along with it until it drops out into the ear canal.",
-      task: "Find out whether anyone knows when yours came out. Most families never notice it happening.",
+      task: "Find out how families usually notice a grommet has come out. Most of them never do.",
       q: "Do grommets have to be taken out in another operation?",
       a: "Usually not — they fall out by themselves."
     },
@@ -2109,11 +2109,11 @@ lessons: [
     facts: [
       "Nobody expects medical knowledge from a school student.",
       "You do not choose ENT until years after medical school — so you keep every option open.",
-      "Having had grommets yourself is a genuine advantage: you know what the patient's side feels like."
+      "Any experience of being looked after, or looking after someone, is genuinely useful — it teaches you what the other side of the desk feels like."
     ],
     words: [{ w: "Work experience", m: "Time spent watching or helping in a workplace to learn what a job is really like." }],
     t1: {
-      d: "You already know something most surgeons had to be told: what it is like to be the small person in the waiting room. Do not lose that.",
+      d: "Most surgeons had to be taught what it feels like to be the frightened person in the waiting room. Notice it whenever you see it, and do not lose that.",
       task: "Write down one thing you will do this month that moves you a step closer.",
       q: "What matters most at your age?",
       a: "Curiosity, kindness and consistency — not medical knowledge."
@@ -2126,9 +2126,9 @@ lessons: [
     },
     t3: {
       d: "Surgical applications test reflection and evidence of commitment: audit, teaching, courses, presentations. Competition ratios for ENT are high, so a portfolio built steadily from early on matters — but graduate entry, foundation years and access courses all exist, so a first attempt that does not work is a delay, not an ending.",
-      task: "Write a 150-word reflection on something you have experienced that taught you about being a patient.",
-      q: "Why does being a former patient help a surgeon?",
-      a: "It gives you a real understanding of what the experience feels like from the other side, which patients notice."
+      task: "Write a 150-word reflection on something you have seen or done that taught you about caring for someone.",
+      q: "Why is understanding the patient's experience useful to a surgeon?",
+      a: "Patients can tell whether you grasp what it feels like from their side, and it changes how far they trust you."
     }
   }
 ]

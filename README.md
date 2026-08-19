@@ -1,8 +1,7 @@
 # 👂 ENT Pathway
 
 A small, friendly web app for someone who wants to become an **ear, nose and throat surgeon** —
-and to specialise in ears, because they had grommets themselves and want to be the person who does
-that for other children.
+and to specialise in ears — the smallest structures in surgery, and the ones behind a child's hearing.
 
 It maps the whole route from school to consultant, teaches a lesson a day starting from zero
 knowledge, and is honest about the hard parts. No build tools, no dependencies, no accounts, no tracking.
